@@ -296,7 +296,7 @@
 	created_item = /obj/item/rogueweapon/huntingknife
 	createditem_num = 1
 
-/datum/anvil_recipe/weapons/steel/greatsword
+/datum/anvil_recipe/weapons/iron/greatsword
 	name = "Greatsword, Iron (+2 Iron)"
 	req_bar = /obj/item/ingot/iron
 	req_blade = /obj/item/blade/iron_sword
