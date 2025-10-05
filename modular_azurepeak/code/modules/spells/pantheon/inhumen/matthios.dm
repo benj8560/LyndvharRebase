@@ -78,8 +78,8 @@
 			return FALSE
 		if(HAS_TRAIT(target, TRAIT_NOFAITHHEAL))
 			target.visible_message(span_info("[target] stirs for a moment, the miracle dissipates."), span_notice("As quickly as the swelling warmth arrives, it fades- rejecting your vessel."))
-			playsound(target, 'sound/magic/PSY.ogg', 100, FALSE, -1)
-			user.playsound_local(user, 'sound/magic/PSY.ogg', 100, FALSE, -1)
+			playsound(target, 'sound/magic/godless.ogg', 100, FALSE, -1)
+			user.playsound_local(user, 'sound/magic/godless.ogg', 100, FALSE, -1)
 			return FALSE
 		user.visible_message(span_notice("The transaction Is made, [target] Is bathed In empowerment!"))
 		to_chat(user, "<font color='yellow'>[held_item] burns into the air suddenly, my Transaction is accepted.</font>")
