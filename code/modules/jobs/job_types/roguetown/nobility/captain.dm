@@ -141,7 +141,7 @@
 	switch(weapon_choice)
 		if("Zweihander")
 			H.adjust_skillrank_up_to(/datum/skill/combat/swords, 5, TRUE)
-			r_hand = /obj/item/rogueweapon/greatsword/zwei
+			r_hand = /obj/item/rogueweapon/greatsword
 			backl = /obj/item/rogueweapon/scabbard/gwstrap
 		if("Greataxe")
 			H.adjust_skillrank_up_to(/datum/skill/combat/axes, 5, TRUE)
