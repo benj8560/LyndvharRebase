@@ -222,7 +222,12 @@
 						"Without a Viscount, they were doomed to enjoy a mass-suicide.",
 						"Without a Viscount, the Lich made them his playthings.",
 						"Without a Viscount, some jealous rival reigned in tyranny.",
-						"Without a Viscount, the city was abandoned. The war claims another.")
+						"Without a Viscount, the city was abandoned. The war claims another.",
+						"Without a Viscount, the city was razed by Rhaenish pirates. The war claims another.",
+						"Without a Viscount, a raiding party lead by Baleron destroyed what was left. The war claims another.",
+						"Without a Viscount, the city was picked apart by scavengers and left to rot.",
+						"Without a Viscount, they were doomed to become dust.",
+						"Without a Viscount, the walls were breached and the city incinerated in fire by Laurence. The war claims another.")
 
 	if(vampire_werewolf() == "vampire")
 		end_reason = "When the Vampires finished sucking the city dry, they moved on to the next one."
