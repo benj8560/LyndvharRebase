@@ -35,38 +35,11 @@
 	if(onoff == 0)
 		return
 
-	if(next_yap > world.time) //Yap cooldown
-		return
-
 	if(ishuman(user)) //are we a person?
 		var/mob/living/carbon/human/HU = user
 
 		if(HU.anti_magic_check()) //are we shielded?
 			return
-
-		if(!(HU in SStreasury.bank_accounts)) //first off- do we not have an account? we'll ALWAYS scream if that's the case
-			playsound(loc, 'sound/misc/gold_license.ogg', 100, TRUE, -1)
-			say("UNKNOWN PERSON IN SECURE AREA- ARRETZ-VOUZ!!")
-			next_yap = world.time + 6 SECONDS
-			return
-
-		if(HAS_TRAIT(user, TRAIT_NOBLE))
-			say("Salut, [user.real_name] de Sommet. Thirty-breths silence period active por votre grace.")
-			playsound(loc, 'sound/misc/gold_menu.ogg', 100, TRUE, -1)
-			next_yap = world.time + 30 SECONDS
-			return
-
-		if((HU in SStreasury.bank_accounts)) //do we not have an account?
-			playsound(loc, 'sound/misc/gold_menu.ogg', 100, TRUE, -1)
-			say("Yeoman [user.real_name] logged entering zone securisee.")
-			return
-
-		else //?????
-			playsound(loc, 'sound/misc/gold_license.ogg', 100, TRUE, -1)
-			say("UNAUTHORIZED PERSON IN SECURE AREA- ARRETZ-VOUZ!!")
-			next_yap = world.time + 6 SECONDS
-
-	else
 		playsound(loc, 'sound/misc/gold_license.ogg', 100, TRUE, -1)
-		say("UNKNOWN CREATURE IN SECURE AREA- ARRETZ-VOUS!!")
-		next_yap = world.time + 6 SECONDS
+		say("SKRAAAAK!! GUARDEZ!! GUARDEZ!! CREACHER DANS L'ZONE SECURISEE!!")
+		user.consider_ambush(TRUE, TRUE, min_dist = WARDEN_AMBUSH_MIN, max_dist = WARDEN_AMBUSH_MAX, silent = silent)
