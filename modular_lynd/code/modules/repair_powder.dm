@@ -3,21 +3,21 @@
 	name = "bronze repairhpowder (one loose zenny)"
 	category = "Table"
 	result = list(/obj/item/mundane/repair_powder)
-	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/copper/pile = 1)
+	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/copper = 1)
 	craftdiff = 1
 
 /datum/crafting_recipe/roguetown/alchemy/roachdust_silver
 	name = "silver repairpowder (one loose zilqua)"
 	category = "Table"
 	result = list(/obj/item/mundane/repair_powder)
-	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/silver/pile = 1)
+	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/silver = 1)
 	craftdiff = 2
 
 /datum/crafting_recipe/roguetown/alchemy/roachdust_gold
 	name = "golden repairpowder (one loose zenar)"
 	category = "Table"
 	result = list(/obj/item/mundane/repair_powder)
-	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/gold/pile = 1)
+	reqs = list(/obj/item/natural/stone = 1, /obj/item/natural/dirtclod = 1, /obj/item/roguecoin/gold = 1)
 	craftdiff = 3
 
 
