@@ -150,11 +150,17 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 		neck = /obj/item/clothing/neck/roguetown/bevor/iron
 	if(prob(50))
 		gloves = /obj/item/clothing/gloves/roguetown/angle/rhaenvalfur
-	if(prob(50))
-		r_hand = /obj/item/rogueweapon/sword/short/messer/iron
-		l_hand = /obj/item/rogueweapon/shield/atgervi
-	else
-		r_hand = /obj/item/rogueweapon/greataxe
+	switch(rand(1, 4))
+		if(1)
+			r_hand = /obj/item/rogueweapon/sword/short/messer/iron
+			l_hand = /obj/item/rogueweapon/shield/atgervi
+		if(2)
+			r_hand = /obj/item/rogueweapon/spear
+		if(3)
+			r_hand = /obj/item/rogueweapon/greataxe
+		if(4)
+			r_hand = /obj/item/rogueweapon/greatsword/zwei
+		
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 	H.STASPD = 9
 	H.STACON = rand(10,12) //so their limbs no longer pop off like a skeleton

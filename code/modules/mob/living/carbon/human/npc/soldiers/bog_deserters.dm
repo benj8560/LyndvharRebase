@@ -251,12 +251,12 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	H.STASTR = rand(14,16)
+	H.STASTR = rand(12,14)
 	H.STASPD = 11
 	H.STACON = rand(11,13)
 	H.STAWIL = 13
 	H.STAPER = 11
-	H.STAINT = 11
+	H.STAINT = 10
 	//Chest Gear
 	add_random_deserter_cloak(H)
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
@@ -392,12 +392,12 @@ GLOBAL_LIST_INIT(bog_aggro, world.file2list("strings/rt/highwaymanaggrolines.txt
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	H.STASTR = rand(14,16)
+	H.STASTR = rand(12,14)
 	H.STASPD = 11
 	H.STACON = rand(11,13)
 	H.STAWIL = 13
 	H.STAPER = 11
-	H.STAINT = 11
+	H.STAINT = 10
 	//Chest Gear
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 	add_random_deserter_armor_hard(H)

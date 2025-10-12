@@ -401,11 +401,12 @@
 	icon_state = "psycross_a"
 	color = "#bb9696"
 
-/obj/item/clothing/neck/roguetown/zcross/aalloy
+/obj/item/clothing/neck/roguetown/psicross/inhumen/aalloy
 	name = "decrepit zcross"
 	desc = "A symbol of darkness from an era long forgotten in blood."
 	icon_state = "zcross_a"
 	color = "#bb9696"
+	resistance_flags = FIRE_PROOF
 	possible_item_intents = list(/datum/intent/use, /datum/intent/special/magicarc)
 
 /obj/item/clothing/neck/roguetown/psicross/undivided

@@ -60,7 +60,7 @@
 	color = "#b8252c"
 	icon_state = "shalal"
 	item_state = "shalal"
-	flags_inv = HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDEEARS
+	flags_inv = HIDEHAIR|HIDEFACIALHAIR|HIDEFACE|HIDEEARS|HIDESNOUT
 	sleevetype = null
 	sleeved = null
 	icon = 'icons/roguetown/clothing/head.dmi'
