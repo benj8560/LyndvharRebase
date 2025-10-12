@@ -7,8 +7,9 @@
 	name = "bloodhead"
 	icon = 'modular_lynd/icons/decoration.dmi'
 	icon_state = "alarm_evil"
-	desc = "Blood gently trickles with each blink. Best not get into its gaze."
+	desc = "Blood gently trickles with each blink. Best not get into its gaze. Mammons gleam at the bottom of its maw."
 	pixel_y = 32
+	alpha = 60
 	var/next_yap = 0
 	var/onoff = 1 //Init on
 
@@ -41,10 +42,21 @@
 	if(istype(I, /obj/item/lockpick)) //just let em have it. this is more a fluff thing
 		to_chat(user, "<span class='warning'>I start trying to disable \the [src.name]...</span>")
 		playsound(src.loc, 'sound/foley/doors/lockrattle.ogg', 5, TRUE)
+		if(do_after(user,100, target = src))
+			say("O, la morte... To sleep?! Perchance, to DREAM...")
+			src.onoff = 0 //nightnight!
+			icon_state = "alarm_evil_off"
 
 	if(istype(I, /obj/item/melee/touch_attack/lesserknock))
 		to_chat(user, "<span class='warning'>I start trying to disable \the [src.name]...</span>")
 		playsound(src.loc, 'sound/foley/doors/lockrattle.ogg', 5, TRUE)
+		if(do_after(user,100, target = src))
+			say("O, la morte... To sleep?! Perchance, to DREAM...")
+			src.onoff = 0 //nightnight!
+			icon_state = "alarm_evil_off"
+
+	else
+		return //no cheese
 
 /obj/structure/fluff/walldeco/alarmevil/Crossed(mob/living/user)
 
@@ -72,6 +84,7 @@
 /obj/structure/fluff/walldeco/alarmevil/proc/turnthetvoff() //mustaaard
 
 	src.onoff = 0 //nightnight!
+	alpha = 255
 
 	var/oldx = pixel_x
 	animate(src, pixel_x = oldx+1, time = 1)
