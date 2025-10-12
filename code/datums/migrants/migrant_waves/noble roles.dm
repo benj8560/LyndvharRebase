@@ -1,13 +1,19 @@
+#define CTAG_NOBLE_ARISTOCRAT "noble_aristocrat"
+#define CTAG_NOBLE_BODYGUARD "noble_bodyguard"
+
 /datum/migrant_role/noble/aristocrat
 	name = "Aristocrat"
-	tutorial = "You are a traveling noble wandering what's left of Lyndhardtia. With wealth, come the poor, ready to pilfer you of your hard earned (inherited) coin, so tread lightly unless you want to meet a grizzly end."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
-	grant_lit_torch = TRUE
+	greet_text = "You are a traveling noble wandering what's left of Lyndhardtia. With wealth, come the poor, ready to pilfer you of your hard earned (inherited) coin, so tread lightly unless you want to meet a grizzly end."
+	advclass_cat_rolls = list(CTAG_NOBLE_ARISTOCRAT = 20)
+
+/datum/advclass/noble_aristocrat
+	name = "Aristocrat"
+	tutorial = "You are a traveling noble wandering what's left of Lyndhardtia. With wealth, come the poor, ready to pilfer you of your hard earned (inherited) coin, so tread lightly unless you want to meet a grizzly end."
 	outfit = /datum/outfit/job/roguetown/adventurer/noble
 	traits_applied = list(TRAIT_NOBLE, TRAIT_SEEPRICES)
-
-	cmode_music = 'sound/music/combat_knight.ogg'
+	category_tags = list(CTAG_NOBLE_ARISTOCRAT)
 	subclass_stats = list(
 		STATKEY_PER = 2,
 		STATKEY_INT = 2,
@@ -53,12 +59,14 @@
 /datum/migrant_role/noble/bodyguard
 	name = "Bodyguard"
 	greet_text = "You are a dilligent soldier in employ of this lone aristocrat for protection and to assure that their journey goes as planned."
-	outfit = /datum/outfit/job/roguetown/noble/bodyguard
-	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED)
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
+	advclass_cat_rolls = list(CTAG_NOBLE_BODYGUARD = 20)
 
-	cmode_music = 'sound/music/combat_knight.ogg'
+/datum/advclass/noble_bodyguard
+	name = "Bodyguard"
+	outfit = /datum/outfit/job/roguetown/noble/bodyguard
+	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED)
 	subclass_stats = list(
 		STATKEY_STR = 2,
 		STATKEY_WIL = 2,
