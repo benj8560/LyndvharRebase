@@ -121,3 +121,6 @@
 	var/turf/TU = get_turf(H)
 	if(TU)
 		new /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled(TU)
+
+#undef CTAG_NOBLE_ARISTOCRAT
+#undef CTAG_NOBLE_BODYGUARD
