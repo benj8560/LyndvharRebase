@@ -173,7 +173,7 @@
 #define STATS_LOCKS_PICKED "locks_picked"
 #define STATS_BANDITS "bandits"
 
-GLOBAL_LIST_INIT(azure_round_stats, list(
+GLOBAL_LIST_INIT(lynd_round_stats, list(
 	STATS_DEATHS = 0,
 	STATS_NOBLE_DEATHS = 0,
 	STATS_MOAT_FALLERS = 0,
@@ -478,19 +478,19 @@ GLOBAL_LIST_EMPTY(chronicle_stats)
 /proc/record_round_statistic(name, amount = 1)
 	if(SSticker.current_state == GAME_STATE_FINISHED)
 		return
-	if(!name || isnull(GLOB.azure_round_stats[name]))
+	if(!name || isnull(GLOB.lynd_round_stats[name]))
 		return
 
-	GLOB.azure_round_stats[name] += amount
+	GLOB.lynd_round_stats[name] += amount
 
 /// Force set a value of a specific round statistic to a given value
 /proc/force_set_round_statistic(name, value)
 	if(SSticker.current_state == GAME_STATE_FINISHED)
 		return
-	if(!name || isnull(GLOB.azure_round_stats[name]))
+	if(!name || isnull(GLOB.lynd_round_stats[name]))
 		return
 
-	GLOB.azure_round_stats[name] = value
+	GLOB.lynd_round_stats[name] = value
 
 /proc/format_top_stats(stat_category)
 	var/list/stat_data = GLOB.featured_stats[stat_category]

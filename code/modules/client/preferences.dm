@@ -483,9 +483,6 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 			dat += "<br><b>Bedshot:</b> [nsfw_headshot_link ? "<font color = '#802929'><b>SET</b></font>" : "UNSET"] <a href='?_src_=prefs;preference=nsfw_headshot;task=input'>Change</a>"
 
-			if(is_legacy)
-				dat += "<br><i><font size = 1>(Legacy)<a href='?_src_=prefs;preference=legacyhelp;task=input'>(?)</a></font></i>"
-
 			dat += "<br><b>[(length(flavortext) < MINIMUM_FLAVOR_TEXT) ? "<font color = '#802929'>" : ""]Flavortext:[(length(flavortext) < MINIMUM_FLAVOR_TEXT) ? "</font>" : ""]</b><a href='?_src_=prefs;preference=formathelp;task=input'>(?)</a><a href='?_src_=prefs;preference=flavortext;task=input'>Change</a>"
 
 			dat += "<br><b>[(length(ooc_notes) < MINIMUM_OOC_NOTES) ? "<font color = '#802929'>" : ""]OOC Notes:[(length(ooc_notes) < MINIMUM_OOC_NOTES) ? "</font>" : ""]</b><a href='?_src_=prefs;preference=formathelp;task=input'>(?)</a><a href='?_src_=prefs;preference=ooc_notes;task=input'>Change</a>"
@@ -1774,21 +1771,6 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 				if("ooc_preview")	//Unashamedly copy pasted from human_topic.dm L:7. Sorry!
 					var/list/dat = list()
 					dat += "<div align='center'><font size = 5; font color = '#dddddd'><b>[real_name]</b></font></div>"
-					var/legacy_check = FALSE
-					if(isnull(flavortext_display) && !isnull(flavortext))	//If there's an FT already in the slot, but no _display, that means it's a legacy slot.
-						is_legacy = TRUE
-						legacy_check = TRUE
-						flavortext_display = replacetext(flavortext, "\n", "<BR>")
-					if(isnull(ooc_notes_display) && !isnull(ooc_notes))
-						is_legacy = TRUE
-						legacy_check = TRUE
-						ooc_notes_display = replacetext(ooc_notes, "\n", "<BR>")
-					if(legacy_check)
-						save_character()
-						ShowChoices(user)
-						return
-					if(is_legacy)
-						dat += "<center><i><font color = '#b9b9b9'; font size = 1>This is a LEGACY Profile from naive days of Psydon.</font></i></center>"
 					if(valid_headshot_link(null, headshot_link, TRUE))
 						dat += ("<div align='center'><img src='[headshot_link]' width='325px' height='325px'></div>")
 					if(flavortext && flavortext_display)

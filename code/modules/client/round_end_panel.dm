@@ -138,35 +138,35 @@
 
 	// Left column
 	data += "<div style='display: table-cell; width: 50%; vertical-align: top; border-left: 1px solid #444; padding: 0 10px;'>"
-	data += "<font color='#9b6937'><span class='bold'>Total Deaths:</span></font> [GLOB.azure_round_stats[STATS_DEATHS]]<br>"
-	data += "<font color='#6b5ba1'><span class='bold'>Noble Deaths:</span></font> [GLOB.azure_round_stats[STATS_NOBLE_DEATHS]]<br>"
-	data += "<font color='#e6b327'><span class='bold'>Revivals:</span></font> [GLOB.azure_round_stats[STATS_ASTRATA_REVIVALS]]<br>"
-	data += "<font color='#2dc5bd'><span class='bold'>Lux Revivals:</span></font> [GLOB.azure_round_stats[STATS_LUX_REVIVALS]]<br>"
-	data += "<font color='#825b1c'><span class='bold'>Moat Fallers:</span></font> [GLOB.azure_round_stats[STATS_MOAT_FALLERS]]<br>"
-	data += "<font color='#ac5d5d'><span class='bold'>Ankles Broken:</span></font> [GLOB.azure_round_stats[STATS_ANKLES_BROKEN]]<br>"
-	data += "<font color='#e6d927'><span class='bold'>People Smitten:</span></font> [GLOB.azure_round_stats[STATS_PEOPLE_SMITTEN]]<br>"
-	data += "<font color='#50aeb4'><span class='bold'>People Drowned:</span></font> [GLOB.azure_round_stats[STATS_PEOPLE_DROWNED]]<br>"
-	data += "<font color='#8f816b'><span class='bold'>Items Stolen:</span></font> [GLOB.azure_round_stats[STATS_ITEMS_PICKPOCKETED]]<br>"
-	data += "<font color='#c24bc2'><span class='bold'>Drugs Snorted:</span></font> [GLOB.azure_round_stats[STATS_DRUGS_SNORTED]]<br>"
-	data += "<font color='#90a037'><span class='bold'>Laughs Had:</span></font> [GLOB.azure_round_stats[STATS_LAUGHS_MADE]]<br>"
-	data += "<font color='#f5c02e'><span class='bold'>Taxes Collected:</span></font> [GLOB.azure_round_stats[STATS_TAXES_COLLECTED]]<br>"
+	data += "<font color='#9b6937'><span class='bold'>Total Deaths:</span></font> [GLOB.lynd_round_stats[STATS_DEATHS]]<br>"
+	data += "<font color='#6b5ba1'><span class='bold'>Noble Deaths:</span></font> [GLOB.lynd_round_stats[STATS_NOBLE_DEATHS]]<br>"
+	data += "<font color='#e6b327'><span class='bold'>Revivals:</span></font> [GLOB.lynd_round_stats[STATS_ASTRATA_REVIVALS]]<br>"
+	data += "<font color='#2dc5bd'><span class='bold'>Lux Revivals:</span></font> [GLOB.lynd_round_stats[STATS_LUX_REVIVALS]]<br>"
+	data += "<font color='#825b1c'><span class='bold'>Moat Fallers:</span></font> [GLOB.lynd_round_stats[STATS_MOAT_FALLERS]]<br>"
+	data += "<font color='#ac5d5d'><span class='bold'>Ankles Broken:</span></font> [GLOB.lynd_round_stats[STATS_ANKLES_BROKEN]]<br>"
+	data += "<font color='#e6d927'><span class='bold'>People Smitten:</span></font> [GLOB.lynd_round_stats[STATS_PEOPLE_SMITTEN]]<br>"
+	data += "<font color='#50aeb4'><span class='bold'>People Drowned:</span></font> [GLOB.lynd_round_stats[STATS_PEOPLE_DROWNED]]<br>"
+	data += "<font color='#8f816b'><span class='bold'>Items Stolen:</span></font> [GLOB.lynd_round_stats[STATS_ITEMS_PICKPOCKETED]]<br>"
+	data += "<font color='#c24bc2'><span class='bold'>Drugs Snorted:</span></font> [GLOB.lynd_round_stats[STATS_DRUGS_SNORTED]]<br>"
+	data += "<font color='#90a037'><span class='bold'>Laughs Had:</span></font> [GLOB.lynd_round_stats[STATS_LAUGHS_MADE]]<br>"
+	data += "<font color='#f5c02e'><span class='bold'>Taxes Collected:</span></font> [GLOB.lynd_round_stats[STATS_TAXES_COLLECTED]]<br>"
 	data += "</div>"
 
 	// Right column
 	data += "<div style='display: table-cell; width: 50%; vertical-align: top; padding: 0 15px;'>"
-	data += "<font color='#36959c'><span class='bold'>Triumphs Awarded:</span></font> [GLOB.azure_round_stats[STATS_TRIUMPHS_AWARDED]]<br>"
-	data += "<font color='#a02fa4'><span class='bold'>Triumphs Stolen:</span></font> [GLOB.azure_round_stats[STATS_TRIUMPHS_STOLEN] * -1]<br>"
-	data += "<font color='#d7da2f'><span class='bold'>Prayers Made:</span></font> [GLOB.azure_round_stats[STATS_PRAYERS_MADE]]<br>"
-	data += "<font color='#bacfd6'><span class='bold'>Graves Consecrated:</span></font> [GLOB.azure_round_stats[STATS_GRAVES_CONSECRATED]]<br>"
-	data += "<font color='#9c3e46'><span class='bold'>Active Deadites:</span></font> [GLOB.azure_round_stats[STATS_DEADITES_ALIVE]]<br>"
-	data += "<font color='#0f555c'><span class='bold'>Beards Shaved:</span></font> [GLOB.azure_round_stats[STATS_BEARDS_SHAVED]]<br>"
-	data += "<font color='#6e7c81'><span class='bold'>Skills Learned:</span></font> [GLOB.azure_round_stats[STATS_SKILLS_LEARNED]]<br>"
-	data += "<font color='#23af4d'><span class='bold'>Plants Harvested:</span></font> [GLOB.azure_round_stats[STATS_PLANTS_HARVESTED]]<br>"
-	data += "<font color='#4492a5'><span class='bold'>Fish Caught:</span></font> [GLOB.azure_round_stats[STATS_FISH_CAUGHT]]<br>"
-	data += "<font color='#836033'><span class='bold'>Trees Felled:</span></font> [GLOB.azure_round_stats[STATS_TREES_CUT]]<br>"
-	data += "<font color='#af2323'><span class='bold'>Organs Eaten:</span></font> [GLOB.azure_round_stats[STATS_ORGANS_EATEN]]<br>"
-	data += "<font color='#afa623'><span class='bold'>Locks Picked:</span></font> [GLOB.azure_round_stats[STATS_LOCKS_PICKED]]<br>"
-	data += "<font color='#af2379'><span class='bold'>Kisses Made:</span></font> [GLOB.azure_round_stats[STATS_KISSES_MADE]]<br>"
+	data += "<font color='#36959c'><span class='bold'>Triumphs Awarded:</span></font> [GLOB.lynd_round_stats[STATS_TRIUMPHS_AWARDED]]<br>"
+	data += "<font color='#a02fa4'><span class='bold'>Triumphs Stolen:</span></font> [GLOB.lynd_round_stats[STATS_TRIUMPHS_STOLEN] * -1]<br>"
+	data += "<font color='#d7da2f'><span class='bold'>Prayers Made:</span></font> [GLOB.lynd_round_stats[STATS_PRAYERS_MADE]]<br>"
+	data += "<font color='#bacfd6'><span class='bold'>Graves Consecrated:</span></font> [GLOB.lynd_round_stats[STATS_GRAVES_CONSECRATED]]<br>"
+	data += "<font color='#9c3e46'><span class='bold'>Active Deadites:</span></font> [GLOB.lynd_round_stats[STATS_DEADITES_ALIVE]]<br>"
+	data += "<font color='#0f555c'><span class='bold'>Beards Shaved:</span></font> [GLOB.lynd_round_stats[STATS_BEARDS_SHAVED]]<br>"
+	data += "<font color='#6e7c81'><span class='bold'>Skills Learned:</span></font> [GLOB.lynd_round_stats[STATS_SKILLS_LEARNED]]<br>"
+	data += "<font color='#23af4d'><span class='bold'>Plants Harvested:</span></font> [GLOB.lynd_round_stats[STATS_PLANTS_HARVESTED]]<br>"
+	data += "<font color='#4492a5'><span class='bold'>Fish Caught:</span></font> [GLOB.lynd_round_stats[STATS_FISH_CAUGHT]]<br>"
+	data += "<font color='#836033'><span class='bold'>Trees Felled:</span></font> [GLOB.lynd_round_stats[STATS_TREES_CUT]]<br>"
+	data += "<font color='#af2323'><span class='bold'>Organs Eaten:</span></font> [GLOB.lynd_round_stats[STATS_ORGANS_EATEN]]<br>"
+	data += "<font color='#afa623'><span class='bold'>Locks Picked:</span></font> [GLOB.lynd_round_stats[STATS_LOCKS_PICKED]]<br>"
+	data += "<font color='#af2379'><span class='bold'>Kisses Made:</span></font> [GLOB.lynd_round_stats[STATS_KISSES_MADE]]<br>"
 	data += "</div>"
 	data += "</div></div>"
 	data += "</div>"
@@ -182,35 +182,35 @@
 
 	// Left column
 	data += "<div style='display: table-cell; width: 50%; vertical-align: top; border-left: 1px solid #444; padding: 0 10px;'>"
-	data += "<font color='#8f1dc0'<span class='bold'>Ruler's Patron:</span></font> [GLOB.azure_round_stats[STATS_MONARCH_PATRON]]<br>"
-	data += "<font color='#4682B4'><span class='bold'>Total Populace:</span></font> [GLOB.azure_round_stats[STATS_TOTAL_POPULATION]]<br>"
-	data += "<font color='#ce4646'><span class='bold'>Nobility:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_NOBLES]]<br>"
-	data += "<font color='#556B2F'><span class='bold'>Garrison:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_GARRISON]]<br>"
-	data += "<font color='#DAA520'><span class='bold'>Clergy:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_CLERGY]]<br>"
-	data += "<font color='#D2691E'><span class='bold'>Tradesmen:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_TRADESMEN]]<br>"
-	data += "<font color='#8B4513'><span class='bold'>Humens:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_NORTHERN_HUMANS]]<br>"	//Here to save space, should be other column
-	data += "<font color='#6b89e0'><span class='bold'>Males:</span></font> [GLOB.azure_round_stats[STATS_MALE_POPULATION]]<br>"
-	data += "<font color='#d67daa'><span class='bold'>Females:</span></font> [GLOB.azure_round_stats[STATS_FEMALE_POPULATION]]<br>"
-	data += "<font color='#77d0cd'><span class='bold'>Non-binary:</span></font> [GLOB.azure_round_stats[STATS_OTHER_GENDER]]<br>"
-	data += "<font color='#d0d67c'><span class='bold'>Adults:</span></font> [GLOB.azure_round_stats[STATS_ADULT_POPULATION]]<br>"
-	data += "<font color='#FFD700'><span class='bold'>Middle-Aged:</span></font> [GLOB.azure_round_stats[STATS_MIDDLEAGED_POPULATION]]<br>"
-	data += "<font color='#C0C0C0'><span class='bold'>Elderly:</span></font> [GLOB.azure_round_stats[STATS_ELDERLY_POPULATION]]<br>"
+	data += "<font color='#8f1dc0'<span class='bold'>Ruler's Patron:</span></font> [GLOB.lynd_round_stats[STATS_MONARCH_PATRON]]<br>"
+	data += "<font color='#4682B4'><span class='bold'>Total Populace:</span></font> [GLOB.lynd_round_stats[STATS_TOTAL_POPULATION]]<br>"
+	data += "<font color='#ce4646'><span class='bold'>Nobility:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_NOBLES]]<br>"
+	data += "<font color='#556B2F'><span class='bold'>Garrison:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_GARRISON]]<br>"
+	data += "<font color='#DAA520'><span class='bold'>Clergy:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_CLERGY]]<br>"
+	data += "<font color='#D2691E'><span class='bold'>Tradesmen:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_TRADESMEN]]<br>"
+	data += "<font color='#8B4513'><span class='bold'>Humens:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_NORTHERN_HUMANS]]<br>"	//Here to save space, should be other column
+	data += "<font color='#6b89e0'><span class='bold'>Males:</span></font> [GLOB.lynd_round_stats[STATS_MALE_POPULATION]]<br>"
+	data += "<font color='#d67daa'><span class='bold'>Females:</span></font> [GLOB.lynd_round_stats[STATS_FEMALE_POPULATION]]<br>"
+	data += "<font color='#77d0cd'><span class='bold'>Non-binary:</span></font> [GLOB.lynd_round_stats[STATS_OTHER_GENDER]]<br>"
+	data += "<font color='#d0d67c'><span class='bold'>Adults:</span></font> [GLOB.lynd_round_stats[STATS_ADULT_POPULATION]]<br>"
+	data += "<font color='#FFD700'><span class='bold'>Middle-Aged:</span></font> [GLOB.lynd_round_stats[STATS_MIDDLEAGED_POPULATION]]<br>"
+	data += "<font color='#C0C0C0'><span class='bold'>Elderly:</span></font> [GLOB.lynd_round_stats[STATS_ELDERLY_POPULATION]]<br>"
 	data += "</div>"
 
 	// Right column	- Way too many races, so they've been thrown together.
 	data += "<div style='display: table-cell; width: 50%; vertical-align: top; padding: 0 10px;'>"
-	data += "<font color='#808080'><span class='bold'>Dwarves:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_DWARVES]]<br>"
-	data += "<font color='#87CEEB'><span class='bold'>Pure & Half-Elves:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_WOOD_ELVES] + GLOB.azure_round_stats[STATS_ALIVE_HALF_ELVES]]<br>"
-	data += "<font color='#7729af'><span class='bold'>Dark Elves:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_DARK_ELVES]]<br>"
-	data += "<font color='#e7e3d9'><span class='bold'>Aasimars:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_AASIMAR]]<br>"
-	data += "<font color='#DC143C'><span class='bold'>Tieflings:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_TIEFLINGS]]<br>"
-	data += "<font color='#228B22'><span class='bold'>Half-Orcs & Goblins:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_HALF_ORCS] + GLOB.azure_round_stats[STATS_ALIVE_GOBLINS]]<br>"
-	data += "<font color='#CD853F'><span class='bold'>Capridae & Cervaline:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_CAPRIDAE] + GLOB.azure_round_stats[STATS_ALIVE_CERVALINE]]<br>"
-	data += "<font color='#FFD700'><span class='bold'>Eskallians & Kobolds:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_LIZARDS] + GLOB.azure_round_stats[STATS_ALIVE_KOBOLDS]]<br>"
-	data += "<font color='#d49d7c'><span class='bold'>Half & Wildkins:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_HALFKIN] + GLOB.azure_round_stats[STATS_ALIVE_WILDKIN]]<br>"
-	data += "<font color='#99dfd5'><span class='bold'>Lupians & Tabaxi:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_LUPIANS] + GLOB.azure_round_stats[STATS_ALIVE_TABAXI]]<br>"
-	data += "<font color='#c0c6c7'><span class='bold'>Rhaeteians & Axians:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_RHAETEIAN] + GLOB.azure_round_stats[STATS_ALIVE_AXIAN]]<br>"
-	data += "<font color='#9ACD32'><span class='bold'>Vulpkians:</span></font> [GLOB.azure_round_stats[STATS_ALIVE_VULPS]]<br>"
+	data += "<font color='#808080'><span class='bold'>Dwarves:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_DWARVES]]<br>"
+	data += "<font color='#87CEEB'><span class='bold'>Pure & Half-Elves:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_WOOD_ELVES] + GLOB.lynd_round_stats[STATS_ALIVE_HALF_ELVES]]<br>"
+	data += "<font color='#7729af'><span class='bold'>Dark Elves:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_DARK_ELVES]]<br>"
+	data += "<font color='#e7e3d9'><span class='bold'>Aasimars:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_AASIMAR]]<br>"
+	data += "<font color='#DC143C'><span class='bold'>Tieflings:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_TIEFLINGS]]<br>"
+	data += "<font color='#228B22'><span class='bold'>Half-Orcs & Goblins:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_HALF_ORCS] + GLOB.lynd_round_stats[STATS_ALIVE_GOBLINS]]<br>"
+	data += "<font color='#CD853F'><span class='bold'>Capridae & Cervaline:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_CAPRIDAE] + GLOB.lynd_round_stats[STATS_ALIVE_CERVALINE]]<br>"
+	data += "<font color='#FFD700'><span class='bold'>Eskallians & Kobolds:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_LIZARDS] + GLOB.lynd_round_stats[STATS_ALIVE_KOBOLDS]]<br>"
+	data += "<font color='#d49d7c'><span class='bold'>Half & Wildkins:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_HALFKIN] + GLOB.lynd_round_stats[STATS_ALIVE_WILDKIN]]<br>"
+	data += "<font color='#99dfd5'><span class='bold'>Lupians & Tabaxi:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_LUPIANS] + GLOB.lynd_round_stats[STATS_ALIVE_TABAXI]]<br>"
+	data += "<font color='#c0c6c7'><span class='bold'>Rhaeteians & Axians:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_RHAETEIAN] + GLOB.lynd_round_stats[STATS_ALIVE_AXIAN]]<br>"
+	data += "<font color='#9ACD32'><span class='bold'>Vulpkians:</span></font> [GLOB.lynd_round_stats[STATS_ALIVE_VULPS]]<br>"
 	data += "</div>"
 
 	data += "</div></div>"
@@ -511,24 +511,24 @@
 			// Left column (Revenue)
 			data += "<div style='width: 44%; display: flex; justify-content: flex-end;'>"
 			data += "<div style='text-align: left; padding-right: 20px;'>"
-			data += "<div style='margin-bottom: 4px;'><font color='#f0c759'>Starting Treasury: </font>[GLOB.azure_round_stats[STATS_STARTING_TREASURY]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#e67e22'>Noble Estates Revenue: </font>[GLOB.azure_round_stats[STATS_NOBLE_INCOME_TOTAL]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#ce9d15'>Rural Taxes Collected: </font>[GLOB.azure_round_stats[STATS_RURAL_TAXES_COLLECTED]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#f5c02e'>Royal Taxes Collected: </font>[GLOB.azure_round_stats[STATS_TAXES_COLLECTED]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#8fa36a'>Mammons Deposited: </font>[GLOB.azure_round_stats[STATS_MAMMONS_DEPOSITED]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#90b34f'>Stockpile Exports: </font>[GLOB.azure_round_stats[STATS_STOCKPILE_EXPORTS_VALUE]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#a2b337'>Bought from Stockpile: </font>[GLOB.azure_round_stats[STATS_STOCKPILE_REVENUE]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#f0c759'>Starting Treasury: </font>[GLOB.lynd_round_stats[STATS_STARTING_TREASURY]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#e67e22'>Noble Estates Revenue: </font>[GLOB.lynd_round_stats[STATS_NOBLE_INCOME_TOTAL]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#ce9d15'>Rural Taxes Collected: </font>[GLOB.lynd_round_stats[STATS_RURAL_TAXES_COLLECTED]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#f5c02e'>Royal Taxes Collected: </font>[GLOB.lynd_round_stats[STATS_TAXES_COLLECTED]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#8fa36a'>Mammons Deposited: </font>[GLOB.lynd_round_stats[STATS_MAMMONS_DEPOSITED]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#90b34f'>Stockpile Exports: </font>[GLOB.lynd_round_stats[STATS_STOCKPILE_EXPORTS_VALUE]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#a2b337'>Bought from Stockpile: </font>[GLOB.lynd_round_stats[STATS_STOCKPILE_REVENUE]]</div>"
 			data += "<div style='border-top: 1px solid #555; margin: 8px 0;'></div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#23ba30'>Total Revenue: </font>[GLOB.azure_round_stats[STATS_STARTING_TREASURY]  + GLOB.azure_round_stats[STATS_NOBLE_INCOME_TOTAL] + GLOB.azure_round_stats[STATS_TAXES_COLLECTED] + GLOB.azure_round_stats[STATS_MAMMONS_DEPOSITED] + GLOB.azure_round_stats[STATS_STOCKPILE_EXPORTS_VALUE] + GLOB.azure_round_stats[STATS_STOCKPILE_REVENUE] + GLOB.azure_round_stats[STATS_RURAL_TAXES_COLLECTED]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#23ba30'>Total Revenue: </font>[GLOB.lynd_round_stats[STATS_STARTING_TREASURY]  + GLOB.lynd_round_stats[STATS_NOBLE_INCOME_TOTAL] + GLOB.lynd_round_stats[STATS_TAXES_COLLECTED] + GLOB.lynd_round_stats[STATS_MAMMONS_DEPOSITED] + GLOB.lynd_round_stats[STATS_STOCKPILE_EXPORTS_VALUE] + GLOB.lynd_round_stats[STATS_STOCKPILE_REVENUE] + GLOB.lynd_round_stats[STATS_RURAL_TAXES_COLLECTED]]</div>"
 			data += "</div></div>"
 
 			// Right column (Expenses)
 			data += "<div style='width: 44%; display: flex; justify-content: flex-start;'>"
 			data += "<div style='text-align: left; padding-left: 20px;'>"
-			data += "<div style='margin-bottom: 4px;'><font color='#c95555'>Mammons Withdrawn: </font>[GLOB.azure_round_stats[STATS_MAMMONS_WITHDRAWN]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#db853d'>Stockpile Imports: </font>[GLOB.azure_round_stats[STATS_STOCKPILE_IMPORTS_VALUE]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#c95555'>Mammons Withdrawn: </font>[GLOB.lynd_round_stats[STATS_MAMMONS_WITHDRAWN]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#db853d'>Stockpile Imports: </font>[GLOB.lynd_round_stats[STATS_STOCKPILE_IMPORTS_VALUE]]</div>"
 			data += "<div style='border-top: 1px solid #555; margin: 8px 0;'></div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#c44731'>Total Expenses: </font>[GLOB.azure_round_stats[STATS_MAMMONS_WITHDRAWN] + GLOB.azure_round_stats[STATS_STOCKPILE_IMPORTS_VALUE]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#c44731'>Total Expenses: </font>[GLOB.lynd_round_stats[STATS_MAMMONS_WITHDRAWN] + GLOB.lynd_round_stats[STATS_STOCKPILE_IMPORTS_VALUE]]</div>"
 			data += "</div></div>"
 
 			data += "</div></div>"
@@ -543,24 +543,24 @@
 			// Left column
 			data += "<div style='width: 44%; display: flex; justify-content: flex-end;'>"
 			data += "<div style='text-align: left; padding-right: 20px;'>"
-			data += "<div style='margin-bottom: 4px;'><font color='#caa64a'>Bathmatron Vault Revenue: </font>[GLOB.azure_round_stats[STATS_BATHMATRON_VAULT_TOTAL_REVENUE]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#c57e62'>Sold to Stockpile: </font>[GLOB.azure_round_stats[STATS_STOCKPILE_EXPANSES]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#b6a17f'>Salary Payments: </font>[GLOB.azure_round_stats[STATS_WAGES_PAID]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#aac484'>Treasury Transfers: </font>[GLOB.azure_round_stats[STATS_DIRECT_TREASURY_TRANSFERS]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#c78445'>Royal Fines Collected: </font>[GLOB.azure_round_stats[STATS_FINES_INCOME]]</div>"
-			data += "<div><font color='#e74c3c'>Royal Taxes Evaded: </font>[GLOB.azure_round_stats[STATS_TAXES_EVADED]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#caa64a'>Bathmatron Vault Revenue: </font>[GLOB.lynd_round_stats[STATS_BATHMATRON_VAULT_TOTAL_REVENUE]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#c57e62'>Sold to Stockpile: </font>[GLOB.lynd_round_stats[STATS_STOCKPILE_EXPANSES]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#b6a17f'>Salary Payments: </font>[GLOB.lynd_round_stats[STATS_WAGES_PAID]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#aac484'>Treasury Transfers: </font>[GLOB.lynd_round_stats[STATS_DIRECT_TREASURY_TRANSFERS]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#c78445'>Royal Fines Collected: </font>[GLOB.lynd_round_stats[STATS_FINES_INCOME]]</div>"
+			data += "<div><font color='#e74c3c'>Royal Taxes Evaded: </font>[GLOB.lynd_round_stats[STATS_TAXES_EVADED]]</div>"
 			data += "</div></div>"
 
 			// Right column
 			data += "<div style='width: 44%; display: flex; justify-content: flex-start;'>"
 			data += "<div style='text-align: left; padding-left: 20px;'>"
-			data += "<div style='margin-bottom: 4px;'><font color='#ebbf49'>Mammons Circulating: </font>[GLOB.azure_round_stats[STATS_MAMMONS_HELD]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#db9a59'>Trade Value Exported: </font>[GLOB.azure_round_stats[STATS_TRADE_VALUE_EXPORTED]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#dfbf57'>Trade Value Imported: </font>[GLOB.azure_round_stats[STATS_TRADE_VALUE_IMPORTED]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#c0b283'>GOLDFACE Imports: </font>[GLOB.azure_round_stats[STATS_GOLDFACE_VALUE_SPENT]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#c0b283'>SILVERFACE Imports: </font>[GLOB.azure_round_stats[STATS_SILVERFACE_VALUE_SPENT]]</div>"
-			data += "<div style='margin-bottom: 4px;'><font color='#b5a642'>PURITY Imports: </font>[GLOB.azure_round_stats[STATS_PURITY_VALUE_SPENT]]</div>"
-			data += "<div><font color='#7495d3'>Peddler Revenue: </font>[GLOB.azure_round_stats[STATS_PEDDLER_REVENUE]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#ebbf49'>Mammons Circulating: </font>[GLOB.lynd_round_stats[STATS_MAMMONS_HELD]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#db9a59'>Trade Value Exported: </font>[GLOB.lynd_round_stats[STATS_TRADE_VALUE_EXPORTED]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#dfbf57'>Trade Value Imported: </font>[GLOB.lynd_round_stats[STATS_TRADE_VALUE_IMPORTED]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#c0b283'>GOLDFACE Imports: </font>[GLOB.lynd_round_stats[STATS_GOLDFACE_VALUE_SPENT]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#c0b283'>SILVERFACE Imports: </font>[GLOB.lynd_round_stats[STATS_SILVERFACE_VALUE_SPENT]]</div>"
+			data += "<div style='margin-bottom: 4px;'><font color='#b5a642'>PURITY Imports: </font>[GLOB.lynd_round_stats[STATS_PURITY_VALUE_SPENT]]</div>"
+			data += "<div><font color='#7495d3'>Peddler Revenue: </font>[GLOB.lynd_round_stats[STATS_PEDDLER_REVENUE]]</div>"
 			data += "</div></div>"
 
 			data += "</div></div>"
@@ -917,8 +917,8 @@
 				largest_religion = FALSE
 				break
 	var/apostasy_followers = GLOB.patron_follower_counts["Godless"] || 0
-	var/psydonite_monarch = GLOB.azure_round_stats[STATS_MONARCH_PATRON] == "Psydon" ? TRUE : FALSE
-	var/psydon_influence = (psydon_followers * 20) + (GLOB.confessors.len * 20) + (GLOB.azure_round_stats[STATS_HUMEN_DEATHS] * -10) + (GLOB.azure_round_stats[STATS_ALIVE_TIEFLINGS] * -20) + (psydonite_monarch ? (psydonite_monarch * 500) : -250) + (largest_religion? (largest_religion * 500) : -250) + (GLOB.azure_round_stats[STATS_PSYCROSS_USERS] * 10) + (apostasy_followers * -20) + (GLOB.azure_round_stats[STATS_LUX_HARVESTED] * -50) + (psydonite_user ? 10000 : -10000)
+	var/psydonite_monarch = GLOB.lynd_round_stats[STATS_MONARCH_PATRON] == "Psydon" ? TRUE : FALSE
+	var/psydon_influence = (psydon_followers * 20) + (GLOB.confessors.len * 20) + (GLOB.lynd_round_stats[STATS_HUMEN_DEATHS] * -10) + (GLOB.lynd_round_stats[STATS_ALIVE_TIEFLINGS] * -20) + (psydonite_monarch ? (psydonite_monarch * 500) : -250) + (largest_religion? (largest_religion * 500) : -250) + (GLOB.lynd_round_stats[STATS_PSYCROSS_USERS] * 10) + (apostasy_followers * -20) + (GLOB.lynd_round_stats[STATS_LUX_HARVESTED] * -50) + (psydonite_user ? 10000 : -10000)
 
 	data += "<div style='width: 42.5%; margin: 0 auto 30px; border: 2px solid #99b2b1; background: #47636d; color: #d0d0d0; max-height: 420px;'>"
 	data += "<div style='text-align: center; font-size: 1.3em; padding: 12px;'><b>PSYDON</b></div>"
@@ -928,7 +928,7 @@
 
 	data += "<div style='flex: 1; padding-right: 10px;'>"
 	data += "Number of followers: [psydon_followers] ([get_colored_influence_value(psydon_followers * 20)])<br>"
-	data += "People wearing psycross: [GLOB.azure_round_stats[STATS_PSYCROSS_USERS]] ([get_colored_influence_value(GLOB.azure_round_stats[STATS_PSYCROSS_USERS] * 10)])<br>"
+	data += "People wearing psycross: [GLOB.lynd_round_stats[STATS_PSYCROSS_USERS]] ([get_colored_influence_value(GLOB.lynd_round_stats[STATS_PSYCROSS_USERS] * 10)])<br>"
 	data += "Number of confessions: [GLOB.confessors.len] ([get_colored_influence_value(GLOB.confessors.len * 20)])<br>"
 	data += "Largest faith: [largest_religion ? "YES" : "NO"] ([get_colored_influence_value(largest_religion ? 500 : -250)])<br>"
 	data += "Psydonite monarch: [psydonite_monarch ? "YES" : "NO"] ([get_colored_influence_value((psydonite_monarch ? (psydonite_monarch * 500) : -250))])<br>"
@@ -936,9 +936,9 @@
 
 	data += "<div style='flex: 1; padding-left: 60px;'>"
 	data += "Number of apostates: [apostasy_followers] ([get_colored_influence_value(apostasy_followers * -20)])<br>"
-	data += "Humen deaths: [GLOB.azure_round_stats[STATS_HUMEN_DEATHS]] ([get_colored_influence_value(GLOB.azure_round_stats[STATS_HUMEN_DEATHS] * -10)])<br>"
+	data += "Humen deaths: [GLOB.lynd_round_stats[STATS_HUMEN_DEATHS]] ([get_colored_influence_value(GLOB.lynd_round_stats[STATS_HUMEN_DEATHS] * -10)])<br>"
 	data += "Largest faith: [largest_religion ? "YES" : "NO"] ([get_colored_influence_value(largest_religion ? 500 : -250)])<br>"
-	data += "Lux harvested: [GLOB.azure_round_stats[STATS_LUX_HARVESTED]] ([get_colored_influence_value(GLOB.azure_round_stats[STATS_LUX_HARVESTED] * -50)])<br>"
+	data += "Lux harvested: [GLOB.lynd_round_stats[STATS_LUX_HARVESTED]] ([get_colored_influence_value(GLOB.lynd_round_stats[STATS_LUX_HARVESTED] * -50)])<br>"
 	data += "God's status: [psydonite_user ? "ALIVE" : "DEAD"] ([get_colored_influence_value(psydonite_user ? 10000 : -10000)])<br>"
 	data += "</div>"
 
@@ -1033,7 +1033,7 @@
 		dynamic_content += "Number of followers: [followers] ([get_colored_influence_value(SSgamemode.get_follower_influence(storyteller))])<br>"
 		for(var/stat in initialized_storyteller.influence_factors)
 			var/list/stat_data = initialized_storyteller.influence_factors[stat]
-			var/stat_value = GLOB.azure_round_stats[stat] || 0
+			var/stat_value = GLOB.lynd_round_stats[stat] || 0
 
 			dynamic_content += "[stat_data["name"]] [round(stat_value)] ([get_colored_influence_value(SSgamemode.calculate_specific_influence(storyteller, stat))])<br>"
 	else
@@ -1046,7 +1046,7 @@
 			var/list/current_set = prototype.influence_sets[set_name]
 			for(var/stat in current_set)
 				var/list/stat_data = current_set[stat]
-				var/stat_value = GLOB.azure_round_stats[stat] || 0
+				var/stat_value = GLOB.lynd_round_stats[stat] || 0
 				var/influence_value = stat_value * stat_data["points"]
 				var/is_active = (stat in initialized_storyteller.influence_factors)
 

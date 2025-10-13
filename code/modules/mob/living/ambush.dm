@@ -33,7 +33,7 @@ GLOBAL_VAR_INIT(ambush_mobconsider_cooldown, 2 MINUTES) // Cooldown for each ind
 	if(!always && prob(100 - true_ambush_chance))
 		return FALSE
 	if(!always)
-		if(HAS_TRAIT(src, TRAIT_AZURENATIVE))
+		if(HAS_TRAIT(src, TRAIT_LYNDNATIVE))
 			return FALSE
 		if(world.time > last_client_interact + 0.3 SECONDS)
 			return FALSE // unmoving afks can't trigger random ambushes i.e. when being pulled/kicked/etc
