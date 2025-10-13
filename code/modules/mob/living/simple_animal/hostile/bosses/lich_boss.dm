@@ -333,40 +333,42 @@
 	faction = list("lich")
 
 /mob/living/carbon/human/species/skeleton/npc/dungeon/lich
-	skel_fragile = FALSE
+	skel_fragile = TRUE
 	skel_outfit = /datum/outfit/job/roguetown/npc/skeleton/dungeon/lich
 
 /datum/outfit/job/roguetown/npc/skeleton/dungeon/lich/pre_equip(mob/living/carbon/human/H)
 	..()
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	gloves = /obj/item/clothing/gloves/roguetown/plate/blk/death
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/blkknight/death
-	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/blkknight/death
-	pants = /obj/item/clothing/under/roguetown/platelegs/blk/death
-	neck = /obj/item/clothing/neck/roguetown/bevor
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/black
-	belt = /obj/item/storage/belt/rogue/leather/black
-	H.STASTR = 20
-	H.STAPER = 20
-	H.STASPD = 10
-	H.STACON = 20
-	H.STAWIL = 20
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/paalloy
+	gloves = /obj/item/clothing/gloves/roguetown/plate/paalloy
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/paalloy
+	shoes = /obj/item/clothing/shoes/roguetown/boots/aalloy
+	pants = /obj/item/clothing/under/roguetown/platelegs/paalloy
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/paalloy
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/guard/paalloy
+	mask = /obj/item/clothing/head/roguetown/roguehood/black
+	cloak = /obj/item/clothing/cloak/stabard/black
+	belt = /obj/item/storage/belt/rogue/leather/battleskirt/black
+	H.STASTR = 14
+	H.STAPER = 10
+	H.STASPD = 7
+	H.STACON = 14
+	H.STAWIL = 16
 	H.STAINT = 1
 	H.faction = list("lich")
-	H.wander = FALSE
+	H.wander = TRUE
 
 	H.adjust_skillrank_up_to(/datum/skill/craft/carpentry, 1, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/craft/masonry, 1, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/craft/crafting, 1, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/craft/sewing, 1, TRUE)
 
-	H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+	H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 3, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/combat/maces, 3, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/combat/axes, 3, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/combat/wrestling, 2, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/combat/unarmed, 2, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/misc/athletics, 4, TRUE)
-	H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+	H.adjust_skillrank_up_to(/datum/skill/combat/swords, 3, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/combat/shields, 2, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/combat/knives, 3, TRUE)
 	H.adjust_skillrank_up_to(/datum/skill/misc/climbing, 2, TRUE)
@@ -383,10 +385,10 @@
 	H.swap_rmb_intent(num=1)
 
 	if(prob(50))
-		r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
+		r_hand = /obj/item/rogueweapon/spear/paalloy
 		l_hand = null
 	else
-		r_hand = /obj/item/rogueweapon/greatsword
+		r_hand = /obj/item/rogueweapon/greatsword/paalloy
 		l_hand = null
 
 /obj/effect/oneway
