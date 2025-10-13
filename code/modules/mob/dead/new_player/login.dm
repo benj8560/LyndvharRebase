@@ -12,6 +12,22 @@
 
 	..()
 
+	if(client)
+		client.update_ooc_verb_visibility()
+
+	sight |= SEE_TURFS
+
+	addtimer(CALLBACK(src, PROC_REF(do_after_login)), 4 SECONDS)
+	new_player_panel()
+
+	if(client)
+		client.playtitlemusic()
+
+/mob/dead/new_player/proc/do_after_login()
+	PRIVATE_PROC(TRUE)
+	if(!client)
+		return
+
 	var/motd = global.config.motd
 	if(motd)
 		to_chat(src, "<div class=\"motd\">[motd]</div>", handle_whitespace=FALSE)
