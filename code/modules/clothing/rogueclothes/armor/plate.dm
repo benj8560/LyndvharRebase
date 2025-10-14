@@ -74,7 +74,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/fluted/ornate
 	name = "psydonic half-plate"
-	desc = "A sturdily made fluted half-plate armour-set, complete with pauldrons and shoulder-guards. \
+	desc = "A sturdily made fluted half-plate armour-set, complete with pauldrons and shoulder-guards."
 	icon_state = "ornatehalfplate"
 	smeltresult = /obj/item/ingot/silverblessed
 	body_parts_covered = COVERAGE_FULL // Less durability than proper plate, more expensive to manufacture, and accurate to the sprite.
@@ -120,7 +120,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/full/fluted/ornate
 	name = "psydonic plate"
-	desc = "A sturdily made fluted full-plate. Heavy-duty, and made to deflect blows from blades and arrows. \
+	desc = "A sturdily made fluted full-plate. Heavy-duty, and made to deflect blows from blades and arrows."
 	icon_state = "ornateplate"
 	smeltresult = /obj/item/ingot/silverblessed
 
@@ -352,8 +352,9 @@
 /obj/item/clothing/suit/roguetown/armor/plate/half/fluted/ornate
 	name = "psydonic cuirass"
 	icon_state = "ornatecuirass"
-	desc = "An ornate steel cuirass with tassets, favored by the Valorian Inquisition. \
+	desc = "An ornate steel cuirass with tassets, favored by the Valorian Inquisition."
 	smeltresult = /obj/item/ingot/silverblessed
+	
 /obj/item/clothing/suit/roguetown/armor/plate/half/iron
 	name = "iron breastplate"
 	desc = "A basic cuirass of iron, protective and moderately durable."

@@ -289,7 +289,7 @@
 			cloak = /obj/item/clothing/cloak/templar/pestran
 		if(/datum/patron/divine/eora) //Eora content from stonekeep
 			wrists = /obj/item/clothing/neck/roguetown/psicross/eora
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/eoran
+			head = /obj/item/clothing/head/roguetown/helmet/sallet/eoran
 			cloak = /obj/item/clothing/cloak/templar/eoran
 		if(/datum/patron/divine/noc)
 			wrists = /obj/item/clothing/neck/roguetown/psicross/noc

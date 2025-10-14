@@ -44,7 +44,7 @@
 	smeltresult = /obj/item/ingot/steel
 	smelt_bar_num = 2
 
-/obj/item/clothing/head/roguetown/helmet/heavy/eoran
+/obj/item/clothing/head/roguetown/helmet/sallet/eoran
 	name = "eoran sallet"
 	desc = "Hide your face away not, for this sallet was made so that you may walk with the grace of Eora."
 	icon_state = "eorahelmsallet"

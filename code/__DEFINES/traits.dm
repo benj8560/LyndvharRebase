@@ -58,7 +58,6 @@
 #define TRAIT_DUNGEONMASTER "Ruthless Jailor"
 #define TRAIT_DEATHBARGAIN "Death Bargain" // Used by UNDERMAIDEN'S BARGAIN
 #define TRAIT_RITUALIST "Ritualist"  // Allows use of ritual chalk
-#define TRAIT_GOODTRAINER "Good Trainer"
 #define TRAIT_BADTRAINER "Bad Trainer"
 #define TRAIT_INQUISITION "Member of the Valorian Inquisition"
 #define TRAIT_GOODTRAINER "Educator"

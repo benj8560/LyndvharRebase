@@ -248,7 +248,7 @@
 			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if (/datum/patron/divine/eora)
 			cloak = /obj/item/clothing/cloak/templar/eora
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/eoran
+			head = /obj/item/clothing/head/roguetown/helmet/sallet/eoran
 			armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		if (/datum/patron/divine/ravox)
 			cloak = /obj/item/clothing/cloak/cleric/ravox
