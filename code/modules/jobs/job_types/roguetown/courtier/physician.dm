@@ -69,14 +69,15 @@
 /datum/outfit/job/roguetown/physician/basic/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.adjust_blindness(-3)
-	head = /obj/item/clothing/head/roguetown/physician
+	head = /obj/item/clothing/head/roguetown/roguehood/feld
 	mask = /obj/item/clothing/mask/rogue/physician
-	neck = /obj/item/clothing/neck/roguetown/psicross/pestra
-	armor = /obj/item/clothing/suit/roguetown/shirt/robe/physician
-	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/black
+	neck = /obj/item/clothing/neck/roguetown/collar/feldcollar
+	id = /obj/item/clothing/neck/roguetown/psicross/pestra
+	armor = /obj/item/clothing/suit/roguetown/shirt/robe/feld
+	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/monk
 	gloves = /obj/item/clothing/gloves/roguetown/leather/black
-	pants = /obj/item/clothing/under/roguetown/trou/leather/mourning
-	shoes = /obj/item/clothing/shoes/roguetown/boots/
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	shoes = /obj/item/clothing/shoes/roguetown/boots
 	belt = /obj/item/storage/belt/rogue/leather/black
 	beltl = /obj/item/storage/belt/rogue/surgery_bag/full/physician
 	beltr = /obj/item/storage/keyring/physician

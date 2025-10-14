@@ -37,7 +37,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt/random
 	cloak = /obj/item/clothing/cloak/apron
 	shoes = /obj/item/clothing/shoes/roguetown/simpleshoes
-	backl = /obj/item/storage/backpack/rogue/backpack
+	backl = /obj/item/storage/backpack/rogue/backpack/bagpack
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	beltr = /obj/item/reagent_containers/glass/bottle/waterskin/milk

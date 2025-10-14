@@ -35,7 +35,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/purple
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/raincloak/purple
-	backl = /obj/item/storage/backpack/rogue/satchel/short
+	backl = /obj/item/storage/backpack/rogue/backpack/bagpack
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltl = /obj/item/flashlight/flare/torch/lantern
@@ -86,7 +86,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/black
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/half
-	backl = /obj/item/storage/backpack/rogue/satchel/short
+	backl = /obj/item/storage/backpack/rogue/backpack/bagpack
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltl = /obj/item/flashlight/flare/torch/lantern
@@ -132,7 +132,7 @@
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/mageyellow
 	belt = /obj/item/storage/belt/rogue/leather/black
-	backl = /obj/item/storage/backpack/rogue/satchel/short
+	backl = /obj/item/storage/backpack/rogue/backpack/bagpack
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltl = /obj/item/flashlight/flare/torch/lantern
@@ -295,7 +295,7 @@
 	cloak = /obj/item/clothing/suit/roguetown/armor/longcoat
 	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/red
 	belt = /obj/item/storage/belt/rogue/leather/black
-	backl = /obj/item/storage/backpack/rogue/satchel/short
+	backl = /obj/item/storage/backpack/rogue/backpack/bagpack
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	beltr = /obj/item/rogueweapon/mace/cudgel
 	beltl = /obj/item/flashlight/flare/torch/lantern
@@ -354,7 +354,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/workervest
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
 	belt = /obj/item/storage/belt/rogue/leather/black
-	backl = /obj/item/storage/backpack/rogue/backpack
+	backl = /obj/item/storage/backpack/rogue/backpack/bagpack
 	beltr = /obj/item/cooking/pan
 	beltl = /obj/item/flashlight/flare/torch/lantern
 	backpack_contents = list(

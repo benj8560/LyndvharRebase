@@ -41,7 +41,7 @@
 	neck = /obj/item/storage/belt/rogue/pouch/coins/mid
 	beltl = /obj/item/rogueweapon/blowrod
 	beltr = /obj/item/rogueweapon/tongs   // Necessary for removing hot glass panes from furnaces.
-	backl = /obj/item/storage/backpack/rogue/backpack
+	backl = /obj/item/storage/backpack/rogue/backpack/bagpack
 	backr = /obj/item/rogueweapon/shovel  // For getting clay
 
 	backpack_contents = list(

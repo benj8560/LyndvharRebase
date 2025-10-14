@@ -3,10 +3,10 @@ GLOBAL_LIST_EMPTY(cursed_players)
 GLOBAL_LIST_EMPTY(excommunicated_players)
 GLOBAL_LIST_EMPTY(heretical_players)
 #define PRIEST_ANNOUNCEMENT_COOLDOWN (2 MINUTES)
-#define PRIEST_SERMON_COOLDOWN (20 MINUTES)
+#define PRIEST_SERMON_COOLDOWN (10 MINUTES)
 #define PRIEST_APOSTASY_COOLDOWN (5 MINUTES)
-#define PRIEST_EXCOMMUNICATION_COOLDOWN (5 MINUTES)
-#define PRIEST_CURSE_COOLDOWN (10 MINUTES)
+#define PRIEST_EXCOMMUNICATION_COOLDOWN (1 MINUTES)
+#define PRIEST_CURSE_COOLDOWN (5 MINUTES)
 #define PRIEST_SWAP_COOLDOWN (15 MINUTES)
 
 /datum/job/roguetown/priest
@@ -83,7 +83,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	H.adjust_blindness(-3)
 	neck = /obj/item/clothing/neck/roguetown/psicross/undivided
 	head = /obj/item/clothing/head/roguetown/priestmask
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/priest
+	shirt = /obj/item/clothing/suit/roguetown/shirt/robe/monk/holy
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
 	beltl = /obj/item/storage/keyring/priest

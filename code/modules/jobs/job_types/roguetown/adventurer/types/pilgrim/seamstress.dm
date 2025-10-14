@@ -27,20 +27,18 @@
 /datum/outfit/job/roguetown/adventurer/seamstress/pre_equip(mob/living/carbon/human/H)
 	..()
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
-	cloak = /obj/item/clothing/cloak/raincloak/furcloak
-	armor = /obj/item/clothing/suit/roguetown/armor/armordress
-	shirt = /obj/item/clothing/suit/roguetown/shirt/tunic/white
-	pants = /obj/item/clothing/under/roguetown/tights/random
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/black
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
+	pants = /obj/item/clothing/under/roguetown/tights/black
 	shoes = /obj/item/clothing/shoes/roguetown/shortboots
-	belt = /obj/item/storage/belt/rogue/leather/cloth/lady
-	beltl = /obj/item/needle
+	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/rogueweapon/huntingknife/scissors
-	backl = /obj/item/storage/backpack/rogue/satchel
+	backl = /obj/item/storage/backpack/rogue/satchel/short
 	backpack_contents = list(
 						/obj/item/natural/cloth = 2,
 						/obj/item/natural/bundle/fibers/full = 1,
 						/obj/item/flashlight/flare/torch = 1,
-						/obj/item/needle/thorn = 1,
+						/obj/item/needle = 1,
 						/obj/item/recipe_book/sewing = 1, 
 						/obj/item/recipe_book/leatherworking = 1
 						)
