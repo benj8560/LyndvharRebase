@@ -32,7 +32,7 @@
 	)
 
 /datum/outfit/job/roguetown/nightmaiden
-	name = "Nightmaiden"
+	name = "Bathswain"
 	// This is just a base outfit, the actual outfits are defined in the advclasses
 
 /datum/advclass/nightmaiden
@@ -66,7 +66,7 @@
 
 /datum/outfit/job/roguetown/nightmaiden/attendant/pre_equip(mob/living/carbon/human/H)
 	..()
-	head = /obj/item/clothing/head/roguetown/armingcap
+	head = /obj/item/clothing/head/roguetown/paddedcap
 	neck = /obj/item/clothing/neck/roguetown/collar/leather
 	beltl = /obj/item/roguekey/nightmaiden
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
@@ -76,8 +76,8 @@
 		/obj/item/soap/bath = 1
 	)
 	if(should_wear_femme_clothes(H))
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt
-		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/sexy/random
+		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt
+		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/sexy
 		pants = /obj/item/clothing/under/roguetown/skirt/brown
 		belt =	/obj/item/storage/belt/rogue/leather/cloth/lady
 	else
@@ -123,7 +123,7 @@
 	)
 	if(should_wear_femme_clothes(H))
 		mask = /obj/item/clothing/mask/rogue/exoticsilkmask
-		neck = /obj/item/clothing/neck/roguetown/collar/leather
+		neck = /obj/item/clothing/neck/roguetown/collar/catbell
 		shirt = /obj/item/clothing/suit/roguetown/shirt/exoticsilkbra
 		pants = /obj/item/clothing/under/roguetown/tights/stockings/silk
 		shoes = /obj/item/clothing/shoes/roguetown/anklets
