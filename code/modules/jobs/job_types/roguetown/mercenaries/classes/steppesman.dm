@@ -45,14 +45,14 @@
 	to_chat(H, span_warning("The Szabristas are the elites of the northwestern steppes, veterans of conflict across the realm. Outfitted with a shishka and shield, these warriors sacrifice their swiftness for armor and civilized respect."))
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot/steppesman
 	head = /obj/item/clothing/head/roguetown/helmet/sallet/shishak		//Needs a unique helmet + mask combo at some point. 	//Dragonfruits to the rescue! Unique helmet with neck protection and +50 durability.
-	gloves = /obj/item/clothing/gloves/roguetown/chain
+	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/steppe	//Scale armor w/ better durability & unique sprite
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 	backl = /obj/item/rogueweapon/shield/iron/steppesman
 	beltl= /obj/item/rogueweapon/scabbard/sword
 	l_hand = /obj/item/rogueweapon/sword/sabre/steppesman
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	belt = /obj/item/storage/belt/rogue/leather/black
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
@@ -113,12 +113,12 @@
 	to_chat(H, span_warning("The Árkászi are frontline sappers specialized in sowing chaos and confusion in tandem with the Szabristas, focused on raw strength and will over the company's swordsmen and archers."))
 	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot/steppesman
 	head = /obj/item/clothing/head/roguetown/helmet/sallet/shishak
-	gloves = /obj/item/clothing/gloves/roguetown/chain
+	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/steppe
-	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 	backl = /obj/item/rogueweapon/shield/iron/steppesman
 	l_hand = /obj/item/rogueweapon/stoneaxe/battle/steppesman
-	neck = /obj/item/clothing/neck/roguetown/chaincoif
+	neck = /obj/item/clothing/neck/roguetown/coif/padded
 	belt = /obj/item/storage/belt/rogue/leather/black
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
