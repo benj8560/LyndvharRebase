@@ -71,7 +71,7 @@
 	beltl = /obj/item/rogueweapon/scabbard/sword
 	beltr = /obj/item/storage/keyring/heir
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 
 /datum/advclass/heir/aristocrat
 	name = "Sheltered Aristocrat"
@@ -107,7 +107,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/storage/keyring/heir
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	if(should_wear_masc_clothes(H))
 		pants = /obj/item/clothing/under/roguetown/tights
 		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/prince
@@ -171,19 +171,19 @@
 	subclass_stats = list(
 	STATKEY_STR = -3,
 	STATKEY_CON = -3,
-	STATKEY_SPD = 4,
-	STATKEY_PER = 2,
+	STATKEY_SPD = 2,
+	STATKEY_PER = 3,
 	STATKEY_INT = 2,
 	STATKEY_WIL = 1,
 	STATKEY_LCK = 1,
 	)
 	subclass_skills = list(
-		/datum/skill/misc/sneaking = SKILL_LEVEL_MASTER,
-		/datum/skill/misc/climbing = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/stealing = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/lockpicking = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/sneaking = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/stealing = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/lockpicking = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/combat/slings = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/athletics = SKILL_LEVEL_NOVICE,
 		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/craft/alchemy = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
@@ -199,7 +199,7 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltl = /obj/item/quiver/sling/iron
 	beltr = /obj/item/gun/ballistic/revolver/grenadelauncher/sling
-	backr = /obj/item/storage/backpack/rogue/satchel
+	backr = /obj/item/storage/backpack/rogue/satchel/short
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/shorts
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/lowcut
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced/short
