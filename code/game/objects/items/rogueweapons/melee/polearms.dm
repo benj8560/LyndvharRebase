@@ -1278,7 +1278,7 @@
 
 /obj/item/rogueweapon/woodstaff/quarterstaff/silver
 	name = "silver quarterstaff"
-	desc = "A quarterstaff reinforced with silver tips. A relatively new design, purportedly inspired by the warstaffs oft-carried by Naledian warscholars. Durable enough to catch avantyne to the shaft, without so much as a splinter - or so, they say."
+	desc = "A quarterstaff reinforced with silver tips. Durable enough to catch avantyne to the shaft, without so much as a splinter - or so, they say."
 	force = 20
 	force_wielded = 27
 	gripped_intents = list(/datum/intent/spear/bash/ranged/quarterstaff, /datum/intent/spear/thrust/quarterstaff)
@@ -1300,7 +1300,7 @@
 
 /obj/item/rogueweapon/woodstaff/quarterstaff/psy
 	name = "psydonic quarterstaff"
-	desc = "A quarterstaff reinforced with silver tips. A relatively new design, purportedly inspired by the warstaffs oft-carried by Naledian warscholars. Durable enough to catch avantyne to the shaft, without so much as a splinter - or so, they say."
+	desc = "A quarterstaff reinforced with silver tips. Durable enough to catch avantyne to the shaft, without so much as a splinter - or so, they say."
 	force = 20
 	force_wielded = 27
 	gripped_intents = list(/datum/intent/spear/bash/ranged/quarterstaff, /datum/intent/spear/thrust/quarterstaff)
