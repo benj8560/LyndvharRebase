@@ -26,7 +26,7 @@
 /area/rogue/outdoors/exposed/town/keep
 	name = "Keep"
 	icon_state = "manor"
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/newgarri.ogg'
 	keep_area = TRUE
 	town_area = TRUE
 	detail_text = DETAIL_TEXT_KEEP
@@ -50,7 +50,7 @@
 
 /area/rogue/outdoors/exposed/manorgarri
 	icon_state = "manorgarri"
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/newgarri.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	keep_area = TRUE
@@ -122,7 +122,7 @@
 /area/rogue/indoors/town/garrison
 	name = "Garrison"
 	icon_state = "garrison"
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/newgarri.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	droning_sound_dusk = null
@@ -135,7 +135,7 @@
 	icon_state = "cell"
 	spookysounds = SPOOKY_DUNGEON
 	spookynight = SPOOKY_DUNGEON
-	droning_sound = 'sound/music/area/manorgarri.ogg'
+	droning_sound = 'sound/music/area/newgarri.ogg'
 	droning_sound_dusk = null
 	droning_sound_night = null
 	converted_type = /area/rogue/outdoors/exposed/manorgarri
@@ -202,7 +202,7 @@
 /area/rogue/indoors/inq
 	name = "The Inquisition"
 	icon_state = "chapel"
-	first_time_text = "THE OTAVAN INQUISITION"
+	first_time_text = "THE VALORIAN INQUISITION"
 	detail_text = DETAIL_TEXT_INQUISITION_HQ
 
 /area/rogue/indoors/inq/office

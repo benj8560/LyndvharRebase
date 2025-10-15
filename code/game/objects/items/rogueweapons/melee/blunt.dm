@@ -525,7 +525,7 @@
 
 /obj/item/rogueweapon/mace/warhammer/steel/silver
 	name = "silver warhammer"
-	desc = "A heavy warhammer, forged from pure silver. It follows the Otavan design of a 'lucerene'; a shortened polehammer with a pronounced spike, rebalanced for one-handed usage. Resplendent in presentation, righteous in purpose."
+	desc = "A heavy warhammer, forged from pure silver. It follows the Valorian design of a 'lucerene'; a shortened polehammer with a pronounced spike, rebalanced for one-handed usage. Resplendent in presentation, righteous in purpose."
 	icon_state = "silverhammer"
 	force = 30
 	force_wielded = 30

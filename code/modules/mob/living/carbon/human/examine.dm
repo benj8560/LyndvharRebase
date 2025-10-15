@@ -950,13 +950,13 @@
 /mob/living/proc/get_inquisition_text(mob/examiner)
 	var/inquisition_text
 	if(HAS_TRAIT(src, TRAIT_INQUISITION) && HAS_TRAIT(examiner, TRAIT_INQUISITION))
-		inquisition_text = "A fellow adherent to the Holy Otavan Inquisition's missives."
+		inquisition_text = "A fellow adherent to the Inquisition's missives."
 	if(HAS_TRAIT(src, TRAIT_PURITAN) && HAS_TRAIT(examiner, TRAIT_INQUISITION))
-		inquisition_text = "My superior, sent by the Holy Otavan Inquisition to lead our sect."
+		inquisition_text = "My superior, sent by the Inquisition to lead our sect."
 	if(HAS_TRAIT(src, TRAIT_INQUISITION) && HAS_TRAIT(examiner, TRAIT_PURITAN))
-		inquisition_text = "A subordinate to my authority, as willed by the Holy Otavan Inquisition."
+		inquisition_text = "A subordinate to my authority, as willed by the Inquisition."
 	if(HAS_TRAIT(src, TRAIT_PURITAN) && HAS_TRAIT(examiner, TRAIT_PURITAN))
-		inquisition_text = "Myself. I lead this sect of the Holy Otavan Inquisition."
+		inquisition_text = "Myself. I lead this sect of the Inquisition."
 
 	return inquisition_text
 

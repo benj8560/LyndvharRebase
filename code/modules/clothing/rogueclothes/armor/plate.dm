@@ -51,7 +51,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/fluted
 	name = "fluted half-plate"
-	desc = "An ornate steel cuirass, fitted with tassets and pauldrons for additional coverage. This lightweight deviation of 'plate armor' is favored by cuirassiers all across Psydonia, alongside fledging barons who've - up until now - waged their fiercest battles upon a chamberpot." 
+	desc = "An ornate steel cuirass, fitted with tassets and pauldrons for additional coverage. This lightweight deviation of 'plate armor' is favored by cuirassiers all across Beowricke, alongside fledging barons who've - up until now - waged their fiercest battles upon a chamberpot." 
 	icon_state = "ornatehalfplate"
 
 	equip_delay_self = 6 SECONDS
@@ -404,7 +404,7 @@
 	slot_flags = ITEM_SLOT_ARMOR
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "inquisitorial duster"
-	desc = "A heavy longcoat with layers of maille hidden beneath the leather, donned by the Holy Otavan Inquisition's finest. </br>A Psydonic Cuirass can be fitted with this longcoat, in order to ward off deadlier blows without compromising one's fashion sense."
+	desc = "A heavy longcoat with layers of maille hidden beneath the leather, donned by the Inquisition's finest. </br>A Psydonic Cuirass can be fitted with this longcoat, in order to ward off deadlier blows without compromising one's fashion sense."
 	body_parts_covered = COVERAGE_FULL
 	allowed_sex = list(MALE, FEMALE)
 	allowed_sex = list(MALE, FEMALE)
@@ -443,7 +443,7 @@
 /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat/armored
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "armored inquisitorial duster"
-	desc = "A heavy longcoat with layers of maille hidden beneath the leather, donned by the Holy Otavan Inquisition's finest. Where the longcoat parts, a surprise awaits; an ornate steel cuirass, worn beneath the leathers to ward off crippling blows."
+	desc = "A heavy longcoat with layers of maille hidden beneath the leather, donned by the Inquisition's finest. Where the longcoat parts, a surprise awaits; an ornate steel cuirass, worn beneath the leathers to ward off crippling blows."
 	smeltresult = /obj/item/ingot/steel 
 	icon_state = "inqcoata"
 	item_state = "inqcoata"

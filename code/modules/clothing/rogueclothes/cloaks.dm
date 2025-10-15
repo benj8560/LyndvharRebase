@@ -1618,7 +1618,7 @@
 
 /obj/item/clothing/neck/roguetown/blkknight
 	name = "dragonscale necklace" //Who the hell put a NECKLACE in the CLOAKS file?
-	desc = "A blacksteel chain, laced through a dozen of the Hoardmaster's golden teeth. Atuned to the beating heart of Psydonia's financial systems, its true strength can only be harnessed by those who covet wealth above all else."
+	desc = "A blacksteel chain, laced through a dozen of the Hoardmaster's golden teeth. Atuned to the beating heart of Beowricke's financial systems, its true strength can only be harnessed by those who covet wealth above all else."
 	icon_state = "bktrinket"
 	max_integrity = 666 //Exceptionally strong, can be purchased multiple times, and provides a flat +2 to the entire statblock. If it gets destroyed in a fight, that's fair game. Reduced from the original value of 100,000.
 	armor = ARMOR_DRAGONSCALE

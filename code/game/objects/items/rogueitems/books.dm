@@ -239,7 +239,7 @@
 
 /obj/item/book/rogue/bibble/psy
 	name = "Tome of Psydon"
-	desc = "'And HE WEEPS. Not for you, not for me, but for it all.' </br>A leatherbound tome, chronicling the beliefs held by the Orthodoxy; the largest Psydonic denomination in the world. The 'Harlaus Press', a recent invention by Otava's clergymen, has ensured that no corner of Psydonia would remain unlit by His teachings. Inside are three seperate testaments, each marked with a velvet strap.. </br>PSALMS - TESTAMENTS OF CLERICAL WISDOM, COMMANDING INTERPRETATION. </br>GENESIS - TESTAMENTS OF PSYDONIA'S CREATION, FOR WHAT ONCE WAS. </br>INVOCATIONS - TESTAMENTS OF WILL, TO EXORCISE AND CHANT."
+	desc = "'And HE WEEPS. Not for you, not for me, but for it all.' </br>A leatherbound tome, chronicling the beliefs held by the Orthodoxy; the faith of the Valorian Republic. The 'Harlaus Press', a recent invention by Valoria's clergymen, has ensured that no corner of Beowricke would remain unlit by His teachings in due time. Inside are three seperate testaments, each marked with a velvet strap.. </br>PSALMS - TESTAMENTS OF CLERICAL WISDOM, COMMANDING INTERPRETATION. </br>GENESIS - TESTAMENTS OF BEOWRICKE'S CREATION, FOR WHAT ONCE WAS. </br>INVOCATIONS - TESTAMENTS OF WILL, TO EXORCISE AND CHANT."
 	icon_state = "psyble_0"
 	base_icon_state = "psyble"
 	title = "psyble"
@@ -276,7 +276,7 @@
 /obj/item/book/rogue/bibble/psy/MiddleClick(mob/user, params)
 	. = ..()
 	var/sects = list("PSALMS", "GENESIS", "INVOCATIONS")
-	var/sect_choice = input(user, "SELECT YOUR TESTAMENT", "OF PSYDONIA") as anything in sects
+	var/sect_choice = input(user, "SELECT YOUR TESTAMENT", "OF BEOWRICKE") as anything in sects
 	switch(sect_choice)
 		if("PSALMS")
 			sect = "sect1"

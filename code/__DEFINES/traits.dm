@@ -66,7 +66,7 @@
 #define TRAIT_STUDENT		"Student"
 #define TRAIT_INTELLECTUAL "Intellectual"
 #define TRAIT_GRAVEROBBER "Experienced Grave Robber"
-#define TRAIT_PURITAN "Otavan Emissary"
+#define TRAIT_PURITAN "Valorian Emissary"
 #define TRAIT_PURITAN_ADVENTURER "Interrogator"
 #define TRAIT_MIRROR_MAGIC "Mirror Magic"
 #define TRAIT_WITCH "Disapproval"

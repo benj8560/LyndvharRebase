@@ -859,7 +859,7 @@
 
 /obj/item/rogueweapon/sword/long/kriegmesser/psy
 	name = "psydonic broadsword"
-	desc = "Sunder, cleave, smite; a sea of coagulated blackness, speckled with crimson. Absolve, cherish, endure; the will of one, christened to save Psydonia when all else is lost. </br>'Even here it is not safe, and even this grave has been defaced. Yet, someone has written on this stone, in some angry hand - HOPE RIDES ALONE..'"
+	desc = "Sunder, cleave, smite; a sea of coagulated blackness, speckled with crimson. Absolve, cherish, endure; the will of one, christened to save Beowricke when all else is lost. </br>'Even here it is not safe, and even this grave has been defaced. Yet, someone has written on this stone, in some angry hand - HOPE RIDES ALONE..'"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "silverbroadsword"
 	sheathe_icon = "psysword"
@@ -986,7 +986,7 @@
 
 /obj/item/rogueweapon/sword/short/psy
 	name = "psydonic shortsword"
-	desc = "Otavan smiths worked with Grenzelhoftian artificers, and an esoteric sidearm was born: a shortsword with an unique design, dismissing a crossguard in favor of a hollow beak to hook and draw harm away from its user. Short in length, yet lethally light in weight."
+	desc = "Valorian smiths worked with Dwarven artificers, and an esoteric sidearm was born: a shortsword with an unique design, dismissing a crossguard in favor of a hollow beak to hook and draw harm away from its user. Short in length, yet lethally light in weight."
 	icon_state = "psyswordshort"
 	sheathe_icon = "psyswordshort"
 	force = 20
@@ -1021,7 +1021,7 @@
 
 /obj/item/rogueweapon/sword/short/silver
 	name = "silver shortsword"
-	desc = "A shortsword with a blade of pure silver. In the marginalia of tomes depicting Psydonia's crusading orders, there is no sight more iconic than that of the hauberk-draped paladin; a kite shield in one hand, and this glimmering sidearm in the other."
+	desc = "A shortsword with a blade of pure silver. In the marginalia of tomes depicting Beowricke's crusading orders, there is no sight more iconic than that of the hauberk-draped paladin; a kite shield in one hand, and this glimmering sidearm in the other."
 	icon = 'icons/roguetown/weapons/daggers32.dmi'	
 	icon_state = "silverswordshort"
 	sheathe_icon = "psyswordshort"
@@ -1361,7 +1361,7 @@
 
 /obj/item/rogueweapon/sword/rapier/psy
 	name = "psydonic rapier"
-	desc = "A basket-hilted rapier, fitted with a thin blade of pure silver. Such a resplendent weapon not only pierces the gaps within a heathen's maille, but also serves as the symbol of an Otavan diplomat's authority."
+	desc = "A basket-hilted rapier, fitted with a thin blade of pure silver. Such a resplendent weapon not only pierces the gaps within a heathen's maille, but also serves as the symbol of a Valorian diplomat's authority."
 	icon_state = "silverrapier"
 	sheathe_icon = "rapier"
 	max_integrity = 225
@@ -1448,7 +1448,7 @@
 
 /obj/item/rogueweapon/sword/silver
 	name = "silver arming sword"
-	desc = "An arming sword, fitted with a blade of pure silver. It is the bane of vampyres, nitebeasts, and deadites throughout all of Psydonia; cursed flesh erupts into holy fire, and unholy bravado twists into mortal fear."
+	desc = "An arming sword, fitted with a blade of pure silver. It is the bane of vampyres, nitebeasts, and deadites throughout all of Beowricke; cursed flesh erupts into holy fire, and unholy bravado twists into mortal fear."
 	icon_state = "silversword"
 	sheathe_icon = "silversword"
 	force = 18

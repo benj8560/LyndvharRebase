@@ -1,7 +1,7 @@
 // Putting it in defines so that it is more easily findable and editable in one location.
 
 // Hotsprings
-#define DETAIL_TEXT_EORAN_SHRINE "An Eoran shrine, nestled high in the mountains, hidden away from well-trodden paths. Cherry blossom, a symbol of both love and the fleeting nature of lyfe in Kazengun, are planted and maintained here by Eoran devotees.\n\
+#define DETAIL_TEXT_EORAN_SHRINE "An Eoran shrine, nestled high in the mountains, hidden away from well-trodden paths. Cherry blossom, a symbol of both love and the fleeting nature of lyfe in this world, are planted and maintained here by Eoran devotees.\n\
 	Oddly, the trees here seem to bloom year-round."
 #define DETAIL_TEXT_ABANDONED_HOT_SPRINGS ""
 
