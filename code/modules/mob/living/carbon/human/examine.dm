@@ -10,13 +10,13 @@
 		user.add_stress(/datum/stressevent/jesterphobia)
 	if(HAS_TRAIT(src, TRAIT_BEAUTIFUL) && user != src)//it doesn't really make sense that you can examine your own face
 		user.add_stress(/datum/stressevent/beautiful)
-		// Apply Xylix buff when examining someone with the beautiful trait
-		if(HAS_TRAIT(user, TRAIT_XYLIX) && !user.has_status_effect(/datum/status_effect/buff/xylix_joy))
-			user.apply_status_effect(/datum/status_effect/buff/xylix_joy)
-			to_chat(user, span_info("Their beauty brings a smile to my face, and fortune to my steps!"))
 	if(HAS_TRAIT(src, TRAIT_UNSEEMLY) && user != src)
 		if(!HAS_TRAIT(user, TRAIT_UNSEEMLY))
 			user.add_stress(/datum/stressevent/unseemly)
+	// Apply Xylix buff when examining someone with the beautiful trait
+	if(HAS_TRAIT(user, TRAIT_XYLIX) && !user.has_status_effect(/datum/status_effect/buff/xylix_joy) && user.has_stress_event(/datum/stressevent/beautiful))
+		user.apply_status_effect(/datum/status_effect/buff/xylix_joy)
+		to_chat(user, span_info("Their beauty brings a smile to my face, and fortune to my steps!"))
 
 /mob/living/carbon/human/examine(mob/user)
 	var/observer_privilege = isobserver(user)
@@ -26,7 +26,9 @@
 	var/t_has = p_have()
 	var/t_is = p_are()
 	var/obscure_name = FALSE
-	var/race_name = dna.species.name
+	var/race_name = "[dna.species.name]"
+	if(dna.species.desc)
+		race_name = "<a href='?src=[REF(src)];species_lore=1'><u>[dna.species.name]</u></A>"
 	var/datum/antagonist/maniac/maniac = user.mind?.has_antag_datum(/datum/antagonist/maniac)
 	var/datum/antagonist/skeleton/skeleton = user.mind?.has_antag_datum(/datum/antagonist/skeleton)
 	if(maniac && (user != src))
@@ -72,26 +74,30 @@
 		var/is_returning = FALSE
 		if(observer_privilege)
 			used_name = real_name
-		// if(migrant_type)
-		//	var/datum/migrant_role/migrant = MIGRANT_ROLE(migrant_type)
-		//	if(migrant.show_wanderer_examine)
-		//		display_as_wanderer = TRUE
-		if(job)
+		if(migrant_type)
+			var/datum/migrant_role/migrant = MIGRANT_ROLE(migrant_type)
+			if(migrant.show_wanderer_examine)
+				display_as_wanderer = TRUE
+		else if(job)
 			var/datum/job/J = SSjob.GetJob(job)
 			if(!J || J.wanderer_examine)
 				display_as_wanderer = TRUE
 			if(islatejoin)
 				is_returning = TRUE
+		if ((valid_headshot_link(src, headshot_link, TRUE)) && (user.client?.prefs.chatheadshot))
 			if(display_as_wanderer)
-				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, \n The wandering [race_name]."))
+				. = list(span_info("ø ------------ ø\n<img src=[headshot_link] width=100 height=100/>\n\nThis is <EM>[used_name]</EM>, \nThe wandering [race_name]. \nø ------------ ø"))
 			else if(used_title)
-				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, \n The [is_returning ? "returning " : ""][race_name] [used_title]."))
+				. = list(span_info("ø ------------ ø\n<img src=[headshot_link] width=100 height=100/>\nThis is <EM>[used_name]</EM>, \nThe [is_returning ? "returning " : ""][race_name] [used_title].  \nø ------------ ø"))
 			else
-				. = list(span_info("ø ------------ ø\nThis is the <EM>[used_name]</EM>, \n The [race_name]."))
-
-		if(!obscure_name || client?.prefs.masked_examine)
-			if((valid_headshot_link(src, headshot_link, TRUE)) && (user.client?.prefs.chatheadshot))
-				. += "\n <span class='info'><img src=[headshot_link] width=100 height=100/></span>"
+				. = list(span_info("ø ------------ ø\n<img src=[headshot_link] width=100 height=100/>\nThis is the <EM>[used_name]</EM>, The [race_name]. \nø ------------ ø"))
+		else
+			if(display_as_wanderer)
+				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, \n The wandering [race_name]. \nø ------------ ø"))
+			else if(used_title)
+				. = list(span_info("ø ------------ ø\nThis is <EM>[used_name]</EM>, \n The [is_returning ? "returning " : ""][race_name] [used_title]. \nø ------------ ø"))
+			else
+				. = list(span_info("ø ------------ ø\nThis is the <EM>[used_name]</EM>, The [race_name]. \nø ------------ ø"))
 
 		if(HAS_TRAIT(src, TRAIT_DNR) && src != user)
 			if(HAS_TRAIT(src, TRAIT_DEATHSIGHT))
@@ -125,7 +131,7 @@
 
 		// Knotted effect message
 		if(has_status_effect(/datum/status_effect/knot_tied))
-			. += span_warning("A knot is locked inside them. They're being pulled around like a pet.")
+			. += span_warning("A knot is locked inside them. They're being pulled around like a pet.")		
 
 		if (HAS_TRAIT(src, TRAIT_OUTLANDER) && !HAS_TRAIT(user, TRAIT_OUTLANDER)) 
 			. += span_phobia("A foreigner...")
@@ -237,7 +243,7 @@
 	if (HAS_TRAIT(src, TRAIT_CRITICAL_WEAKNESS) && (!HAS_TRAIT(src, TRAIT_VAMP_DREAMS)))
 		if(isliving(user))
 			var/mob/living/L = user
-			if(L.STAINT > 9 && L.STAPER > 9)
+			if(L.STAINT >= 12 || L.STAPER >= 14)
 				. += span_redtext("<i>[m1] critically fragile!</i>")
 
 	if(user != src && HAS_TRAIT(user, TRAIT_MATTHIOS_EYES) && (!HAS_TRAIT(src, TRAIT_DECEIVING_MEEKNESS)))
@@ -245,7 +251,6 @@
 		if(item)
 			. += span_notice("You get the feeling [m2] most valuable possession is \a [item].")
 
-	. += "<span class='info'>ø ------------ ø</span>"		
 	var/is_stupid = FALSE
 	var/is_smart = FALSE
 	var/is_normal = FALSE
@@ -267,11 +272,13 @@
 					var/shit = bD.examine_friendorfoe(aD,user,src)
 					if(shit)
 						. += shit
-			if(user.mind.has_antag_datum(/datum/antagonist/vampirelord) || user.mind.has_antag_datum(/datum/antagonist/vampire))
-				. += span_userdanger("Blood Volume: [blood_volume]")
+
+	if(user.mind.has_antag_datum(/datum/antagonist/vampirelord) || user.mind.has_antag_datum(/datum/antagonist/vampire))
+		. += span_userdanger("Blood Volume: [blood_volume]")					
 
 	var/list/obscured = check_obscured_slots()
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
+
 	if(wear_shirt && !(SLOT_SHIRT in obscured))
 		if(!wear_armor)
 			var/str = "[m3] [wear_shirt.get_examine_string(user)]."
@@ -520,6 +527,7 @@
 		else
 			str += "[wear_wrists.integrity_check()]"
 		. += str
+
 	//handcuffed?
 	if(handcuffed)
 		if(user == src)
@@ -847,6 +855,7 @@
 					var/skilldiff = user.get_skill_level(user_skill) - get_skill_level(src_skill)
 					. += "<font size = 3><i>[skilldiff_report(skilldiff)] in my wielded skill than they are in theirs.</i></font>"
 
+
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
 		if(get_dist(src, H) <= ((2 + clamp(floor(((H.STAPER - 10))),-1, 4)) + HAS_TRAIT(user, TRAIT_INTELLECTUAL)))
@@ -855,7 +864,6 @@
 	if((!obscure_name || client?.prefs.masked_examine) && (flavortext || headshot_link || ooc_notes))
 		. += "<a href='?src=[REF(src)];task=view_headshot;'>Examine closer</a>"
 
-	var/list/lines = build_cool_description(get_mob_descriptors(obscure_name, user), src)
 	if(lip_style)
 		switch(lip_color)
 			if("red")
@@ -867,6 +875,8 @@
 			if("black")
 				. += "<span class='info' style='color: #313131ff'>[m1] wearing black lipstick.</span>"
 
+
+	var/list/lines
 	if((get_face_name() != real_name) && !observer_privilege)
 		lines = build_cool_description_unknown(get_mob_descriptors_unknown(obscure_name, user), src)
 	else
@@ -879,6 +889,8 @@
 	var/trait_exam = common_trait_examine()
 	if(!isnull(trait_exam))
 		. += trait_exam
+
+	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, .)
 
 /mob/living/proc/status_effect_examines(pronoun_replacement) //You can include this in any mob's examine() to show the examine texts of status effects!
 	var/list/dat = list()
@@ -939,7 +951,7 @@
 	else if(HAS_TRAIT(src, TRAIT_CABAL) && HAS_TRAIT(examiner, TRAIT_CABAL))
 		heretic_text += "♦"
 	else if(HAS_TRAIT(src, TRAIT_HORDE) && HAS_TRAIT(examiner, TRAIT_HORDE))
-		heretic_text += "♣"
+		heretic_text += "♠"
 	else if(HAS_TRAIT(src, TRAIT_DEPRAVED) && HAS_TRAIT(examiner, TRAIT_DEPRAVED))
 		heretic_text += "♥"
 

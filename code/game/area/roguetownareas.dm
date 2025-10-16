@@ -136,9 +136,6 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	icon_state = "deception"
 	first_time_text = "THE CANYON OF DECEPTION"
 
-
-
-
 /area/rogue/outdoors/rtfield
 	name = "City Outskirts"
 	icon_state = "rtfield"
@@ -147,6 +144,8 @@ GLOBAL_LIST_INIT(roguetown_areas_typecache, typecacheof(/area/rogue/indoors/town
 	ambush_mobs = list(
 				/mob/living/simple_animal/hostile/retaliate/rogue/wolf/bobcat = 20,
 				/mob/living/simple_animal/hostile/retaliate/rogue/wolf = 30,
+				/mob/living/simple_animal/hostile/retaliate/rogue/wolf/badger = 10,
+				/mob/living/simple_animal/hostile/retaliate/rogue/wolf/raccoon = 25,
 				/mob/living/carbon/human/species/skeleton/npc/easy = 50,
 				/mob/living/carbon/human/species/human/northern/highwayman/ambush = 20)
 	first_time_text = "LYNDVHAR OUTSKIRTS"

@@ -66,13 +66,14 @@
 		/obj/item/rogueweapon/scabbard/sheath
 		)
 	H.dna.species.soundpack_m = new /datum/voicepack/male/evil() 	//Fits in my head all too well.
-	var/masks = list("Humen", "Beast")
-	var/maskchoice = input("What fits your face?", "MASK SELECTION") as anything in masks
-	switch(maskchoice)
-		if("Humen")
-			H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/steppesman, SLOT_WEAR_MASK, TRUE)
-		if("Beast")
-			H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/steppesman, SLOT_WEAR_MASK, TRUE)
+	if(H.mind)
+		var/masks = list("Humen", "Beast")
+		var/maskchoice = input("What fits your face?", "MASK SELECTION") as anything in masks
+		switch(maskchoice)
+			if("Humen")
+				H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/steppesman, SLOT_WEAR_MASK, TRUE)
+			if("Beast")
+				H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/steppesman, SLOT_WEAR_MASK, TRUE)
 
 
 /datum/advclass/mercenary/steppesman/sapper
@@ -134,7 +135,7 @@
 	H.dna.species.soundpack_m = new /datum/voicepack/male/evil()
 	if(H.mind)
 		var/masks = list("Humen", "Beast")
-		var/maskchoice = input(H, "What fits your face?", "MASK SELECTION") as anything in masks
+		var/maskchoice = input("What fits your face?", "MASK SELECTION") as anything in masks
 		switch(maskchoice)
 			if("Humen")
 				H.equip_to_slot_or_del(new /obj/item/clothing/mask/rogue/facemask/steel/steppesman, SLOT_WEAR_MASK, TRUE)
