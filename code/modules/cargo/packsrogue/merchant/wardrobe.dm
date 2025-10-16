@@ -45,7 +45,7 @@
 				)
 
 /datum/supply_pack/rogue/wardrobe/masks/goldspecs
-	name = "Golden Spectacles"
+	name = "Artificer's Goggles"
 	cost = 60
 	contains = list(
 					/obj/item/clothing/mask/rogue/spectacles/golden,

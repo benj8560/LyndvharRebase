@@ -107,7 +107,7 @@
 		lensmoved = FALSE
 
 /obj/item/clothing/mask/rogue/spectacles/golden
-	name = "golden spectacles"
+	name = "artificer's goggles"
 	icon_state = "goggles"
 	break_sound = "glassbreak"
 	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
