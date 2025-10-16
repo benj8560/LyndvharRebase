@@ -1092,6 +1092,15 @@
 	},
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors)
+"MT" = (
+/obj/structure/stairs/fancy/l{
+	dir = 1
+	},
+/obj/effect/landmark/start/adventurerlate,
+/turf/open/floor/rogue/carpet/lord{
+	icon_state = "carpet_l"
+	},
+/area/rogue/indoors)
 "MU" = (
 /obj/structure/table/wood{
 	icon_state = "longtable"
