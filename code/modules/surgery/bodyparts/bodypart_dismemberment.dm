@@ -139,6 +139,7 @@
 /obj/item/bodypart/proc/drop_limb(special)
 	if(!owner)
 		return FALSE
+	testing("begin drop limb")
 	var/atom/drop_location = owner.drop_location()
 	var/mob/living/carbon/was_owner = owner
 	update_limb(dropping_limb = TRUE)
@@ -290,6 +291,20 @@
 		C.update_inv_pants()
 
 /obj/item/bodypart/l_leg/drop_limb(special) //copypasta
+	var/mob/living/carbon/C = owner
+	. = ..()
+	if(C && !special)
+		if(C.legcuffed)
+			C.legcuffed.forceMove(C.drop_location())
+			C.legcuffed.dropped(C)
+			C.legcuffed = null
+			C.update_inv_legcuffed()
+		if(C.shoes && (C.get_num_legs(FALSE) < 1))
+			C.dropItemToGround(C.shoes, force = TRUE)
+		C.update_inv_shoes()
+		C.update_inv_pants()
+
+/obj/item/bodypart/taur/drop_limb(special) //copypasta
 	var/mob/living/carbon/C = owner
 	. = ..()
 	if(C && !special)

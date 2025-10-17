@@ -1962,6 +1962,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 						if (istype(V, /datum/virtue/heretic) && !istype(selected_patron, /datum/patron/inhumen))
 							continue
 						if (istype(V, /datum/virtue/utility/resident) && (pref_species == /datum/species/dullahan))
+							continue
 						virtue_choices[V.name] = V
 					var/result = browser_input_list(user, "SELECT A VIRTUE", "VIRTUOUS DAE",  virtue_choices, virtuetwo)
 
