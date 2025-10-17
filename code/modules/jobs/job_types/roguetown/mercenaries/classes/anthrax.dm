@@ -44,7 +44,6 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/shadowpants
 	backl = /obj/item/storage/backpack/rogue/satchel/black
-	head = /obj/item/clothing/neck/roguetown/chaincoif/full/black
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1, 
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1, 
@@ -59,6 +58,7 @@
 			armor = /obj/item/clothing/suit/roguetown/armor/plate/fluted/shadowplate
 			shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/shadowrobe
 			gloves = /obj/item/clothing/gloves/roguetown/plate/shadowgauntlets
+			head = /obj/item/clothing/neck/roguetown/chaincoif/full/black
 			wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 			mask = /obj/item/clothing/mask/rogue/facemask/shadowfacemask
 			neck = /obj/item/clothing/neck/roguetown/chaincoif/chainmantle
