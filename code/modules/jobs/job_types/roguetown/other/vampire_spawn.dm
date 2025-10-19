@@ -38,9 +38,9 @@
 		STATKEY_SPD = 1,
 	)
 	subclass_skills = list(
-		/datum/skill/combat/polearms = SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
-		/datum/skill/combat/maces = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/polearms = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/swords = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/maces = SKILL_LEVEL_JOURNEYMAN,
 		/datum/skill/misc/riding = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/crossbows = SKILL_LEVEL_EXPERT,
 		/datum/skill/combat/bows = SKILL_LEVEL_EXPERT,
@@ -55,16 +55,16 @@
 
 /datum/outfit/job/roguetown/vampire_spawn/pre_equip(mob/living/carbon/human/H)
 	..()
-	neck = /obj/item/clothing/neck/roguetown/bevor
-	gloves = /obj/item/clothing/gloves/roguetown/plate
+	neck = /obj/item/clothing/neck/roguetown/gorget/steel
+	gloves = /obj/item/clothing/gloves/roguetown/chain
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
-	belt = /obj/item/storage/belt/rogue/leather/steel
-	backr = /obj/item/storage/backpack/rogue/satchel/black
+	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
+	backr = /obj/item/storage/backpack/rogue/satchel/short/black
 
 	if(H.mind)
 		var/weapons = list(
-			"Longsword + Crossbow",
+			"Sword + Crossbow",
 			"Billhook + Recurve Bow",
 			"Grand Mace + Longbow", 
 			"Sabre + Recurve Bow",
@@ -78,44 +78,59 @@
 		)
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 		switch(weapon_choice)
-			if("Longsword + Crossbow")
+			if("Sword + Crossbow")
 				beltl = /obj/item/rogueweapon/scabbard/sword
-				r_hand = /obj/item/rogueweapon/sword/long
+				r_hand = /obj/item/rogueweapon/sword
 				beltr = /obj/item/quiver/bolts
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/crossbows, 5, TRUE)
 			if("Billhook + Recurve Bow")
 				r_hand = /obj/item/rogueweapon/spear/billhook
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
-				beltr = /obj/item/quiver/arrows
+				beltr = /obj/item/quiver/bodkin
 				beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/bows, 5, TRUE)
 			if("Grand Mace + Longbow")
 				backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
-				beltr = /obj/item/quiver/arrows
+				beltr = /obj/item/quiver/bodkin
 				beltl = /obj/item/rogueweapon/mace/goden/steel
+				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/bows, 5, TRUE)
 			if("Sabre + Recurve Bow")
 				l_hand = /obj/item/rogueweapon/scabbard/sword
 				r_hand = /obj/item/rogueweapon/sword/sabre
-				beltr = /obj/item/quiver/arrows
+				beltr = /obj/item/quiver/bodkin
 				beltl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
+				H.adjust_skillrank_up_to(/datum/skill/combat/bows, 5, TRUE)
 			if("Claymore")
 				r_hand = /obj/item/rogueweapon/greatsword/zwei
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
 			if("Great Mace")
 				r_hand = /obj/item/rogueweapon/mace/goden/steel
+				H.adjust_skillrank_up_to(/datum/skill/combat/maces, 4, TRUE)
 			if("Battle Axe")
 				r_hand = /obj/item/rogueweapon/stoneaxe/battle
+				H.adjust_skillrank_up_to(/datum/skill/combat/axes, 4, TRUE)
 			if("Greataxe")
 				r_hand = /obj/item/rogueweapon/greataxe/steel
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+				H.adjust_skillrank_up_to(/datum/skill/combat/axes, 4, TRUE)
 			if("Estoc")
 				r_hand = /obj/item/rogueweapon/estoc
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+				H.adjust_skillrank_up_to(/datum/skill/combat/swords, 4, TRUE)
 			if("Lucerne")
 				r_hand = /obj/item/rogueweapon/eaglebeak/lucerne
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
 			if("Partizan")
 				r_hand = /obj/item/rogueweapon/spear/partizan
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
+				H.adjust_skillrank_up_to(/datum/skill/combat/polearms, 4, TRUE)
 
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
 	pants = /obj/item/clothing/under/roguetown/chainlegs
