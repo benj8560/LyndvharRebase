@@ -221,7 +221,7 @@
 						add_sleep_experience(opener, /datum/skill/misc/lockpicking, opener.STAINT/2)
 					if(lockprogress >= locktreshold)
 						record_featured_stat(FEATURED_STATS_CRIMINALS, user)
-						GLOB.scarlet_round_stats[STATS_LOCKS_PICKED]++
+						GLOB.lynd_round_stats[STATS_LOCKS_PICKED]++
 						lockpicking_check_done = 1
 						break
 					else
