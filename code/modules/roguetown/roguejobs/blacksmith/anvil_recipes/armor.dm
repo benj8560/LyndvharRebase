@@ -867,7 +867,7 @@
 	name = "Eoran Templar's Helmet (+1 Cured Leather)"
 	req_bar = /obj/item/ingot/steelholy
 	additional_items = list(/obj/item/natural/hide/cured)
-	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/eoran
+	created_item = /obj/item/clothing/head/roguetown/helmet/sallet/eoran
 
 /datum/anvil_recipe/armor/holysteel/astratahelm
 	name = "Astratan Helmet (+1 Cured Leather)"
