@@ -1,6 +1,6 @@
 #define CTAG_GRENZEL_ENVOY "grenzel_envoy"
 #define CTAG_GRENZEL_DOPPEL "grenzel_doppel"
-#define CTAG_GRENZEL_PRIEST "grenzel_crossbow"
+#define CTAG_GRENZEL_CROSSBOW "grenzel_crossbow"
 
 /datum/migrant_role/grenzel/envoy
 	name = "Envoy"
@@ -188,4 +188,4 @@
 		)
 #undef CTAG_GRENZEL_ENVOY
 #undef CTAG_GRENZEL_DOPPEL
-#undef CTAG_GRENZEL_PRIEST
+#undef CTAG_GRENZEL_CROSSBOW
