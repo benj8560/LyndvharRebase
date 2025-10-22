@@ -16,7 +16,7 @@
 		var/deposit = difficulty_data[difficulty]["deposit"]
 		difficulty_choices["[difficulty] ([deposit] mammon deposit)"] = difficulty
 
-	var/selection = tgui_input_list(user, "Select contract difficulty (deposit required)", "CONTRACTS", difficulty_choices)
+	var/selection = browser_input_list(user, "Select contract difficulty (deposit required)", "CONTRACTS", difficulty_choices)
 	if(!selection)
 		return
 
@@ -30,7 +30,7 @@
 
 	var/type_choices = GLOB.global_quest_types
 
-	var/type_selection = tgui_input_list(user, "Select contract type", "CONTRACTS", type_choices[actual_difficulty])
+	var/type_selection = browser_input_list(user, "Select contract type", "CONTRACTS", type_choices[actual_difficulty])
 	
 	if(!type_selection)
 		return

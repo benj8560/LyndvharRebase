@@ -15,6 +15,7 @@
 	var/speaking = TRUE
 	var/dictating = FALSE
 	var/scom_number
+	var/scom_tag
 	var/obj/structure/roguemachine/scomm/calling = null
 	var/obj/structure/roguemachine/scomm/called_by = null
 	var/spawned_rat = FALSE
