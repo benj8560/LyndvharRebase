@@ -292,7 +292,7 @@ Inquisitorial armory down here
 	item_state = "psycenser"
 	light_outer_range = 8
 	light_color ="#70d1e2"
-	possible_item_intents = list(/datum/intent/flail/strike/smash/golgotha)
+	possible_item_intents = list(/datum/intent/mace/smash/flail/golgotha)
 	fuel = 999 MINUTES
 	force = 30
 	var/next_smoke
@@ -319,11 +319,11 @@ Inquisitorial armory down here
 	if(fuel > 0)
 		if(on)
 			turn_off()
-			possible_item_intents = list(/datum/intent/flail/strike/smash/golgotha)
+			possible_item_intents = list(/datum/intent/mace/smash/flail/golgotha)
 			user.update_a_intents()
 		else
 			playsound(src.loc, 'sound/items/censer_on.ogg', 100)
-			possible_item_intents = list(/datum/intent/flail/strike/smash/golgotha, /datum/intent/bless)
+			possible_item_intents = list(/datum/intent/mace/smash/flail/golgotha, /datum/intent/bless)
 			user.update_a_intents()
 			on = TRUE
 			update_brightness()
