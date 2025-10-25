@@ -12,7 +12,6 @@
 		STATKEY_CON = 1,
 		STATKEY_END = 2,
 		STATKEY_STR = 1,
-		STATKEY_INT = -2
 	)
 	subclass_skills = list(
 		/datum/skill/misc/stealing = SKILL_LEVEL_JOURNEYMAN,
@@ -38,9 +37,10 @@
 	beltl = /obj/item/flint
 	backpack_contents = list(
 						/obj/item/storage/pill_bottle/dice = 1,
+						/obj/item/storage/pill_bottle/dice/farkle = 1,
+						/obj/item/reagent_containers/glass/cup = 1,
 						/obj/item/toy/cards/deck = 1,
 						/obj/item/reagent_containers/glass/bottle/rogue/wine = 1,
 						/obj/item/flashlight/flare/torch = 1,
 						)
-	if(H.patron.type == /datum/patron/divine/xylix)
-		ADD_TRAIT(H, TRAIT_CRACKHEAD, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_CRACKHEAD, TRAIT_GENERIC)

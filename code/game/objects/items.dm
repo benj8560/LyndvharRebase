@@ -243,6 +243,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 	/// Angle of the icon while wielded, these are used for attack animations. Generally it's flat, but not always.
 	var/icon_angle_wielded = 0
 
+	var/no_use_cd = FALSE //if true, no cooldown when interacting with it
 	var/leashable = FALSE // More elegant solution to leash checks
 	var/bellsound = FALSE //Sanitycheck for bell jingles
 	var/bell = FALSE //Does item have bell in it, used for attachables
@@ -825,7 +826,7 @@ GLOBAL_VAR_INIT(rpg_loot_items, FALSE)
 		if(altgripped || wielded)
 			ungrip(user, FALSE)
 	if(twohands_required)
-		if(slot == SLOT_HANDS)
+		if(slot == ITEM_SLOT_HANDS)
 			wield(user)
 		else
 			ungrip(user)

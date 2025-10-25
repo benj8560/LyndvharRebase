@@ -135,6 +135,7 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 	"Prisoner",
 	"Beggar",
 	"Outlander",
+	"Trader",
 	"Pilgrim",
 	"Bandit",
 	"Court Agent",

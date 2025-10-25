@@ -31,7 +31,7 @@
 	body_parts_covered = ARMS
 	icon_state = "bracers"
 	item_state = "bracers"
-	armor = ARMOR_BOOTS_PLATED
+	armor = ARMOR_PLATE
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	blocksound = PLATEHIT
 	resistance_flags = FIRE_PROOF
@@ -127,7 +127,7 @@
 	icon_state = "copperarm"
 	item_state = "copperarm"
 	smeltresult = /obj/item/ingot/copper
-	armor = ARMOR_MASK_METAL_BAD
+	armor = ARMOR_PLATE_BAD
 
 /obj/item/clothing/wrists/roguetown/wrappings
 	name = "solar wrappings"
@@ -151,21 +151,25 @@
 	item_state = "nocwrappings"
 	sewrepair = TRUE
 
-/obj/item/clothing/wrists/roguetown/bracers/cloth/monk
-	name = "monk's wrappings"
-	desc = "Sheared burlap and cloth, meticulously fashioned around the forearms. Taut fibers turn weeping gashes into mere tears along the cloth, allowing for Monks to more confidently parry blades with their bare hands."
-	slot_flags = ITEM_SLOT_WRISTS
-	body_parts_covered = ARMS
-	icon_state = "nocwrappings"
-	item_state = "nocwrappings"
+/obj/item/clothing/wrists/roguetown/bracers/cloth
+	name = "cloth bracers"
+	desc = "This shouldn't be used in code."
+	smeltresult = null
 	armor = ARMOR_PADDED_GOOD
 	blade_dulling = DULLING_BASHCHOP
-	color = "#BFB8A9"
+	icon_state = "nocwrappings"
+	item_state = "nocwrappings"
 	max_integrity = ARMOR_INT_SIDE_STEEL //Heavy leather-tier protection and critical resistances, steel-tier integrity. Integrity boost encourages hand-to-hand parrying. Weaker than the Psydonic Thorns. Uncraftable.
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_STAB, BCLASS_BLUNT, BCLASS_TWIST)
 	blocksound = SOFTHIT
+	anvilrepair = null
 	sewrepair = TRUE
 
+/obj/item/clothing/wrists/roguetown/bracers/cloth/monk
+	name = "monk's wrappings"
+	desc = "Sheared burlap and cloth, meticulously fashioned around the forearms. Taut fibers turn weeping gashes into mere tears along the cloth, allowing for Monks to more confidently parry blades with their bare hands."
+	color = "#BFB8A9"
+	
 /obj/item/clothing/wrists/roguetown/bracers/cloth/khazumian
 	name = "sojourner's wrappings"
 	desc = "Sheared burlap and cloth, meticulously fashioned around the forearms. Monks from Kargradi rarely share the same fatalistic mindset as other sects in Yoheon, and - consequently - tend to be averse with binding their wrists in jagged thorns. Unbloodied fingers tend to work far better with the arcyne, too."
@@ -180,7 +184,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_STAB, BCLASS_BLUNT, BCLASS_TWIST)
 	blocksound = SOFTHIT
 	sewrepair = TRUE
-
+	
 //Queensleeves
 /obj/item/clothing/wrists/roguetown/royalsleeves
 	name = "royal sleeves"

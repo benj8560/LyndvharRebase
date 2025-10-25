@@ -46,11 +46,12 @@
 	animname = "strike"
 	blade_class = BCLASS_BLUNT
 	hitsound = list('sound/combat/hits/blunt/bluntsmall (1).ogg', 'sound/combat/hits/blunt/bluntsmall (2).ogg', 'sound/combat/hits/kick/kick.ogg')
-	damfactor = 1.5
+	damfactor = 0.6 // Less damage than a normal attack I don't want this to be better than stabbing
 	penfactor = BLUNT_DEFAULT_PENFACTOR
 	clickcd = 14
 	recovery = 10
 	item_d_type = "blunt"
+	intent_intdamage_factor = BLUNT_DEFAULT_INT_DAMAGEFACTOR
 	canparry = FALSE
 	candodge = FALSE
 
@@ -657,7 +658,6 @@
 	possible_item_intents = list(/datum/intent/dagger/thrust, /datum/intent/dagger/chop)
 	smeltresult = null
 	sellprice = 1
-	smeltresult = /obj/item/ingot/iron
 	thrown_damage_flag = "piercing"		//Checks piercing type like an arrow.
 
 /obj/item/rogueweapon/huntingknife/throwingknife/getonmobprop(tag)
@@ -673,7 +673,6 @@
 	name = "eastern tossblade"
 	desc = "A four pointed throwing knife ground and sharpened from a single piece of metal. The design is intended to solve one of weaknesses of basic tossblades; \
 	more points means these are more likely to land point-first. </br>This dagger can be stowed away inside a pair of boots, permitting it to be quickly drawn when needed."
-	smeltresult = /obj/item/ingot/iron
 	icon_state = "easttossblade"
 
 /obj/item/rogueweapon/huntingknife/throwingknife/aalloy
@@ -683,7 +682,6 @@
 	color = "#bb9696"
 	force = 7
 	throwforce = 16
-	smeltresult = /obj/item/ingot/aaslag
 	randomize_blade_int_on_init = TRUE
 
 /obj/item/rogueweapon/huntingknife/throwingknife/steel
@@ -694,14 +692,12 @@
 	max_integrity = 100
 	armor_penetration = 40
 	icon_state = "throw_knifes"
-	smeltresult = /obj/item/ingot/steel
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 30, "embedded_fall_chance" = 5)
 	sellprice = 2
 
 /obj/item/rogueweapon/huntingknife/throwingknife/steel/palloy
 	name = "ancient alloy tossblade"
 	desc = "A sliver of polished gilbranze, delicately carved into a throwing dagger. A favorite amongst Zizo's undying cabal, and especially amongst Her assassins; what better-a-tool to slip through another's neck? </br>This dagger can be stowed away inside a pair of boots, permitting it to be quickly drawn when needed."
-	smeltresult = /obj/item/ingot/aaslag	
 	icon_state = "throw_knifea"
 
 /obj/item/rogueweapon/huntingknife/throwingknife/silver
@@ -716,7 +712,6 @@
 	icon_state = "throw_knifesil"
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 50, "embedded_fall_chance" = 0)
 	is_silver = TRUE
-	smeltresult = /obj/item/rogueore/coal
 	sellprice = 6
 
 /obj/item/rogueweapon/huntingknife/throwingknife/silver/ComponentInitialize()
@@ -742,7 +737,6 @@
 	icon_state = "throw_knifep"
 	embedding = list("embedded_pain_multiplier" = 4, "embed_chance" = 50, "embedded_fall_chance" = 0)
 	is_silver = TRUE
-	smeltresult = /obj/item/rogueore/coal
 	sellprice = 6
 
 /obj/item/rogueweapon/huntingknife/throwingknife/psydon/ComponentInitialize()

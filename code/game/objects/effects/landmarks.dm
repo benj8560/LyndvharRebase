@@ -80,7 +80,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/adventurerlate
 	name = "Outlanderlate"
 	icon_state = "arrow"
-	jobspawn_override = list("Skeleton", "Pilgrim", "Outlander", "Migrant")
+	jobspawn_override = list("Skeleton", "Pilgrim", "Outlander", "Migrant", "Trader")
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/banditlate
@@ -392,6 +392,10 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 
 /obj/effect/landmark/start/adventurer
 	name = "Outlander"
+	icon_state = "arrow"
+
+/obj/effect/landmark/start/trader
+	name = "Trader"
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/courtagent
