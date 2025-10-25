@@ -362,7 +362,7 @@ Inquisitorial armory down here
 
 /obj/item/flashlight/flare/torch/lantern/psycenser/afterattack(atom/movable/A, mob/user, proximity)
 	. = ..()	//We smashed a guy with it turned on. Bad idea!
-	if(ismob(A) && on && (user.used_intent.type == /datum/intent/flail/strike/smash/golgotha) && user.cmode)
+	if(ismob(A) && on && (user.used_intent.type == /datum/intent/mace/smash/flail/golgotha) && user.cmode)
 		user.visible_message(span_warningbig("[user] smashes the exposed [src], shattering the shard of faith!"))
 		explosion(get_turf(A),devastation_range = 2, heavy_impact_range = 3, light_impact_range = 4, flame_range = 2, flash_range = 4, smoke = FALSE)
 		fuel = 0

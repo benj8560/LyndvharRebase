@@ -23,7 +23,7 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/gronn.dmi'
 	icon_state = "gronnleatherarmor"
 	item_state = "gronnleatherarmor"
-	armor = ARMOR_RHAENVAL_LIGHT
+	armor = ARMOR_LEATHER_GOOD
 
 /obj/item/clothing/under/roguetown/trou/leather/rhaenval
 	name = "rhaenish fur pants"
@@ -31,7 +31,7 @@
 			A wild design that offers superior protection against blunt and slashing. The attack of beasts."
 	icon_state = "gronnleatherpants"
 	item_state = "gronnleatherpants"
-	armor = ARMOR_RHAENVAL_LIGHT
+	armor = ARMOR_LEATHER_GOOD
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_SMASH)
 	max_integrity = ARMOR_INT_LEG_HARDLEATHER
 	icon = 'icons/roguetown/clothing/special/gronn.dmi'
