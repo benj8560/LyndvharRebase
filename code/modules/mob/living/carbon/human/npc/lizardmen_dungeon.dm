@@ -139,16 +139,16 @@
 	//Head Gear
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/monk/holy
-	cloak = /obj/item/clothing/cloak/templar/undivided
 	add_random_psy_vault_guard_mask(H)
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
 	//wrist Gear
 	add_random_psy_vault_guard_psycross(H)
 	//Lower Gear
-	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
+	belt = /obj/item/storage/belt/rogue/leather/steel
 	add_random_psy_vault_guard_beltr_stuff(H)
 	add_random_psy_vault_guard_beltl_stuff(H)
 	pants = /obj/item/clothing/under/roguetown/chainlegs/kilt
+	shoes = /obj/item/clothing/shoes/roguetown/boots/furlinedanklets
 	//Weapons
 	add_random_psy_vault_guard_weapon(H)
 
@@ -156,10 +156,10 @@
 	var/add_random_psy_vault_guard_weapon = rand(1, 7)
 	switch(add_random_psy_vault_guard_weapon)
 		if(1)
-			r_hand = /obj/item/rogueweapon/sword/short/silver
+			r_hand = /obj/item/rogueweapon/sword/short
 			l_hand = /obj/item/rogueweapon/shield/tower/metal
 		if(2)
-			r_hand = /obj/item/rogueweapon/sword/long/church
+			r_hand = /obj/item/rogueweapon/sword/long/rhomphaia
 		if(3)
 			r_hand = /obj/item/rogueweapon/spear/holysee
 		if(4)
@@ -179,11 +179,14 @@
 		if(1)
 			mask = /obj/item/clothing/mask/rogue/facemask/goldmask
 		if(2)
-			mask = /obj/item/clothing/mask/rogue/sack/psy
+			mask = /obj/item/clothing/head/roguetown/menacing
 		if(3)
-			head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket/gold
+			head = /obj/item/clothing/head/roguetown/helmet/heavy/crusader/t
 		if(4)
-			head = /obj/item/clothing/head/roguetown/roguehood/black
+			head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/black
+		if(5)
+			head = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/black
+			mask = /obj/item/clothing/mask/rogue/facemask 
 
 /datum/outfit/job/roguetown/human/species/lizardfolk/psy_vault_guard/proc/add_random_psy_vault_guard_psycross(mob/living/carbon/human/H)
 	var/add_random_psy_vault_guard_psycross = rand(1,5)
