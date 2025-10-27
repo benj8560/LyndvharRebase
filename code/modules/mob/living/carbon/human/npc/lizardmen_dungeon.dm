@@ -47,8 +47,6 @@
 	set_species(/datum/species/lizardfolk)
 	addtimer(CALLBACK(src, PROC_REF(after_creation)), 1 SECONDS)
 	is_silent = TRUE
-	transform = transform.Scale(1.25, 1.25)
-	transform = transform.Translate(0, 0.25 * 16)
 	update_transform()
 
 /mob/living/carbon/human/species/lizardfolk/psy_vault_guard/after_creation()
@@ -57,6 +55,12 @@
 	var/obj/item/organ/tail/lizard/tail = src.getorganslot(ORGAN_SLOT_TAIL)
 	var/obj/item/organ/snout/lizard/psy_vault_guard/snout = src.getorganslot(ORGAN_SLOT_SNOUT)
 	var/obj/item/organ/ears/psy_vault_guard/ears = src.getorganslot(ORGAN_SLOT_EARS)
+	var/obj/item/bodypart/head/head = get_bodypart(BODY_ZONE_HEAD)
+	head.sellprice = 50 // Big sellprice for these guys
+	dna.update_ui_block(DNA_HAIR_COLOR_BLOCK)
+	dna.species.handle_body(src)
+	var/obj/item/organ/eyes/organ_eyes = getorgan(/obj/item/organ/eyes)
+	var/obj/item/organ/ears/organ_ears = getorgan(/obj/item/organ/ears)
 	if(tail)
 		tail.Remove(src,1)
 		QDEL_NULL(tail)
@@ -72,24 +76,29 @@
 		QDEL_NULL(ears)
 	ears = new /obj/item/organ/ears/psy_vault_guard
 	ears.Insert(src)
+	if(organ_eyes)
+		organ_eyes.eye_color = "#2d7c4b"
+		organ_eyes.accessory_colors = "#2d7c4b#2d7c4b"
+	
+	if(organ_ears)
+		organ_ears.accessory_colors = "#9e8850"
+	
+	skin_tone = "9e8850"
+	update_hair()
+	update_body()
 	//This Stuff handles their parts
-	job = "Eskallian Faith-Militant"
-	real_name = "Eskallian Faith-Militant"
+	job = "Eskallian Watcher"
+	real_name = "Eskallian Watcher"
 	ADD_TRAIT(src, TRAIT_NOMOOD, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_NOHUNGER, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_LEECHIMMUNE, INNATE_TRAIT)
 	ADD_TRAIT(src, TRAIT_BREADY, TRAIT_GENERIC)
-	ADD_TRAIT(src, TRAIT_CRITICAL_RESISTANCE, TRAIT_GENERIC)
-	ADD_TRAIT(src, TRAIT_BIGGUY, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_STRONGBITE, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_NIGHT_VISION, TRAIT_GENERIC)
 	equipOutfit(new /datum/outfit/job/roguetown/human/species/lizardfolk/psy_vault_guard)
-	patron = /datum/patron/old_god
-	update_hair()
-	update_body()
+	patron = /datum/patron/divine/undivided
 	update_overlays()
-	var/obj/item/bodypart/head/head = get_bodypart(BODY_ZONE_HEAD)
-	head.sellprice = 50 // Big sellprice for these guys
 
 /mob/living/carbon/human/species/lizardfolk/psy_vault_guard/npc_idle()
 	if(m_intent == MOVE_INTENT_SNEAK)
@@ -109,21 +118,19 @@
 
 /mob/living/carbon/human/species/lizardfolk/psy_vault_guard/handle_combat()
 	if(mode == NPC_AI_HUNT)
-		if(prob(2)) // do not make this big or else they NEVER SHUT UP
+		if(prob(5)) // do not make this big or else they NEVER SHUT UP
 			emote("fsalute")
 	. = ..()
 
 /datum/outfit/job/roguetown/human/species/lizardfolk/psy_vault_guard/pre_equip(mob/living/carbon/human/H)
 	..()
-	//Body Stufff
-	H.skin_tone = "e9d298"
 	//Stat Stuff
-	H.STASTR = 14
-	H.STASPD = 13
-	H.STACON = 14
+	H.STASTR = 13
+	H.STASPD = 12
+	H.STACON = 11
 	H.STAWIL = 14
 	H.STAPER = 10
-	H.STAINT = 8
+	H.STAINT = 10
 	H.STALUC = 10
 	//skill Stuff
 	H.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE) //NPCs do not get these skills unless a mind takes them over, hopefully in the future someone can fix
@@ -134,7 +141,6 @@
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/athletics, 5, TRUE)
-	ADD_TRAIT(H, TRAIT_NIGHT_VISION, TRAIT_GENERIC)
 	//Clothing Stuff
 	//Head Gear
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
@@ -144,11 +150,11 @@
 	//wrist Gear
 	add_random_psy_vault_guard_psycross(H)
 	//Lower Gear
-	belt = /obj/item/storage/belt/rogue/leather/steel
+	belt = /obj/item/storage/belt/rogue/leather/rope
 	add_random_psy_vault_guard_beltr_stuff(H)
 	add_random_psy_vault_guard_beltl_stuff(H)
 	pants = /obj/item/clothing/under/roguetown/chainlegs/kilt
-	shoes = /obj/item/clothing/shoes/roguetown/boots/furlinedanklets
+	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	//Weapons
 	add_random_psy_vault_guard_weapon(H)
 
@@ -161,12 +167,12 @@
 		if(2)
 			r_hand = /obj/item/rogueweapon/sword/long/rhomphaia
 		if(3)
-			r_hand = /obj/item/rogueweapon/spear/holysee
+			r_hand = /obj/item/rogueweapon/spear/boar
 		if(4)
 			r_hand = /obj/item/rogueweapon/mace/warhammer/steel
 			l_hand = /obj/item/rogueweapon/shield/tower
 		if(5)
-			r_hand = /obj/item/rogueweapon/greatsword/zwei
+			r_hand = /obj/item/rogueweapon/greatsword
 		if(6)
 			r_hand = /obj/item/rogueweapon/greataxe/steel
 		if(7)

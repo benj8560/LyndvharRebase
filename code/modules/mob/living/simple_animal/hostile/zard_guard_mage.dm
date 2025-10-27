@@ -1,5 +1,5 @@
 /mob/living/simple_animal/hostile/rogue/eskallian_jailer_mage
-	name = "Eskallian Faith-Militant"
+	name = "Eskallian Magus"
 	desc = ""
 	icon = 'icons/mob/zard_guard_mage.dmi'
 	icon_state = "zard_guard_mage"
@@ -162,12 +162,12 @@
 //Loot
 /obj/item/roguekey/psy_bog/exit
 	name = "Rusted key"
-	desc = "A strange key...ever enduring."
+	desc = "A strange key... wonder where this goes."
 	icon_state = "rustkey"
 	lockid = "psy_bog_dung_lootkey"
 
 /obj/item/roguekey/psy_bog/two
 	name = "Rusted key"
-	desc = "A strange key...ever enduring."
+	desc = "A strange key... wonder where this goes."
 	icon_state = "rustkey"
 	lockid = "psy_bog_dung_lootkey_two"
