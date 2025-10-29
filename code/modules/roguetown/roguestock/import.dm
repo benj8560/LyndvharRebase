@@ -302,7 +302,7 @@
 
 /obj/structure/closet/crate/chest/steward/alcoholset/Initialize()
 	. = ..()
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/gronnmead(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/beer/rhaenvalianmead(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/beer/nred(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/beer/voddena(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/whitewine(src)
@@ -312,7 +312,7 @@
 	new /obj/item/reagent_containers/glass/bottle/rogue/beer/kgunplum(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/beer/aurorian(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/beer/butterhairs(src)
-	new /obj/item/reagent_containers/glass/bottle/rogue/beer/avarmead(src)
+	new /obj/item/reagent_containers/glass/bottle/rogue/beer/vruiridmead(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/beer/kgunshochu(src)
 	new /obj/item/reagent_containers/glass/bottle/rogue/beer/apfelweinheim(src)
 
