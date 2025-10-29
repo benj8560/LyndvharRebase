@@ -147,6 +147,35 @@
 	created_item = /obj/item/storage/hip/headhook/bronze
 	additional_items = list(/obj/item/natural/fibers, /obj/item/natural/fibers)
 	craftdiff = 3
+/*
+/datum/anvil_recipe/engineering/bronze/orestore
+	name = "Mechanized Ore Bag, Bronze (+1 sac, +1 cog)"
+	req_bar = /obj/item/ingot/bronze
+	created_item = /obj/item/storage/hip/orestore/bronze
+	additional_items = list(/obj/item/roguegear, /obj/item/storage/roguebag)
+	craftdiff = 3
+*/
+//contraptions and tools
+/datum/anvil_recipe/engineering/bronze/autoshears
+	name = "Auto Shears (+2 Bronze, +1 cog)"
+	req_bar = /obj/item/ingot/bronze
+	additional_items = list(/obj/item/ingot/bronze, /obj/item/ingot/bronze, /obj/item/roguegear)
+	created_item = /obj/item/contraption/shears
+	craftdiff = 4
+
+/datum/anvil_recipe/engineering/bronze/metalizer
+	name = "Wood Metalizer (+2 cog)"
+	req_bar= /obj/item/ingot/bronze
+	additional_items = list( /obj/item/roguegear, /obj/item/roguegear)
+	created_item = /obj/item/contraption/wood_metalizer
+	craftdiff = 4
+
+/datum/anvil_recipe/engineering/bronze/lockimprover
+	name = "Lock Improver (1 bronze, +1 cog))"
+	req_bar = /obj/item/ingot/bronze
+	additional_items = list(/obj/item/ingot/bronze, /obj/item/roguegear)
+	created_item = /obj/item/contraption/lock_imprinter
+	craftdiff = 4
 
 // ------------ PROSTHETICS ----------------
 
