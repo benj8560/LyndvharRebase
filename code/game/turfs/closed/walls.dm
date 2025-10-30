@@ -138,7 +138,7 @@
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
-	feel_turf(user)
+	to_chat(user, span_notice("I push the wall but nothing happens!"))
 	playsound(src, 'sound/blank.ogg', 25, TRUE)
 	add_fingerprint(user)
 
