@@ -12,7 +12,6 @@
 	var/list/skins = pref_species.get_skin_list()
 	skin_tone = skins[pick(skins)]
 	eye_color = random_eye_color()
-	is_legacy = FALSE
 	if(ft_reset)
 		flavortext = null
 		flavortext_display = " "	//_display left not null to prevent any legacy bugs.

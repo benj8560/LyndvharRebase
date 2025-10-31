@@ -261,11 +261,11 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 			to_chat(usr, span_boldwarning("You are in the migrant queue."))
 			return
 
-		if(length(client.prefs.flavortext) < MINIMUM_FLAVOR_TEXT)
+		if(length(client.prefs.flavortext) < MINIMUM_FLAVOR_TEXT && !client.prefs.is_legacy)
 			to_chat(usr, span_boldwarning("You need a minimum of [MINIMUM_FLAVOR_TEXT] characters in your flavor text in order to play."))
 			return
 
-		if(length(client.prefs.ooc_notes) < MINIMUM_OOC_NOTES)
+		if(length(client.prefs.ooc_notes) < MINIMUM_OOC_NOTES && !client.prefs.is_legacy)
 			to_chat(src, span_boldwarning("You need at least a few words in your OOC notes in order to play."))
 			return
 
