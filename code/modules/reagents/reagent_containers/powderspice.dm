@@ -100,7 +100,7 @@
 	if(M == user)
 		M.visible_message(span_notice("[user] sniffs [src]."))
 	else
-		if(do_mob(user, M, 40))
+		if(do_after(user, 40, FALSE, M))
 			if(iscarbon(M))
 				var/mob/living/carbon/C = M
 				var/obj/item/bodypart/CH = C.get_bodypart(BODY_ZONE_HEAD)
