@@ -1102,7 +1102,7 @@
 	key_third_person = "smiles"
 	message = "smiles."
 	emote_type = EMOTE_VISIBLE
-	
+
 /mob/living/carbon/human/verb/emote_smile()
 	set name = "Smile"
 	set category = "Emotes"
@@ -1942,4 +1942,4 @@
 	set name = "Yip"
 	set category = "Noises"
 
-	emote("yip", intentional = TRUE)*/
+	emote("yip", intentional = TRUE)
