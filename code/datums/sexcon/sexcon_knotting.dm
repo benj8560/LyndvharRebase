@@ -107,9 +107,6 @@
 	target.remove_status_effect(/datum/status_effect/knot_gaped)
 	RegisterSignal(user.sexcon.knotted_owner, COMSIG_MOVABLE_MOVED, PROC_REF(knot_movement), TRUE)
 	RegisterSignal(user.sexcon.knotted_recipient, COMSIG_MOVABLE_MOVED, PROC_REF(knot_movement), TRUE)
-	GLOB.azure_round_stats[STATS_KNOTTED]++
-	if(!islupian(user)) // only add to counter if top isn't a Lupian (for lore reasons)
-		GLOB.azure_round_stats[STATS_KNOTTED_NOT_LUPIANS]++
 
 /datum/sex_controller/proc/knot_movement_mods_remove_his_knot_ty(var/mob/living/carbon/human/top, var/mob/living/carbon/human/btm)
 	var/obj/item/organ/penis/penor = top.getorganslot(ORGAN_SLOT_PENIS)
@@ -325,18 +322,6 @@
 			btm.emote("painmoan", forced = TRUE)
 			btm.sexcon.try_do_pain_effect(PAIN_MILD_EFFECT, FALSE)
 		add_cum_floor(get_turf(btm))
-		if(top.sexcon.knotted_part_partner&(SEX_PART_CUNT|SEX_PART_ANUS)) // use top's knotted_part_partner var to check what effect we need to apply, as bottom may be double knotted or more
-			var/datum/status_effect/facial/internal/creampie = btm.has_status_effect(/datum/status_effect/facial/internal)
-			if(!creampie)
-				btm.apply_status_effect(/datum/status_effect/facial/internal)
-			else
-				creampie.refresh_cum()
-		if(top.sexcon.knotted_part_partner&SEX_PART_JAWS)
-			var/datum/status_effect/facial/facial = btm.has_status_effect(/datum/status_effect/facial)
-			if(!facial)
-				btm.apply_status_effect(/datum/status_effect/facial)
-			else
-				facial.refresh_cum()
 	knot_exit(keep_top_status, keep_btm_status)
 
 /datum/sex_controller/proc/knot_exit(var/keep_top_status = FALSE, var/keep_btm_status = FALSE)
