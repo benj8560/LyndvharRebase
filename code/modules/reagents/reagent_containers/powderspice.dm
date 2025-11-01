@@ -105,14 +105,14 @@
 			var/obj/item/bodypart/CH = C.get_bodypart(BODY_ZONE_HEAD)
 			C.visible_message(span_danger("[user] attempts to force [C] to inhale [src]."), span_danger("[user] attempts to force me to inhale [src]!"))
 			if(do_after(user, 40, FALSE, M))
-					if(!CH)
-						to_chat(user, span_warning("[C.p_theyre(TRUE)] missing something."))
-					if(!C.can_smell())
-						to_chat(user, span_warning("[C.p_theyre(TRUE)] has no nose!"))
-					if(C.cmode)
-						if(!C.grabbedby)
-							to_chat(user, span_info("[C] moves [C.p_their()] face away from it."))
-							return FALSE
+				if(!CH)
+					to_chat(user, span_warning("[C.p_theyre(TRUE)] missing something."))
+				if(!C.can_smell())
+					to_chat(user, span_warning("[C.p_theyre(TRUE)] has no nose!"))
+				if(C.cmode)
+					if(!C.grabbedby)
+						to_chat(user, span_info("[C] moves [C.p_their()] face away from it."))
+						return FALSE
 		else
 			return FALSE				
 	playsound(M, 'sound/items/sniff.ogg', 100, FALSE)
