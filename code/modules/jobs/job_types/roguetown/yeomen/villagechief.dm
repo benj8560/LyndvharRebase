@@ -70,7 +70,7 @@
 	H.adjust_skillrank(/datum/skill/craft/ceramics, 3, TRUE)
 	H.change_stat("strength", 1)
 	H.change_stat("perception", 3)
-	H.change_stat("endurance", 2)
+	H.change_stat("willpower", 2)
 	H.change_stat("speed", -1)
 	H.change_stat("constitution", 2)
 	H.change_stat("intelligence", 4)

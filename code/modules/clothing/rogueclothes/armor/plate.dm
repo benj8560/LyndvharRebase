@@ -126,7 +126,7 @@
 			active_item = TRUE
 			to_chat(user, span_notice("Strength flow throughout your body."))
 			user.change_stat("strength", 2)
-			user.change_stat("endurance", 2)
+			user.change_stat("willpower", 2)
 			icon_state ="artificerplate_powered"
 			item_state = "artificerplate_powered"
 			return
@@ -156,7 +156,7 @@
 				if(H.get_item_by_slot(SLOT_ARMOR) == src)
 					to_chat(H, span_notice("Gone is the strength enhancing thine abilities..."))
 					user.change_stat("strength", -2)
-					user.change_stat("endurance", -2)
+					user.change_stat("willpower", -2)
 					active_item = FALSE
 					return
 			else
