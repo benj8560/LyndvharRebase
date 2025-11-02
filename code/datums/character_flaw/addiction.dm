@@ -23,7 +23,6 @@
 	var/sated_text = "That's much better..."
 	var/unsate_time
 
-
 /datum/charflaw/addiction/New()
 	..()
 	time = rand(6 MINUTES, 30 MINUTES)
@@ -115,3 +114,10 @@
 	time = 40 MINUTES
 	needsate_text = "I need someone to HURT me."
 
+/// NYMPHO
+/datum/charflaw/addiction/lovefiend
+	name = "Nymphomaniac"
+	desc = "I must make love!"
+	time = 90 MINUTES
+	needsate_text = "I'm feeling randy."
+	debuff = /datum/status_effect/debuff/pent_up

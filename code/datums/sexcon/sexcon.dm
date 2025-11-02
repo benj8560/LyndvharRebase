@@ -637,12 +637,22 @@
 		if("toggle_finished")
 			do_until_finished = !do_until_finished
 		if("set_arousal")
+			if(user.has_flaw(/datum/charflaw/addiction/lovefiend)) // NO CHEATING. //
+				var/datum/charflaw/addiction/yeah = user.charflaw
+				if(!yeah.sated)
+					to_chat(user, span_love("I need to tend to myself properly..."))
+					return
 			var/amount = input(user, "Value above 120 will immediately cause orgasm!", "Set Arousal", arousal) as num
 			if(aphrodisiac > 1 && amount > 0)
 				set_arousal(amount * aphrodisiac)
 			else
 				set_arousal(amount)
 		if("freeze_arousal")
+			if(user.has_flaw(/datum/charflaw/addiction/lovefiend)) // NO CHEATING. //
+				var/datum/charflaw/addiction/yeah = user.charflaw
+				if(!yeah.sated)
+					to_chat(user, span_love("I need to tend to myself properly..."))
+					return
 			if(aphrodisiac == 1)
 				arousal_frozen = !arousal_frozen
 		if("category_misc")

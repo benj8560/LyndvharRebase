@@ -602,11 +602,43 @@
 	desc = "The warmth is spreading through my body..."
 	icon_state = "emberwine"
 
+/atom/movable/screen/alert/status_effect/pentup
+	name = "Pent Up"
+	desc = "I need relief..."
+	icon_state = "pentup"	
+
 /datum/status_effect/debuff/emberwine
 	id = "emberwine"
 	effectedstats = list("strength" = -1, "willpower" = -2, "speed" = -2, "intelligence" = -3)
 	duration = 1 MINUTES
 	alert_type = /atom/movable/screen/alert/status_effect/emberwine
+
+/* PENT UP (nympho) */
+/datum/status_effect/debuff/pent_up	
+	id = "pentup"
+	effectedstats = list("intelligence" = -2)
+	duration = 90 MINUTES
+	alert_type = /atom/movable/screen/alert/status_effect/pentup
+	var/time = 0
+
+/datum/status_effect/debuff/pent_up/tick()
+	time += 1
+	var/datum/sex_controller/uhhuh = owner.sexcon
+	if(uhhuh.arousal <= 69) // Funny.
+		switch(time)
+			if(3)
+				uhhuh.adjust_arousal(1)
+			if(6)
+				uhhuh.adjust_arousal(2)
+			if(9)
+				uhhuh.adjust_arousal(1)
+			if(12)
+				uhhuh.adjust_arousal(2)
+			if(15)	
+				uhhuh.adjust_arousal(1)
+			if(18)	
+				uhhuh.adjust_arousal(2)			
+				time = 0
 	
 /* Kockout */
 /datum/status_effect/debuff/knockout
