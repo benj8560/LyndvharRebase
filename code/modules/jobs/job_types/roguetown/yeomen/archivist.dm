@@ -29,6 +29,7 @@
 		TRAIT_SEWING_EXPERT,
 		TRAIT_SURVIVAL_EXPERT,
 		TRAIT_HOMESTEAD_EXPERT, // Archivist teaches everyone everything.
+		TRAIT_GOODWRITER,
 		)
 	advclass_cat_rolls = list(CTAG_ARCHIVIST = 2)
 	job_subclasses = list(
