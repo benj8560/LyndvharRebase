@@ -468,7 +468,7 @@
 	if(stat == DEAD)
 		return
 	if(!silent)
-		emote("deathgasp")
+		emote("deathgurgle", forced = TRUE)
 	ADD_TRAIT(src, TRAIT_FAKEDEATH, source)
 	ADD_TRAIT(src, TRAIT_DEATHCOMA, source)
 	tod = station_time_timestamp()
