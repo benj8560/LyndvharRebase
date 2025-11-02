@@ -16,8 +16,8 @@
 	dam_icon = 'icons/roguetown/mob/bodies/dam/dam_male.dmi'
 	dam_icon_f = 'icons/roguetown/mob/bodies/dam/dam_female.dmi'
 
-	soundpack_m = /datum/voicepack/male
-	soundpack_f = /datum/voicepack/female
+	soundpack_m = /datum/voicepack/male/tabaxi
+	soundpack_f = /datum/voicepack/female/tabaxi
 	offset_features = list(
 		OFFSET_ID = list(0,1), OFFSET_GLOVES = list(0,1), OFFSET_WRISTS = list(0,1),\
 		OFFSET_CLOAK = list(0,1), OFFSET_FACEMASK = list(0,1), OFFSET_HEAD = list(0,1), \
@@ -168,10 +168,12 @@
 /datum/species/tabaxi/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
+	C.verbs += EMOTES_KITTY
 
 /datum/species/tabaxi/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
+	C.verbs -= EMOTES_KITTY
 
 /datum/species/tabaxi/random_name(gender,unique,lastname)
 	var/randname

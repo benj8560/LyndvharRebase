@@ -1403,14 +1403,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_meow()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Meow"
-		set category = "Noises"
-		emote("meow", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_meow()
+	set name = "Meow"
+	set category = "Noises"
+	emote("meow", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/caw
 	key = "caw"
@@ -1422,14 +1418,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_caw()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Caw"
-		set category = "Noises"
-		emote("caw", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_caw()
+	set name = "Caw"
+	set category = "Noises"
+	emote("caw", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/peep
 	key = "peep"
@@ -1441,14 +1433,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_peep()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Peep"
-		set category = "Noises"
-		emote("peep", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_peep()
+	set name = "Peep"
+	set category = "Noises"
+	emote("peep", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/hoot
 	key = "hoot"
@@ -1460,14 +1448,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_hoot()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Hoot"
-		set category = "Noises"
-		emote("hoot", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_hoot()
+	set name = "Hoot"
+	set category = "Noises"
+	emote("hoot", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/squeak
 	key = "squeak"
@@ -1479,14 +1463,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_squeak()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Squeak"
-		set category = "Noises"
-		emote("squeak", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_squeak()
+	set name = "Squeak"
+	set category = "Noises"
+	emote("squeak", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/hiss
 	key = "hiss"
@@ -1498,14 +1478,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_hiss()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Hiss"
-		set category = "Noises"
-		emote("hiss", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_hiss()
+	set name = "Hiss"
+	set category = "Noises"
+	emote("hiss", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/phiss
 	key = "phiss"
@@ -1517,14 +1493,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_phiss()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "PHiss"
-		set category = "Noises"
-		emote("phiss", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_phiss()
+	set name = "PHiss"
+	set category = "Noises"
+	emote("phiss", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/roar
 	key = "roar"
@@ -1535,14 +1507,10 @@
 	vary = TRUE
 	show_runechat = FALSE
 
-/mob/living/carbon/human/verb/emote_roar()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Roar"
-		set category = "Noises"
-		emote("roar", intentional = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_roar()
+	set name = "Roar"
+	set category = "Noises"
+	emote("roar", intentional = TRUE)
 
 /datum/emote/living/howl
 	key = "howl"
@@ -1554,14 +1522,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_howl()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Howl"
-		set category = "Noises"
-		emote("howl", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_howl()
+	set name = "Howl"
+	set category = "Noises"
+	emote("howl", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/cackle
 	key = "cackle"
@@ -1573,14 +1537,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_cackle()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Cackle"
-		set category = "Noises"
-		emote("cackle", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_cackle()
+	set name = "Cackle"
+	set category = "Noises"
+	emote("cackle", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/whine
 	key = "whine"
@@ -1592,14 +1552,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_whine()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Whine"
-		set category = "Noises"
-		emote("whine", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_whine()
+	set name = "Whine"
+	set category = "Noises"
+	emote("whine", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/trill
 	key = "trill"
@@ -1611,14 +1567,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_trill()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Trill"
-		set category = "Noises"
-		emote("trill", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_trill()
+	set name = "Trill"
+	set category = "Noises"
+	emote("trill", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/snap
 	key = "snap"
@@ -1695,14 +1647,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_purr()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Purr"
-		set category = "Noises"
-		emote("purr", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_purr()
+	set name = "Purr"
+	set category = "Noises"
+	emote("purr", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/moo
 	key = "moo"
@@ -1714,14 +1662,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_moo()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Moo"
-		set category = "Noises"
-		emote("moo", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_moo()
+	set name = "Moo"
+	set category = "Noises"
+	emote("moo", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/bark
 	key = "bark"
@@ -1733,14 +1677,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_bark()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Bark"
-		set category = "Noises"
-		emote("bark", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_bark()
+	set name = "Bark"
+	set category = "Noises"
+	emote("bark", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/growl
 	key = "growl"
@@ -1752,14 +1692,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_growl()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Growl"
-		set category = "Noises"
-		emote("growl", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_growl()
+	set name = "Growl"
+	set category = "Noises"
+	emote("growl", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/bleat
 	key = "bleat"
@@ -1771,14 +1707,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_bleat()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/wild_tongue))
-		set name = "Bleat"
-		set category = "Noises"
-		emote("bleat", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_bleat()
+	set name = "Bleat"
+	set category = "Noises"
+	emote("bleat", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/chitter
 	key = "chitter"
@@ -1790,14 +1722,10 @@
 	show_runechat = FALSE
 	is_animal = TRUE
 
-/mob/living/carbon/human/verb/emote_chitter()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/moth))
-		set name = "Chitter"
-		set category = "Noises"
-		emote("chitter", intentional = TRUE, animal = TRUE)
-	else
-		to_chat(usr, span_warning("Your tongue doesn't do that"))
-		return
+/mob/proc/emote_chitter()
+	set name = "Chitter"
+	set category = "Noises"
+	emote("chitter", intentional = TRUE, animal = TRUE)
 
 /datum/emote/living/flutter
 	key = "flutter"
@@ -1806,14 +1734,10 @@
 	emote_type = EMOTE_AUDIBLE | EMOTE_VISIBLE
 	show_runechat = FALSE
 
-/mob/living/carbon/human/verb/emote_flutter()
-	if(istype(usr.getorganslot(ORGAN_SLOT_TONGUE), /obj/item/organ/tongue/moth))
-		set name = "Flutter"
-		set category = "Noises"
-		emote("flutter", intentional = TRUE)
-	else
-		to_chat(usr, span_warning("Your back doesn't do that"))
-		return
+/mob/proc/emote_flutter()
+	set name = "Flutter"
+	set category = "Noises"
+	emote("flutter", intentional = TRUE)
 
 /datum/emote/living/fsalute
 	key = "fsalute"
@@ -1873,7 +1797,7 @@
 	is_animal = TRUE
 	show_runechat = FALSE
 
-/mob/living/carbon/human/verb/yap()
+/mob/proc/yap()
 	set name = "Yap"
 	set category = "Noises"
 	emote("yap", intentional = TRUE)
@@ -1938,8 +1862,4 @@
     stat_allowed = UNCONSCIOUS
     show_runechat = FALSE
 
-/mob/living/carbon/human/verb/yip()
-	set name = "Yip"
-	set category = "Noises"
-
-	emote("yip", intentional = TRUE)
+#define EMOTES_KITTY list(/mob/proc/emote_meow, /mob/proc/emote_hiss, /mob/proc/emote_trill, /mob/proc/emote_purr)
