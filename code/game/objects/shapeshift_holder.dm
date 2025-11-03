@@ -90,8 +90,6 @@
 		var/damage_percent = (shape.maxHealth - shape.health)/shape.maxHealth;
 		var/damapply = stored.maxHealth * damage_percent
 		stored.apply_damage(damapply, source.convert_damage_type, forced = TRUE)
-	if (stored) //don't complain i just want to make this work w/o runtiming and i'm lazy
-		stored.stasis = FALSE
 	qdel(shape)
 	if (!QDELETED(src))
 		qdel(src)

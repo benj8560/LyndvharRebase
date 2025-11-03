@@ -67,7 +67,6 @@
 			ADD_TRAIT(H, TRAIT_ARCYNE_T2, TRAIT_GENERIC)
 			H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 			H.mind?.adjust_spellpoints(9) // twelve if you pick arcyne potential
-			beltl = /obj/item/storage/magebag/starter
 		if("Godsblood")
 			//miracle witch: capped at t2 miracles. cannot pray to regain devo, but has high innate regen because of it (2 instead of 1 from major)
 			var/datum/devotion/D = new /datum/devotion/(H, H.patron)
@@ -84,7 +83,6 @@
 			ADD_TRAIT(H, TRAIT_ARCYNE_T1, TRAIT_GENERIC)
 			H.adjust_skillrank(/datum/skill/magic/arcane, 1, TRUE)
 			H.mind?.adjust_spellpoints(6) // twelve if you pick arcyne potential
-			beltl = /obj/item/storage/magebag/starter
 			neck = /obj/item/clothing/neck/roguetown/psicross/wood
 
 	if(H.mind)
@@ -106,7 +104,7 @@
 				H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/aerosolize)
 
 	if(H.gender == FEMALE)
-		armor = /obj/item/clothing/suit/roguetown/shirt/undershirt/corset
+		armor = /obj/item/clothing/suit/roguetown/armor/corset
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/lowcut
 		pants = /obj/item/clothing/under/roguetown/skirt/red
 
@@ -149,7 +147,6 @@
 /obj/effect/proc_holder/spell/targeted/shapeshift/cat
 	name = "Cat Form"
 	desc = ""
-	invocation = ""
 	overlay_state = "cat_transform"
 	gesture_required = TRUE
 	chargetime = 5 SECONDS
@@ -168,7 +165,6 @@
 /obj/effect/proc_holder/spell/targeted/shapeshift/lesser_wolf
 	name = "Lesser Volf Form"
 	desc = ""
-	invocation = ""
 	overlay_state = "volf_transform"
 	gesture_required = TRUE
 	chargetime = 5 SECONDS
