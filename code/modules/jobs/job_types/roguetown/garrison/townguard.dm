@@ -10,7 +10,7 @@
 	allowed_races = RACES_SHUNNED_UP
 	allowed_patrons = ALL_NICE_PATRONS
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	job_traits = list(TRAIT_GUARDSMAN)
+	job_traits = list(TRAIT_GUARDSMAN, TRAIT_STEELHEARTED)
 	tutorial = "Whether it was through a conscription or a want to do good and serve the city, you are one of the many city guard dotted the walls and streets. Responsible for the safety of the port city and the enforcement of the law, you are the vanguard of the city faced with punishing those who defy the Viscount and their laws. Life is difficult and danger often lurks around every single alley, but you find great camaraderie in your fellow men and women of the watch. Hopefully the city will endure another week with you protecting it."
 	display_order = JDO_TOWNGUARD
 	whitelist_req = TRUE
@@ -107,7 +107,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	backl = /obj/item/rogueweapon/shield/iron
 	beltl = /obj/item/rogueweapon/stoneaxe/woodcut/wardenpick
 	gloves = /obj/item/clothing/gloves/roguetown/angle
-	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1, /obj/item/rope/chain = 1, /obj/item/rogueweapon/scabbard/sheath = 1, /obj/item/storage/keyring/guardcastle = 1)
+	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1, /obj/item/rope/chain = 1, /obj/item/rogueweapon/scabbard/sheath = 1, /obj/item/storage/keyring/watchman = 1)
 	H.verbs |= /mob/proc/haltyell
 
 /datum/advclass/watchman/archer
@@ -151,7 +151,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	armor = /obj/item/clothing/suit/roguetown/armor/leather	//So they get default-dodge expert usage.
 	beltr = /obj/item/quiver/arrows
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
-	beltl = /obj/item/storage/keyring/guardcastle
+	beltl = /obj/item/storage/keyring/watchman
 	gloves = /obj/item/clothing/gloves/roguetown/angle
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel = 1, /obj/item/rope/chain = 1, /obj/item/rogueweapon/scabbard/sheath = 1)
 	H.verbs |= /mob/proc/haltyell
@@ -199,7 +199,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
-	beltl = /obj/item/storage/keyring/guardcastle
+	beltl = /obj/item/storage/keyring/watchman
 	beltr = /obj/item/rogueweapon/scabbard/sword
 	l_hand = /obj/item/rogueweapon/sword/short
 	gloves = /obj/item/clothing/gloves/roguetown/angle
