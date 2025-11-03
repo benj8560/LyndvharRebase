@@ -247,8 +247,8 @@
 /obj/item/storage/keyring/merchant
 	keys = list(/obj/item/roguekey/shop, /obj/item/roguekey/merchant)
 
-/obj/item/storage/keyring/mguard
-	keys = list(/obj/item/roguekey/dungeon, /obj/item/roguekey/garrison, /obj/item/roguekey/walls, /obj/item/roguekey/manor, /obj/item/roguekey/armory)
+/obj/item/storage/keyring/watchman
+	keys = list(/obj/item/roguekey/dungeon, /obj/item/roguekey/garrison, /obj/item/roguekey/armory)
 
 /obj/item/storage/keyring/mage
 	keys = list(/obj/item/roguekey/manor, /obj/item/roguekey/tower, /obj/item/roguekey/mage, /obj/item/roguekey/walls)
