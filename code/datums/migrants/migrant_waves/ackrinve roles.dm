@@ -5,13 +5,12 @@
 	name = "Ackrinval Necromancer"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_SHUNNED_UP
-	greet_text = "You are a Grenzelhoftian envoy, traveling with a bodyguard and a crossbowman to represent your homeland.\
-	 What exactly you have been sent here to speak about- only you know."
+	greet_text = "You are a Warlock-Necromancer from the Ackrinve Wastelands, use your dark magic to bring RUIN upon the lands of the Pantheon and DEFILE their Temples"
 	advclass_cat_rolls = list(CTAG_ACKRINVE_NECROMANCER = 20)
 
 /datum/advclass/ackrinve_necromancer
 	name = "Ackrinval Necromancer"
-	tutorial = "You have been ostracized and hunted by society for your dark magics and perversion of life."
+	tutorial = "You are a Warlock-Necromancer from the Ackrinve Wastelands, use your dark magic to bring RUIN upon the lands of the Pantheon and DEFILE their Temples"
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
 	outfit = /datum/outfit/job/roguetown/ackrinve/necromancer
@@ -104,8 +103,9 @@
 	subclass_stats = list(
 		STATKEY_STR = 4,
 		STATKEY_WIL = 3,
-		STATKEY_CON = 4,
+		STATKEY_CON = 3,
 		STATKEY_PER = -2,
+		STATKEY_INT = -5,
 		STATKEY_SPD = 1,
 	)
 	subclass_skills = list(
