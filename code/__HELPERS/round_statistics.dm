@@ -146,7 +146,6 @@
 #define STATS_KISSES_MADE "kisses_made"
 #define STATS_PLEASURES "pleasures"
 #define STATS_HUGS_MADE "hugs_made"
-#define STATS_CLINGY_PEOPLE "clingy_people"
 
 //Zizo
 #define STATS_ZIZO_PRAISED "zizo_praised"
@@ -223,7 +222,6 @@ GLOBAL_LIST_INIT(lynd_round_stats, list(
 	STATS_ABYSSOR_REMEMBERED = 0,
 	STATS_LEECHES_EMBEDDED = 0,
 	STATS_HUGS_MADE = 0,
-	STATS_CLINGY_PEOPLE = 0,
 	STATS_DEADITES_ALIVE = 0,
 	STATS_CLERGY_DEATHS = 0,
 	STATS_ALCOHOL_CONSUMED = 0,

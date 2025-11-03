@@ -354,9 +354,6 @@
 		"Set 3" = list(
 			STATS_HUGS_MADE = list("name" = "Hugs made:", "points" = 2.5, "capacity" = 70),
 		),
-		"Set 4" = list(
-			STATS_CLINGY_PEOPLE = list("name" = "Clingy people:", "points" = 6.5, "capacity" = 75),
-		)
 	)
 
 /datum/storyteller/dendor

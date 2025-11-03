@@ -12,8 +12,6 @@ GLOBAL_LIST_INIT(character_flaws, list(
 	"Sadist"=/datum/charflaw/addiction/sadist,
 	"Masochist"=/datum/charflaw/addiction/masochist,
 	"Paranoid"=/datum/charflaw/paranoid,
-	"Clingy"=/datum/charflaw/clingy,
-	"Isolationist"=/datum/charflaw/isolationist,
 	"Bad Sight"=/datum/charflaw/badsight,
 	"Cyclops (R)"=/datum/charflaw/noeyer,
 	"Cyclops (L)"=/datum/charflaw/noeyel,
@@ -22,7 +20,7 @@ GLOBAL_LIST_INIT(character_flaws, list(
 	"Sleepless"=/datum/charflaw/sleepless,
 	"Mute"=/datum/charflaw/mute,
 	"Critical Weakness"=/datum/charflaw/critweakness,
-	"Random or No Flaw"=/datum/charflaw/randflaw,
+	"Random"=/datum/charflaw/randflaw,
 	"No Flaw (3 TRIUMPHS)"=/datum/charflaw/noflaw,
 	))
 
@@ -60,8 +58,8 @@ GLOBAL_LIST_INIT(character_flaws, list(
 	return charflaw
 
 /datum/charflaw/randflaw
-	name = "Random or None"
-	desc = "A 50% chance to be given a random flaw, or a 50% chance to have NO flaw."
+	name = "Random"
+	desc = "A random flaw."
 	var/nochekk = TRUE
 
 /datum/charflaw/randflaw/flaw_on_life(mob/user)
@@ -71,21 +69,17 @@ GLOBAL_LIST_INIT(character_flaws, list(
 		var/mob/living/carbon/human/H = user
 		if(H.ckey)
 			nochekk = FALSE
-			if(prob(50))
-				var/flawz = GLOB.character_flaws.Copy()
-				var/charflaw = pick_n_take(flawz)
+			var/flawz = GLOB.character_flaws.Copy()
+			var/charflaw = pick_n_take(flawz)
+			charflaw = GLOB.character_flaws[charflaw]
+			if((charflaw == type) || (charflaw == /datum/charflaw/noflaw))
+				charflaw = pick_n_take(flawz)
 				charflaw = GLOB.character_flaws[charflaw]
-				if((charflaw == type) || (charflaw == /datum/charflaw/noflaw))
-					charflaw = pick_n_take(flawz)
-					charflaw = GLOB.character_flaws[charflaw]
-				if((charflaw == type) || (charflaw == /datum/charflaw/noflaw))
-					charflaw = pick_n_take(flawz)
-					charflaw = GLOB.character_flaws[charflaw]
-				H.charflaw = new charflaw()
-				H.charflaw.on_mob_creation(H)
-			else
-				H.charflaw = new /datum/charflaw/eznoflaw()
-				H.charflaw.on_mob_creation(H)
+			if((charflaw == type) || (charflaw == /datum/charflaw/noflaw))
+				charflaw = pick_n_take(flawz)
+				charflaw = GLOB.character_flaws[charflaw]
+			H.charflaw = new charflaw()
+			H.charflaw.on_mob_creation(H)
 
 
 /datum/charflaw/eznoflaw
@@ -192,58 +186,6 @@ GLOBAL_LIST_INIT(character_flaws, list(
 			break
 	if(cnt > 6)
 		user.add_stress(/datum/stressevent/parablood)
-
-/datum/charflaw/isolationist
-	name = "Isolationist"
-	desc = "I don't like being near people. They might be trying to do something to me..."
-	var/last_check = 0
-
-/datum/charflaw/isolationist/flaw_on_life(mob/user)
-	. = ..()
-	if(world.time < last_check + 10 SECONDS)
-		return
-	if(!user)
-		return
-	last_check = world.time
-	var/cnt = 0
-	for(var/mob/living/carbon/human/L in hearers(7, user))
-		if(L == user)
-			continue
-		if(L.stat)
-			continue
-		if(L.dna.species)
-			cnt++
-		if(cnt > 3)
-			break
-	var/mob/living/carbon/P = user
-	if(cnt > 3)
-		P.add_stress(/datum/stressevent/crowd)
-
-/datum/charflaw/clingy
-	name = "Clingy"
-	desc = "I like being around people, it's just so lively..."
-	var/last_check = 0
-
-/datum/charflaw/clingy/flaw_on_life(mob/user)
-	. = ..()
-	if(world.time < last_check + 10 SECONDS)
-		return
-	if(!user)
-		return
-	last_check = world.time
-	var/cnt = 0
-	for(var/mob/living/carbon/human/L in hearers(7, user))
-		if(L == user)
-			continue
-		if(L.stat)
-			continue
-		if(L.dna.species)
-			cnt++
-		if(cnt > 1)
-			break
-	var/mob/living/carbon/P = user
-	if(cnt < 1)
-		P.add_stress(/datum/stressevent/nopeople)
 
 /datum/charflaw/noeyer
 	name = "Cyclops (R)"
