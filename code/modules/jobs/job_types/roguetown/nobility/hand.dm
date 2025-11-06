@@ -143,63 +143,6 @@
 		H.adjust_skillrank_up_to(/datum/skill/misc/stealing, 6, TRUE)
 		H.adjust_skillrank_up_to(/datum/skill/misc/lockpicking, 6, TRUE)
 
-//Advisor Start
-/datum/advclass/hand/advisor
-	name = "Advisor"
-	tutorial = " You have played researcher and confidant to the Noble-Family for so long that you are a vault of knowledge, something you exploit with potent conviction. Let no man ever forget the knowledge you wield. You've read more books than any blademaster or spymaster could ever claim to."
-	outfit = /datum/outfit/job/roguetown/hand/advisor
-
-	category_tags = list(CTAG_HAND)
-	traits_applied = list(TRAIT_ALCHEMY_EXPERT, TRAIT_MAGEARMOR, TRAIT_ARCYNE_T2)
-	subclass_stats = list(
-		STATKEY_INT = 4,
-		STATKEY_PER = 3,
-		STATKEY_WIL = 2,
-		STATKEY_LCK = 2,		
-	)
-	subclass_spellpoints = 15
-	subclass_skills = list(
-		/datum/skill/combat/crossbows = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/combat/staves = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
-		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/reading = SKILL_LEVEL_MASTER,
-		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE,
-		/datum/skill/craft/alchemy = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/medicine = SKILL_LEVEL_EXPERT,
-		/datum/skill/misc/lockpicking = SKILL_LEVEL_EXPERT,
-		/datum/skill/magic/arcane = SKILL_LEVEL_APPRENTICE,
-	)
-
-//Advisor start. Trades combat skills for more knowledge and skills - for older hands, hands that don't do combat - people who wanna play wizened old advisors. 
-/datum/outfit/job/roguetown/hand/advisor/pre_equip(mob/living/carbon/human/H)
-	r_hand = /obj/item/rogueweapon/sword/rapier/dec
-	beltr = /obj/item/rogueweapon/scabbard/sword
-	head = /obj/item/clothing/head/roguetown/chaperon/noble/hand
-	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
-	pants = /obj/item/clothing/under/roguetown/tights/black
-	if(should_wear_femme_clothes(H))
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/hand_f
-	else if(should_wear_masc_clothes(H))
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/hand_m
-	backpack_contents = list(
-		/obj/item/rogueweapon/huntingknife/idagger/dtace = 1,
-		/obj/item/rogueweapon/scabbard/sheath = 1,
-		/obj/item/storage/keyring/hand = 1,
-		/obj/item/lockpickring/mundane = 1,
-		/obj/item/reagent_containers/glass/bottle/rogue/poison = 1,//starts with a vial of poison, like all wizened evil advisors do!
-	)
-	if(H.age == AGE_OLD)
-		H.change_stat(STATKEY_SPD, -1)
-		H.change_stat(STATKEY_STR, -1)
-		H.change_stat(STATKEY_INT, 1)
-		H.change_stat(STATKEY_PER, 1)
-		H.mind?.adjust_spellpoints(3)
 
 ////////////////////
 ///SPELLS & VERBS///

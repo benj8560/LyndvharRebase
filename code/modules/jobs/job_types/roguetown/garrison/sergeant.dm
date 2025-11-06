@@ -1,11 +1,12 @@
 /datum/job/roguetown/sergeant
-	title = "Sergeant"
+	title = "Watch Captain"
 	flag = SERGEANT
 	department_flag = GARRISON
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	allowed_sexes = list(MALE, FEMALE)
+	allowed_patrons = ALL_NICE_PATRONS
 	allowed_races = ACCEPTED_RACES
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	tutorial = "You are the most experienced of the Crown's Soldiery, leading the men-at-arms in maintaining order and attending to threats and crimes below the court's attention. \
@@ -34,28 +35,30 @@
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		if(ishuman(L))
-			if(istype(H.cloak, /obj/item/clothing/cloak/stabard/surcoat/guard))
-				var/obj/item/clothing/S = H.cloak
-				var/index = findtext(H.real_name, " ")
-				if(index)
-					index = copytext(H.real_name, 1,index)
-				if(!index)
-					index = H.real_name
-				S.name = "sergeant jupon ([index])"
+		if(istype(H.cloak, /obj/item/clothing/cloak/captain))
+			var/obj/item/clothing/S = H.cloak
+			var/index = findtext(H.real_name, " ")
+			if(index)
+				index = copytext(H.real_name, 1,index)
+			if(!index)
+				index = H.real_name
+			S.name = "captain's cloak ([index])"
+			H.advsetup = 1
+			H.invisibility = INVISIBILITY_MAXIMUM
+			H.become_blind("advsetup")
 
 //All skills/traits are on the loadouts. All are identical. Welcome to the stupid way we have to make sub-classes...
 /datum/outfit/job/roguetown/sergeant
-	pants = /obj/item/clothing/under/roguetown/chainlegs
-	cloak = /obj/item/clothing/cloak/stabard/surcoat/guard
-	neck = /obj/item/clothing/neck/roguetown/gorget
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
-	belt = /obj/item/storage/belt/rogue/leather/black
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/full
+	head = /obj/item/clothing/head/roguetown/helmet/heavy/captain
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/captain
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	pants = /obj/item/clothing/under/roguetown/chainlegs/captain
+	gloves = /obj/item/clothing/gloves/roguetown/plate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
-	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
-	backr = /obj/item/storage/backpack/rogue/satchel/black
-	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
+	belt = /obj/item/storage/belt/rogue/leather/black
+	cloak = /obj/item/clothing/cloak/captain
 
 //Rare-ish anti-armor two hander sword. Kinda alternative of a bastard sword type. Could be cool.
 /datum/advclass/sergeant/sergeant
@@ -131,13 +134,6 @@
 				r_hand = /obj/item/rogueweapon/sword/sabre
 				l_hand = /obj/item/rogueweapon/scabbard/sword
 
-		var/armors = list(
-			"Lightweight Brigandine"		= /obj/item/clothing/suit/roguetown/armor/brigandine/light,
-			"Steel Cuirass"		= /obj/item/clothing/suit/roguetown/armor/plate/half,
-			"Scalemail"	= /obj/item/clothing/suit/roguetown/armor/plate/scale,
-		)
-		var/armorchoice = input(H, "Choose your armor.", "TAKE UP ARMOR") as anything in armors
-		armor = armors[armorchoice]
 
 /obj/effect/proc_holder/spell/invoked/order
 	name = ""
@@ -165,16 +161,11 @@
 		if(!msg)
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
-		if(user.job == "Sergeant")
-			if(!(target.job in list("Manor Guard", "Watchman")))
+		if(user.job == "Watch Captain")
+			if(!(target.job in list("Watchman")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				revert_cast()
-				return
-		if(user.job == "Retinue Captain")
-			if(!(target.job in list("Cataphract", "Squire")))
-				to_chat(user, span_alert("I cannot order one not of my ranks!"))
-				revert_cast()
-				return		
+				return	
 		if(target == user)
 			to_chat(user, span_alert("I cannot order myself!"))
 			revert_cast()
@@ -231,7 +222,7 @@
 		if(!msg)
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
-		if(user.job == "Sergeant")
+		if(user.job == "Watch Captain")
 			if(!(target.job in list("Manor Guard", "Watchman")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				revert_cast()
@@ -266,7 +257,7 @@
 		if(!msg)
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
-		if(user.job == "Sergeant")
+		if(user.job == "Watch Captain")
 			if(!(target.job in list("Manor Guard", "Watchman")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				revert_cast()
@@ -328,7 +319,7 @@
 		if(!msg)
 			to_chat(user, span_alert("I must say something to give an order!"))
 			return
-		if(user.job == "Sergeant")
+		if(user.job == "Watch Captain")
 			if(!(target.job in list("Manor Guard", "Watchman")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
 				revert_cast()
