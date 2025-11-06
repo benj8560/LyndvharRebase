@@ -9,8 +9,8 @@
 	allowed_patrons = ALL_NICE_PATRONS
 	allowed_races = RACES_SHUNNED_UP
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
-	tutorial = "You are the most experienced of the Crown's Soldiery, leading the men-at-arms in maintaining order and attending to threats and crimes below the court's attention. \
-				See to those under your command and fill in the gaps knights leave in their wake. Obey the orders of your Marshal and the Crown."
+	tutorial = "As the one with the most veterancy in the lump of men and women of the watch, you've been given direct control over most of the day-to-day orders given to these lemmings. While the lyfe is not easy, it is not the worst. You get paid well, and you get to tell people what to do. \
+				See to those under your command with due diligence and fill in the gaps that any of the retinue leave in their wake. Obey the orders given to you by your superiors, and you may be well-rewarded."
 	display_order = JDO_SERGEANT
 	whitelist_req = TRUE
 	round_contrib_points = 3
@@ -64,7 +64,7 @@
 //Rare-ish anti-armor two hander sword. Kinda alternative of a bastard sword type. Could be cool.
 /datum/advclass/sergeant/sergeant
 	name = "Watch Captain"
-	tutorial = "You are a not just anybody but the Sergeant-at-Arms of the Duchy's garrison. While you may have started as some peasant or mercenary, you have advanced through the ranks to that of someone who commands respect and wields it. Take up arms, sergeant!"
+	tutorial = "You are a not just anybody but the Captain of the city's garrison. While you may have started as some peasant or mercenary, you have advanced through the ranks to that of someone who commands respect and wields it. Take up arms, soldier!"
 	outfit = /datum/outfit/job/roguetown/sergeant/sergeant
 
 	category_tags = list(CTAG_SERGEANT)
@@ -114,17 +114,17 @@
 		)
 	H.adjust_blindness(-3)
 	if(H.mind)
-		var/weapons = list("Rhomphaia","Flail & Shield","Halberd","Sabre & Crossbow")	//Bit more unique than footsman, you are a jack-of-all-trades + slightly more 'elite'.
+		var/weapons = list("Dunargi Longsword","Flail & Shield","Halberd","Sabre & Crossbow")	//Bit more unique than footsman, you are a jack-of-all-trades + slightly more 'elite'.
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 		H.set_blindness(0)
 		switch(weapon_choice)
-			if("Rhomphaia")			//Rare-ish anti-armor two hander sword. Kinda alternative of a bastard sword type. Could be cool.
+			if("Dunargi Longsword")			//Thematic to the Dunargi region, since this is where the server actually takes place
 				backl = /obj/item/rogueweapon/scabbard/sword
-				l_hand = /obj/item/rogueweapon/sword/long/rhomphaia
+				l_hand = /obj/item/rogueweapon/sword/long/dunargi
 				beltr = /obj/item/rogueweapon/mace/cudgel
-			if("Flail & Shield")	//Tower-shield, higher durability wood shield w/ more coverage. Plus a steel flail; maybe.. less broken that a steel mace?
+			if("Flail & Shield")	//Kite-shield, high durability metal shield w/ more coverage. Plus a steel flail; maybe.. less broken that a steel mace?
 				beltr = /obj/item/rogueweapon/flail/sflail
-				backl = /obj/item/rogueweapon/shield/tower
+				backl = /obj/item/rogueweapon/shield/tower/metal
 			if("Halberd")			//Halberd - basically exact same as MAA. It's a really valid build. Spear thrust + sword chop + bash.
 				r_hand = /obj/item/rogueweapon/halberd
 				backl = /obj/item/rogueweapon/scabbard/gwstrap
