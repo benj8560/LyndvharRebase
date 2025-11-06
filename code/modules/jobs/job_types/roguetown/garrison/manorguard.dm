@@ -62,7 +62,7 @@
 // standard issue goon
 /datum/advclass/manorguard/footsman
 	name = "Manor Guard"
-	tutorial = "You are a professional soldier of the realm, specializing in melee warfare. Stalwart and hardy, your body can both withstand and dish out powerful strikes.."
+	tutorial = "You have one task. Ensuring the Manor and its occupants are protected."
 	outfit = /datum/outfit/job/roguetown/manorguard/footsman
 
 	category_tags = list(CTAG_MENATARMS)

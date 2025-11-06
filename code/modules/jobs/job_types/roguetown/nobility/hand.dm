@@ -32,18 +32,17 @@
 	beltl = /obj/item/rogueweapon/scabbard/sheath
 	job_bitflag = BITFLAG_ROYALTY
 
+/datum/outfit/job/roguetown/hand/pre_equip(mob/living/carbon/human/H)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/self/convertrole/agent)
+	H.verbs |= /datum/job/roguetown/hand/proc/remember_agents
+
 /datum/job/roguetown/hand/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	. = ..()
 	addtimer(CALLBACK(src, PROC_REF(know_agents), L), 5 SECONDS)
 
-/datum/job/roguetown/hand/proc/know_agents(var/mob/living/carbon/human/H)
-	if(!GLOB.court_agents.len)
-		to_chat(H, span_notice("You begun the week with no agents."))
-	else
-		to_chat(H, span_notice("We begun the week with these agents:"))
-		for(var/name in GLOB.court_agents)
-			to_chat(H, span_notice(name))
-
+///////////
+//CLASSES//
+///////////
 
 
 /datum/advclass/hand/hand
@@ -139,3 +138,102 @@
 		backr = /obj/item/storage/backpack/rogue/satchel/short
 		armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
 		pants = /obj/item/clothing/under/roguetown/tights/black
+	if(H.age == AGE_OLD)
+		H.adjust_skillrank_up_to(/datum/skill/misc/sneaking, 6, TRUE)
+		H.adjust_skillrank_up_to(/datum/skill/misc/stealing, 6, TRUE)
+		H.adjust_skillrank_up_to(/datum/skill/misc/lockpicking, 6, TRUE)
+
+//Advisor Start
+/datum/advclass/hand/advisor
+	name = "Advisor"
+	tutorial = " You have played researcher and confidant to the Noble-Family for so long that you are a vault of knowledge, something you exploit with potent conviction. Let no man ever forget the knowledge you wield. You've read more books than any blademaster or spymaster could ever claim to."
+	outfit = /datum/outfit/job/roguetown/hand/advisor
+
+	category_tags = list(CTAG_HAND)
+	traits_applied = list(TRAIT_ALCHEMY_EXPERT, TRAIT_MAGEARMOR, TRAIT_ARCYNE_T2)
+	subclass_stats = list(
+		STATKEY_INT = 4,
+		STATKEY_PER = 3,
+		STATKEY_WIL = 2,
+		STATKEY_LCK = 2,		
+	)
+	subclass_spellpoints = 15
+	subclass_skills = list(
+		/datum/skill/combat/crossbows = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/knives = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/swords = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/staves = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/swimming = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/climbing = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/reading = SKILL_LEVEL_MASTER,
+		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/tracking = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/craft/alchemy = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/medicine = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/lockpicking = SKILL_LEVEL_EXPERT,
+		/datum/skill/magic/arcane = SKILL_LEVEL_APPRENTICE,
+	)
+
+//Advisor start. Trades combat skills for more knowledge and skills - for older hands, hands that don't do combat - people who wanna play wizened old advisors. 
+/datum/outfit/job/roguetown/hand/advisor/pre_equip(mob/living/carbon/human/H)
+	r_hand = /obj/item/rogueweapon/sword/rapier/dec
+	beltr = /obj/item/rogueweapon/scabbard/sword
+	head = /obj/item/clothing/head/roguetown/chaperon/noble/hand
+	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	if(should_wear_femme_clothes(H))
+		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/hand_f
+	else if(should_wear_masc_clothes(H))
+		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/royal/hand_m
+	backpack_contents = list(
+		/obj/item/rogueweapon/huntingknife/idagger/dtace = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/storage/keyring/hand = 1,
+		/obj/item/lockpickring/mundane = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue/poison = 1,//starts with a vial of poison, like all wizened evil advisors do!
+	)
+	if(H.age == AGE_OLD)
+		H.change_stat(STATKEY_SPD, -1)
+		H.change_stat(STATKEY_STR, -1)
+		H.change_stat(STATKEY_INT, 1)
+		H.change_stat(STATKEY_PER, 1)
+		H.mind?.adjust_spellpoints(3)
+
+////////////////////
+///SPELLS & VERBS///
+////////////////////
+
+/datum/job/roguetown/hand/proc/know_agents(var/mob/living/carbon/human/H)
+	if(!GLOB.court_agents.len)
+		to_chat(H, span_boldnotice("You begun the week with no agents."))
+	else
+		to_chat(H, span_boldnotice("We begun the week with these agents:"))
+		for(var/name in GLOB.court_agents)
+			to_chat(H, span_greentext(name))
+
+/datum/job/roguetown/hand/proc/remember_agents()
+	set name = "Remember Agents"
+	set category = "Voice of Command"
+
+	to_chat(usr, span_boldnotice("I have these agents present:"))
+	for(var/name in GLOB.court_agents)
+		to_chat(usr, span_greentext(name))
+	return
+
+/obj/effect/proc_holder/spell/self/convertrole/agent
+	name = "Recruit Agent"
+	new_role = "Court Agent"//They get shown as adventurers either way.
+	overlay_state = "recruit_servant"
+	recruitment_faction = "Agents"
+	recruitment_message = "Serve the crown, %RECRUIT!"
+	accept_message = "FOR THE CROWN!"
+	refuse_message = "I refuse."
+	recharge_time = 100
+
+/obj/effect/proc_holder/spell/self/convertrole/agent/convert(mob/living/carbon/human/recruit, mob/living/carbon/human/recruiter)
+	. = ..()
+	if(!.)
+		return
+	GLOB.court_agents += recruit.real_name
