@@ -49,7 +49,7 @@
 	cloak = /obj/item/clothing/cloak/stabard/guard
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-	neck = /obj/item/clothing/neck/roguetown/coif/heavypadding/white
+	neck = /obj/item/clothing/neck/roguetown/coif/heavypadding/black
 	gloves = /obj/item/clothing/gloves/roguetown/angle
 	beltl = /obj/item/rogueweapon/scabbard
 	beltr = /obj/item/rogueweapon/sword

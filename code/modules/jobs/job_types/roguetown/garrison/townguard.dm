@@ -147,7 +147,7 @@ Archer is basically a 'bounty-catcher' in function, less specialized at close-qu
 /datum/outfit/job/roguetown/guardsman/archer/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/kettle/iron
-	mask = /obj/item/clothing/head/roguetown/roguehood/red		//To-do: Make a guard hood come in kingdom's colors.
+	mask = /obj/item/clothing/head/roguetown/roguehood/black	//To-do: Make a guard hood come in kingdom's colors.
 	armor = /obj/item/clothing/suit/roguetown/armor/leather	//So they get default-dodge expert usage.
 	beltr = /obj/item/quiver/arrows
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/longbow
