@@ -43,7 +43,7 @@
 #define TRAIT_ANTISCRYING "Non-Detection"
 #define TRAIT_SHOCKIMMUNE "Shock Immunity"
 #define TRAIT_PACIFISM	"Pacifism"
-#define TRAIT_NOSLEEP "Fatal Insomnia"
+#define TRAIT_NOSLEEP "Sleepless"
 #define TRAIT_FASTSLEEP "Fast Sleeper"
 #define TRAIT_GOODLOVER "Fabled Lover"
 #define TRAIT_SEEDKNOW "Skilled Herbalist"
@@ -116,6 +116,7 @@
 #define TRAIT_PSYDONITE "Psydonite Devotion" // Anti-Miracles on a selective basis, anastasis / cure rot still apply. Slow passive wound healing while you have blood.
 #define TRAIT_BLACKBAGGER "Apprehension Techniques" // Capable of using Garrotes and Blackbags. Apprehension techniques.
 #define TRAIT_NOFAITHHEAL "Apostasis" // Miracles dont work, blue bar regenerates faster when resting, sleep faster.
+#define TRAIT_LYCANRESILENCE "Werewolf Resilence"
 
 // PATRON GOD CURSES
 
@@ -335,6 +336,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_PSYDONIAN_GRIT = span_info("I can shrug off my wounds and maintain composure under duress. My own mortality is proof that I LYVE, as too does HE."),
 	TRAIT_NOFAITHHEAL = span_info("I am able to recuperate myself much faster than others thanks to my own perseverance and tenacity. Through my rejection of all faiths, the miracles of the Divine hold no sway over me or any others of my ilk."),
 	TRAIT_BLACKBAGGER = span_info("I've been trained to properly abduct individuals through the use of seizing garrotes and blackbags."),
+	TRAIT_LYCANRESILENCE = span_info("Dendor's fury flows through my veins, my wounds regenerate over time..."),
 	TRAIT_FORTITUDE = span_info("The typical drain I feel from day to day life is lessened, my athleticism greater."),
 	TRAIT_GUIDANCE = span_info("The arcyne aides me in battle."),
 	TRAIT_DEPRAVED = span_info("The languid scent of Her debauchery is known to me, and I can detect its sordid presence upon others."),
