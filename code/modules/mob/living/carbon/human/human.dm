@@ -717,6 +717,9 @@
 		var/mob/living/target = dragged
 		// If the target is not grabbed, we prompt them to ask if they want to be piggybacked
 		if(stat == CONSCIOUS && can_piggyback(target))
+			if(target == src)
+				// Why would you offer yourself a piggy-back? Miscreant.
+				return FALSE
 			// if the user dragged themselves onto the person, prompt the person
 			if(user == target)
 				to_chat(user, span_notice("You request a piggyback ride from [src]..."))
