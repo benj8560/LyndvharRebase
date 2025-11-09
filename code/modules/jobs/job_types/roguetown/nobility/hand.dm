@@ -157,6 +157,7 @@
 	outfit = /datum/outfit/job/roguetown/hand/marshal
 
 	category_tags = list(CTAG_HAND)
+	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_STEELHEARTED)
 	subclass_stats = list(
 		STATKEY_PER = 1,
 		STATKEY_INT = 2,
@@ -200,7 +201,7 @@
 	outfit = /datum/outfit/job/roguetown/hand/kcommander
 
 	category_tags = list(CTAG_HAND)
-	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED)
+	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_STEELHEARTED)
 	subclass_stats = list(
 		STATKEY_PER = 1,
 		STATKEY_INT = 2,
