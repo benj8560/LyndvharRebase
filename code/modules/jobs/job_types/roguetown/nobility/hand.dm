@@ -22,11 +22,14 @@
 	job_traits = list(TRAIT_NOBLE)
 	job_subclasses = list(
 		/datum/advclass/hand/hand,
-		/datum/advclass/hand/spymaster
+		/datum/advclass/hand/spymaster,
+		/datum/advclass/hand/marshal,
+		/datum/advclass/hand/kcommander
 	)
 
 /datum/outfit/job/roguetown/hand
 	shoes = /obj/item/clothing/shoes/roguetown/boots
+	neck = /obj/item/clothing/neck/roguetown/leather
 	belt = /obj/item/storage/belt/rogue/leather/steel
 	beltr = /obj/item/rogueweapon/scabbard/sword
 	beltl = /obj/item/rogueweapon/scabbard/sheath
@@ -79,7 +82,9 @@
 	l_hand = /obj/item/rogueweapon/huntingknife/idagger/dtace
 	r_hand = /obj/item/rogueweapon/sword/rapier/dec
 	backpack_contents = list(
-		/obj/item/storage/keyring/hand = 1
+		/obj/item/storage/keyring/hand = 1,
+		/obj/item/rogueweapon/scabbard/sword = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1,
 		)
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
 	pants = /obj/item/clothing/under/roguetown/tights/black
@@ -124,7 +129,10 @@
 	r_hand = /obj/item/rogueweapon/sword/rapier/dec
 	backpack_contents = list(
 		/obj/item/storage/keyring/hand = 1,
-		/obj/item/lockpickring/mundane = 1
+		/obj/item/lockpickring/mundane = 1,
+		/obj/item/rogueweapon/scabbard/sword = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1, 
+		
 		)
 	if(H.dna.species.type in NON_DWARVEN_RACE_TYPES)
 		shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/shadowrobe
@@ -142,6 +150,92 @@
 		H.adjust_skillrank_up_to(/datum/skill/misc/sneaking, 6, TRUE)
 		H.adjust_skillrank_up_to(/datum/skill/misc/stealing, 6, TRUE)
 		H.adjust_skillrank_up_to(/datum/skill/misc/lockpicking, 6, TRUE)
+
+/datum/advclass/hand/marshal
+	name = "Marshal"
+	tutorial = "You've spent your daes in the courts and garrisons of the city. You've studied the law tome from back to front and enforce your word with the iron hand of justice, and the iron mace in your hands. More men have spent days rotting in the dungeon than that Retinue Captain could ever have claimed, and every person in the realm respects your authority in matters of law and order."
+	outfit = /datum/outfit/job/roguetown/hand/marshal
+
+	category_tags = list(CTAG_HAND)
+	subclass_stats = list(
+		STATKEY_PER = 1,
+		STATKEY_INT = 2,
+		STATKEY_STR = 2,
+		STATKEY_CON = 1,
+		STATKEY_WIL = 1,
+		STATKEY_SPD = -1
+	)
+	subclass_skills = list(
+		/datum/skill/combat/maces = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/tracking = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
+	)
+
+/datum/outfit/job/roguetown/hand/marshal/pre_equip(mob/living/carbon/human/H)
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff
+	gloves = /obj/item/clothing/gloves/roguetown/leather
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	cloak = /obj/item/clothing/cloak/stabard/surcoat/bailiff
+	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
+	beltl = /obj/item/rogueweapon/mace/cudgel/justice
+	head = /obj/item/clothing/head/roguetown/chaperon/noble/bailiff
+	backr = /obj/item/storage/backpack/rogue/satchel/short
+	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
+	backpack_contents = list(
+		/obj/item/storage/keyring/hand = 1,
+		/obj/item/book/rogue/law = 1,
+		)
+
+/datum/advclass/hand/kcommander
+	name = "Retired Commandant"
+	tutorial = "You spent your daes as a dutiful cataphract in the service to the Ruby Throne. Earning your accolades through military tactics and victories, you are well-renowned for your knowledge in warfare. Now retired from your days afield, you enforce the same iron law you once practiced in the civil war in your home. You run the garrison, knights and the town's laws with a military strictness, and no-one can claim you are weak on crime."
+	outfit = /datum/outfit/job/roguetown/hand/kcommander
+
+	category_tags = list(CTAG_HAND)
+	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED)
+	subclass_stats = list(
+		STATKEY_PER = 1,
+		STATKEY_INT = 2,
+		STATKEY_STR = 2,
+		STATKEY_CON = 1,
+		STATKEY_WIL = 1,
+		STATKEY_SPD = -1
+	)
+	subclass_skills = list(
+		/datum/skill/combat/swords = SKILL_LEVEL_EXPERT,
+		/datum/skill/combat/wrestling = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/tracking = SKILL_LEVEL_EXPERT,
+		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/combat/unarmed = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/reading = SKILL_LEVEL_JOURNEYMAN,
+		/datum/skill/misc/swimming = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/combat/crossbows = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
+		/datum/skill/misc/riding = SKILL_LEVEL_APPRENTICE,
+	)
+
+/datum/outfit/job/roguetown/hand/kcommander/pre_equip(mob/living/carbon/human/H)
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/guard
+	pants = /obj/item/clothing/under/roguetown/tights/black
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff/coat
+	gloves = /obj/item/clothing/gloves/roguetown/leather
+	backr = /obj/item/rogueweapon/sword/long/oathkeeper
+	beltr = /obj/item/storage/belt/rogue/pouch/coins/rich
+	beltl = /obj/item/reagent_containers/glass/bottle/rogue/healthpot
+	backl = /obj/item/storage/backpack/rogue/satchel/short
+	shoes = /obj/item/clothing/shoes/roguetown/boots/nobleboot
+	backpack_contents = list(
+		/obj/item/storage/keyring/hand = 1,
+		/obj/item/book/rogue/law = 1
+		)
 
 
 ////////////////////
