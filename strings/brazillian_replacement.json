@@ -9,13 +9,13 @@
 
 	},
 	"end": {
-		"ish": "ishh"
+		"ish": "ish"
 	},
 	"syllable": {
-		"th": "thh",
-		"sh": "shh",
-		"h": "hh",
+		"th": "th",
+		"sh": "sssh",
+		"h": "h",
 		"s": "sss",
-		"y": "yhh"
+		"y": "y"
 	}
 }
