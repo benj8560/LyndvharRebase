@@ -779,7 +779,6 @@
 	cookonme = TRUE
 	max_integrity = 30
 	soundloop = /datum/looping_sound/fireloop
-	var/healing_range = 2
 
 /obj/machinery/light/rogue/campfire/process()
 	..()
@@ -787,20 +786,6 @@
 		var/turf/open/O = loc
 		if(IS_WET_OPEN_TURF(O))
 			extinguish()
-
-	var/list/hearers_in_range = SSspatial_grid.orthogonal_range_search(src, SPATIAL_GRID_CONTENTS_TYPE_HEARING, healing_range)
-	for(var/mob/living/carbon/human/human in hearers_in_range)
-		var/distance = get_dist(src, human)
-		if(distance > healing_range)
-			continue
-		if(!human.has_status_effect(/datum/status_effect/buff/healing/campfire))
-			to_chat(human, "The warmth of the fire comforts me, affording me a short rest.")
-		// Astrata followers get enhanced fire healing
-		var/buff_strength = 1
-		if(human.patron?.type == /datum/patron/divine/astrata || human.patron?.type == /datum/patron/inhumen/matthios) //Fire and the fire-stealer
-			buff_strength = 2
-		human.apply_status_effect(/datum/status_effect/buff/healing/campfire, buff_strength)
-		human.add_stress(/datum/stressevent/campfire)
 
 /obj/machinery/light/rogue/campfire/onkick(mob/user)
 	if(isliving(user) && on)
@@ -819,6 +804,13 @@
 		if(istype(H))
 			H.visible_message("<span class='info'>[H] warms [user.p_their()] hand near the fire.</span>")
 
+			while(do_after(H, 105, target = src) && on)
+				if(!H.construct && !H.has_status_effect(/datum/status_effect/buff/healing/campfire))
+					H.apply_status_effect(/datum/status_effect/buff/healing/campfire, 1)
+					to_chat(H, "<span class='info'>The warmth of the fire comforts me, affording me a short rest.</span>")
+					H.add_stress(/datum/stressevent/campfire)
+		return TRUE //fires that are on always have this interaction with lmb unless its a torch
+
 /obj/machinery/light/rogue/campfire/densefire
 	icon_state = "densefire1"
 	base_state = "densefire"
@@ -832,7 +824,6 @@
 	pass_flags = LETPASSTHROW
 	bulb_colour = "#eea96a"
 	max_integrity = 60
-	healing_range = 4
 
 /obj/machinery/light/rogue/campfire/densefire/CanPass(atom/movable/mover, turf/target)
 	if(istype(mover) && (mover.pass_flags & PASSTABLE))
