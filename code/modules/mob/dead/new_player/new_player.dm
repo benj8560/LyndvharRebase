@@ -8,12 +8,10 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	flags_1 = NONE
 
 	invisibility = INVISIBILITY_ABSTRACT
-
-//	hud_type = /datum/hud/new_player
-
 	density = FALSE
 	stat = DEAD
 	hud_possible = list()
+	hud_type = /datum/hud/new_player
 
 	var/mob/living/new_character	//for instant transfer once the round is set up
 
