@@ -987,7 +987,7 @@
 	name = "Cuirass, Blacksteel (+1 Blacksteel)"
 	req_bar = /obj/item/ingot/blacksteel
 	additional_items = list(/obj/item/ingot/blacksteel)
-	created_item = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/blackiron_half_plate
 
 /datum/anvil_recipe/armor/blacksteel/modern/platechest
 	name = "Full-Plate, Blacksteel (+3 Blacksteel)"

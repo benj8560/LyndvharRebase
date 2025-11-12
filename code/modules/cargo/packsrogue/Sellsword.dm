@@ -120,10 +120,10 @@
 	cost = 15
 	contains = list(/obj/item/clothing/head/roguetown/grenzelhofthat)
 
-/datum/supply_pack/rogue/Sellsword/bsteelcuirass
-	name = "Blacksteel Cuirass"
+/datum/supply_pack/rogue/Sellsword/bironcuirass
+	name = "Blackiron Cuirass"
 	cost = 50
-	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate)
+	contains = list(/obj/item/clothing/suit/roguetown/armor/plate/blackiron_half_plate)
 
 /datum/supply_pack/rogue/Sellsword/Grenzelshirt
 	name = "Grenzel Shirt"

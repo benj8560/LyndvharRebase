@@ -40,16 +40,16 @@
 	strip_delay = 6 SECONDS
 	smelt_bar_num = 4
 
-/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
-	name = "blacksteel cuirass"
-	desc = "A basic cuirass forged from blacksteel. It's somewhat more durable than regular steel."
+/obj/item/clothing/suit/roguetown/armor/plate/blackiron_half_plate
+	name = "blackiron cuirass"
+	desc = "A basic cuirass forged from Grenzelhoftian blackiron. It's as durable as steel."
 	body_parts_covered = COVERAGE_TORSO
 	icon_state = "grenzelcuirass"
 	item_state = "grenzelcuirass"
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/stonekeep_merc.dmi'
 	allowed_race = CLOTHED_RACES_TYPES
 	blocking_behavior = null
-	max_integrity = ARMOR_INT_CHEST_PLATE_BLACKSTEEL
+	max_integrity = ARMOR_INT_CHEST_PLATE_STEEL
 	smeltresult = /obj/item/ingot/blacksteel
 	armor_class = ARMOR_CLASS_MEDIUM
 	smelt_bar_num = 2

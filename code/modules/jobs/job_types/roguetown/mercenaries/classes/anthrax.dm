@@ -36,8 +36,6 @@
 	)
 	extra_context = "This subclass is race-limited to: Dark Elves Only."
 
-/datum/outfit/job/roguetown/mercenary/anthrax
-
 /datum/outfit/job/roguetown/mercenary/anthrax/pre_equip(mob/living/carbon/human/H)
 	..()
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
@@ -51,7 +49,6 @@
 		/obj/item/reagent_containers/glass/bottle/rogue/strongpoison = 1,
 		/obj/item/rogueweapon/scabbard/sheath)
 	if(H.mind)
-
 		H.verbs |= /mob/living/carbon/human/proc/torture_victim //Secret police training owing to their origins.
 
 		if(H.gender == FEMALE) //Melee defense-oriented brute, heavy lean towards non-lethal takedowns and capture.

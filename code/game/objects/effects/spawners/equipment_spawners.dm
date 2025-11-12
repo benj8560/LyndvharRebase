@@ -342,7 +342,7 @@
 	lootcount = 1
 	loot = list(
 		/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_full_plate = 1,
-		/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate = 1,
+		/obj/item/clothing/suit/roguetown/armor/plate/blackiron_half_plate = 1,
 		/obj/item/clothing/shoes/roguetown/boots/blacksteel/plateboots = 1,
 		/obj/item/clothing/gloves/roguetown/blacksteel/plategloves = 1,
 		/obj/item/clothing/head/roguetown/helmet/blacksteel/bucket = 1,
