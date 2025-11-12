@@ -33,14 +33,13 @@
 		/datum/skill/misc/athletics = SKILL_LEVEL_JOURNEYMAN,
 	)
 
-/datum/outfit/job/roguetown/mercenary/atgervi
-
 /datum/outfit/job/roguetown/mercenary/atgervi/pre_equip(mob/living/carbon/human/H)
 	..()
-	to_chat(H, span_warning("You are a Varangian Mercenary of Rhaenvali. The Varangians are one of the more prestigious mercenary groups of their time, known for their loyalty to their clients."))
+	if(H.mind)
+		to_chat(H, span_warning("You are a Varangian Mercenary of Rhaenvali. The Varangians are one of the more prestigious mercenary groups of their time, known for their loyalty to their clients."))
+		H.mind.current.faction += "[H.name]_faction"
 	head = /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi/rhaenval/ownel
 	gloves = /obj/item/clothing/gloves/roguetown/chain/rhaenval
-	H.mind.current.faction += "[H.name]_faction"
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi
 	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/rhaenval
 	pants = /obj/item/clothing/under/roguetown/splintlegs/iron/rhaenval
@@ -52,7 +51,6 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/chainmantle //They didn't have neck protection before.
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
-
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
@@ -86,15 +84,13 @@
 		/datum/skill/craft/tanning = SKILL_LEVEL_APPRENTICE,
 	)
 
-/datum/outfit/job/roguetown/mercenary/atgervishaman
-
 /datum/outfit/job/roguetown/mercenary/atgervishaman/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.set_blindness(0)
-	H.mind.current.faction += "[H.name]_faction"
-	to_chat(H, span_warning("You are a Shaman of the Atgervian. Savage combatants who commune with the winds through gut-wrenching violence, rather than idle prayer."))
-	H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
-
+	if(H.mind)
+		H.mind.current.faction += "[H.name]_faction"
+		to_chat(H, span_warning("You are a Shaman of the Atgervian. Savage combatants who commune with the winds through gut-wrenching violence, rather than idle prayer."))
+		H.dna.species.soundpack_m = new /datum/voicepack/male/warrior()
+		H.put_in_hands(new /obj/item/rogueweapon/handclaw/rhaenval, FALSE)
 	head = /obj/item/clothing/head/roguetown/helmet/leather/shaman_hood
 	gloves = /obj/item/clothing/gloves/roguetown/angle/rhaenvalfur
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi
@@ -106,8 +102,6 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltl = /obj/item/flashlight/flare/torch
-	H.put_in_hands(new /obj/item/rogueweapon/handclaw/rhaenval, FALSE)
-
 	backpack_contents = list(
 		/obj/item/roguekey/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,

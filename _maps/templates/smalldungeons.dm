@@ -144,7 +144,7 @@
 		/obj/item/clothing/suit/roguetown/armor/plate/bikini = 1,
 		/obj/item/clothing/suit/roguetown/armor/plate = 1,
 		/obj/item/clothing/suit/roguetown/armor/longcoat = 2,
-		/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate = 1,
+		/obj/item/clothing/suit/roguetown/armor/plate/blackiron_half_plate = 1,
 
 
 		//food
@@ -329,7 +329,7 @@
 		/obj/item/clothing/suit/roguetown/armor/plate/bikini = 1,
 		/obj/item/clothing/suit/roguetown/armor/plate = 1,
 		/obj/item/clothing/suit/roguetown/armor/longcoat = 2,
-		/obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate = 1,
+		/obj/item/clothing/suit/roguetown/armor/plate/blackiron_half_plate = 1,
 	)
 	lootcount = 1
 
