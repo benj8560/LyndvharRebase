@@ -703,7 +703,7 @@
 	smelt_bar_num = 2
 
 /obj/item/clothing/head/roguetown/helmet/heavy/captain
-	name = "captain's helmet"
+	name = "opulent helmet"
 	desc = "An elegant barbute, fitted with the gold trim and polished metal of nobility."
 	icon = 'icons/roguetown/clothing/special/captain.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'

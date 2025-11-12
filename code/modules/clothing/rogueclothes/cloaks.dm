@@ -1952,7 +1952,7 @@
 	user.update_inv_armor()
 
 /obj/item/clothing/cloak/captain
-	name = "captain's cape"
+	name = "cataphract's cape"
 	desc = "A cape with a gold embroided heraldry of the city."
 	icon = 'icons/roguetown/clothing/special/captain.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'
@@ -1969,7 +1969,16 @@
 		lordcolor(GLOB.lordprimary, GLOB.lordsecondary)
 	GLOB.lordcolor += src
 
-/obj/item/clothing/cloak/tabard/knight/guard/lordcolor(primary,secondary)
+/obj/item/clothing/cloak/captain/update_icon()
+	cut_overlays()
+	if(get_detail_tag())
+		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
+		pic.appearance_flags = RESET_COLOR
+		if(get_detail_color())
+			pic.color = get_detail_color()
+		add_overlay(pic)
+
+/obj/item/clothing/cloak/captain/lordcolor(primary,secondary)
 	detail_color = primary
 	update_icon()
 	if(ismob(loc))

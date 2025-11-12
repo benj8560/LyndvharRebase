@@ -140,8 +140,8 @@
 	alternate_worn_layer = (SHIRT_LAYER)
 
 /obj/item/clothing/under/roguetown/chainlegs/captain
-	name = "captain's chausses"
-	desc = "Cuisses made of plated steel, offering additional protection against blunt force. These are specially fitted for the captain."
+	name = "opulent chausses"
+	desc = "Cuisses made of plated steel, offering additional protection against blunt force. These are specially forged for comfort."
 	icon_state = "capplateleg"
 	item_state = "capplateleg"
 	icon = 'icons/roguetown/clothing/special/captain.dmi'

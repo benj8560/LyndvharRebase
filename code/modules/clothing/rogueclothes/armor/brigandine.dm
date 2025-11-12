@@ -144,12 +144,13 @@
 		add_overlay(pic)
 
 /obj/item/clothing/suit/roguetown/armor/brigandine/captain
-	name = "captain's brigandine"
-	desc = "A coat with plates specifically tailored and forged for the captain of the city retinue."
+	name = "opulent brigandine"
+	desc = "A coat with plates specifically tailored and forged for nobility."
 	icon_state = "capplate"
 	icon = 'icons/roguetown/clothing/special/captain.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/captain.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/captain.dmi'
+	sleeved_detail = TRUE
 	detail_tag = "_detail"
 	detail_color = "#39404d"
 	blocksound = SOFTHIT
@@ -159,3 +160,16 @@
 	sellprice = 363 // On par w/ judgement and ichor fang cuz why not
 	smelt_bar_num = 2
 	armor_class = ARMOR_CLASS_HEAVY
+
+/obj/item/clothing/suit/roguetown/armor/brigandine/captain/Initialize()
+	. = ..()
+	if(GLOB.lordprimary)
+		lordcolor(GLOB.lordprimary, GLOB.lordsecondary)
+	GLOB.lordcolor += src
+	
+/obj/item/clothing/suit/roguetown/armor/brigandine/captain/lordcolor(primary,secondary)
+	detail_color = primary
+	update_icon()
+	if(ismob(loc))
+		var/mob/L = loc
+		L.update_inv_armor()
