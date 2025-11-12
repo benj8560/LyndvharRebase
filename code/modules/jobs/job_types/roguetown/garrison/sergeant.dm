@@ -35,31 +35,31 @@
 	. = ..()
 	if(ishuman(L))
 		var/mob/living/carbon/human/H = L
-		if(istype(H.cloak, /obj/item/clothing/cloak/captain))
+		if(istype(H.cloak, /obj/item/clothing/cloak/stabard/guardhood))
 			var/obj/item/clothing/S = H.cloak
 			var/index = findtext(H.real_name, " ")
 			if(index)
 				index = copytext(H.real_name, 1,index)
 			if(!index)
 				index = H.real_name
-			S.name = "captain's cloak ([index])"
+			S.name = "captain's shawl ([index])"
 			H.advsetup = 1
 			H.invisibility = INVISIBILITY_MAXIMUM
 			H.become_blind("advsetup")
 
 //All skills/traits are on the loadouts. All are identical. Welcome to the stupid way we have to make sub-classes...
 /datum/outfit/job/roguetown/sergeant
-	neck = /obj/item/clothing/neck/roguetown/gorget/steel
+	neck = /obj/item/clothing/neck/roguetown/bevor
 	backr = /obj/item/storage/backpack/rogue/satchel/short/black
-	head = /obj/item/clothing/head/roguetown/helmet/heavy/captain
-	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/captain
-	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
-	pants = /obj/item/clothing/under/roguetown/chainlegs/captain
+	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored
+	armor = /obj/item/clothing/suit/roguetown/armor/brigandine/sheriff
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
+	pants = /obj/item/clothing/under/roguetown/chainlegs
 	gloves = /obj/item/clothing/gloves/roguetown/plate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	belt = /obj/item/storage/belt/rogue/leather/steel/tasset
-	cloak = /obj/item/clothing/cloak/captain
+	cloak = /obj/item/clothing/cloak/stabard/guardhood
 
 //Rare-ish anti-armor two hander sword. Kinda alternative of a bastard sword type. Could be cool.
 /datum/advclass/sergeant/sergeant
