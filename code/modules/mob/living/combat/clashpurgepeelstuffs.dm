@@ -178,12 +178,6 @@
 		if(C.peel_count > 0)
 			C.reduce_peel(amt)
 
-/mob/living/carbon/human/proc/purge_bait()
-	if(!cmode)
-		if(bait_stacks > 0)
-			bait_stacks = 0
-			to_chat(src, span_info("My focus and balance returns. I won't lose my footing if I am baited again."))
-
 /mob/living/carbon/human/proc/expire_peel()
 	if(!cmode)
 		purge_peel(99)

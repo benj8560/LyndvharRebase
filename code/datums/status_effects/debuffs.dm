@@ -780,15 +780,25 @@
 	desc = "I fell for it. I'm exposed. I won't fall for it again. For now."
 	icon_state = "bait"
 
-/atom/movable/screen/alert/status_effect/debuff/baitedcd
-	name = "Bait Cooldown"
+/atom/movable/screen/alert/status_effect/debuff/prycd
+	name = "Pry Cooldown"
+	desc = "I tried it. I need to wait."
+	icon_state = "baitcd"
+
+/datum/status_effect/debuff/prycd
+	id = "prycd"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/prycd
+	duration = 7 SECONDS
+
+/atom/movable/screen/alert/status_effect/debuff/prysuccess
+	name = "Pry Cooldown"
 	desc = "I used it. I must wait."
 	icon_state = "baitcd"
 
-/datum/status_effect/debuff/baitcd
-	id = "baitcd"
-	alert_type = /atom/movable/screen/alert/status_effect/debuff/baitedcd
-	duration = 30 SECONDS
+/datum/status_effect/debuff/prysuccess
+	id = "prysuccess"
+	alert_type = /atom/movable/screen/alert/status_effect/debuff/prysuccess
+	duration = 14 SECONDS
 
 /atom/movable/screen/alert/status_effect/debuff/feintcd
 	name = "Feint Cooldown"

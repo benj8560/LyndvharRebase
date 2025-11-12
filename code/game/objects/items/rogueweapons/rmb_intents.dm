@@ -9,7 +9,6 @@
 
 /mob/living/carbon/human/on_cmode()
 	if(!cmode)	//We just toggled it off.
-		addtimer(CALLBACK(src, PROC_REF(purge_bait)), 30 SECONDS, TIMER_UNIQUE | TIMER_OVERRIDE)
 		addtimer(CALLBACK(src, PROC_REF(expire_peel)), 60 SECONDS, TIMER_UNIQUE | TIMER_OVERRIDE)
 	if(!HAS_TRAIT(src, TRAIT_DECEIVING_MEEKNESS))
 		filtered_balloon_alert(TRAIT_COMBAT_AWARE, (cmode ? ("<i><font color = '#831414'>Tense</font></i>") : ("<i><font color = '#c7c6c6'>Relaxed</font></i>")), y_offset = 32)
@@ -17,11 +16,64 @@
 /datum/rmb_intent/proc/special_attack(mob/living/user, atom/target)
 	return
 
+/datum/rmb_intent/push
+	name = "push"
+	desc = "You've been grabbed and need to push them off of you. Swings are faster with no stamina cost due to proximity. \n RMB to shove their hands off of a grabbed location!"
+	icon_state = "rmbpush"
+
+/datum/rmb_intent/push/special_attack(mob/living/user, atom/target)
+	if(!user)
+		return
+	if(user.incapacitated())
+		return
+	if(!ishuman(user))
+		return
+	if(!ishuman(target))
+		return
+	if(user == target)
+		return
+	
+	var/mob/living/carbon/human/HT = target
+	var/mob/living/carbon/human/HU = user
+	var/obj/item/grabbing/grappler = null
+	for(var/obj/item/grabbing/grab in HU.grabbedby)
+		var/mob/living/carbon/gripper = grab.grabbee
+		if(gripper == HT)
+			grappler = grab
+			break	
+	var/goodsublimb = grappler.sublimb_grabbed
+	var/user_zone = HU.zone_selected
+
+	if(!HT.pulling || HAS_TRAIT(user, TRAIT_GARROTED))
+		return // We can't push them off if they aren't grabbing us. We shouldn't even be on this intent. Garrotes ignore this intent.
+
+	if(user.has_status_effect(/datum/status_effect/debuff/prycd) || user.has_status_effect(/datum/status_effect/debuff/prysuccess))
+		return	//We don't do anything if push is on cooldown.
+
+	playsound(user, 'sound/combat/twist.ogg', 100, TRUE)
+	HU.visible_message(span_danger("[HU] tries to pry [HT] off of them!"))
+
+	if((goodsublimb != user_zone)) // Our zones do not match.
+		to_chat(HU, span_danger("It didn't work! They've still got a hold of me!"))
+		to_chat(HT, span_notice("They couldn't get my grip loose!"))
+		HU.apply_status_effect(/datum/status_effect/debuff/prycd)
+		HU.emote("groan")
+		HU.stamina_add(HU.max_stamina * 0.2)
+		return
+
+	HT.stop_pulling()
+	to_chat(HU, span_notice("[HT] lost their grip! I am loose!"))
+	to_chat(HT, span_danger("My hands are pried off of [HU]! My hold is broken!"))
+	HU.apply_status_effect(/datum/status_effect/debuff/prysuccess)
+	HU.OffBalance(2 SECONDS)
+	HT.OffBalance(2 SECONDS)
+	playsound(user, 'sound/combat/riposte.ogg', 100, TRUE)
+
 /datum/rmb_intent/aimed
 	name = "aimed"
-	desc = "Your attacks are more precise but have a longer recovery time. Higher critrate with precise attacks.\n(RMB WHILE COMBAT MODE IS ACTIVE) Bait out your targeted limb to the enemy. If it matches where they're aiming, they will be thrown off balance."
+	desc = "Your attacks are more precise but have a longer recovery time. Higher critrate with precise attacks."
 	icon_state = "rmbaimed"
-
+/*
 /datum/rmb_intent/aimed/special_attack(mob/living/user, atom/target)
 	if(!user)
 		return
@@ -96,6 +148,7 @@
 	HU.OffBalance(2 SECONDS)
 	HT.OffBalance(2 SECONDS)
 	playsound(user, 'sound/combat/riposte.ogg', 100, TRUE)
+*/
 
 /datum/rmb_intent/strong
 	name = "strong"

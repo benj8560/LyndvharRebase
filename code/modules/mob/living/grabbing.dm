@@ -14,7 +14,7 @@
 	var/grabbed				//ref to what atom we are grabbing
 	var/obj/item/bodypart/limb_grabbed		//ref to actual bodypart being grabbed if we're grabbing a carbo
 	var/sublimb_grabbed		//ref to what precise (sublimb) we are grabbing (if any) (text)
-	var/mob/living/carbon/grabbee
+	var/mob/living/carbon/grabbee = null
 	var/list/dependents = list()
 	var/handaction
 	var/bleed_suppressing = 0.25 //multiplier for how much we suppress bleeding, can accumulate so two grabs means 50% less bleeding; each grab being 25% basically.
