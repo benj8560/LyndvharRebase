@@ -1373,7 +1373,7 @@
 	name = "silver rapier"
 	desc = "A basket-hilted rapier, fitted with a thin blade of pure silver. This weapon - though cumberstone in an untrained hand - is surprisingly adept at both parrying and riposting."
 	icon_state = "silverrapier"
-	sheathe_icon = "psyrapier"
+	sheathe_icon = "rapier"
 	max_integrity = 225
 	max_blade_int = 225
 	force = 20
@@ -1398,7 +1398,7 @@
 	name = "psydonic rapier"
 	desc = "A basket-hilted rapier, fitted with a thin blade of pure silver. Such a resplendent weapon not only pierces the gaps within a heathen's maille, but also serves as the symbol of a Valorian diplomat's authority."
 	icon_state = "silverrapier"
-	sheathe_icon = "rapier"
+	sheathe_icon = "psyrapier"
 	max_integrity = 225
 	max_blade_int = 225
 	force = 20
