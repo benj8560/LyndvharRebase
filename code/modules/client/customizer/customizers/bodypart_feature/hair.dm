@@ -119,6 +119,7 @@
 		/datum/sprite_accessory/hair/head/afro,
 		/datum/sprite_accessory/hair/head/afro2,
 		/datum/sprite_accessory/hair/head/afro_large,
+		/datum/sprite_accessory/hair/head/astolfo,
 		/datum/sprite_accessory/hair/head/alsoprotagonist,
 		/datum/sprite_accessory/hair/head/amazon,
 		/datum/sprite_accessory/hair/head/amazon_f,

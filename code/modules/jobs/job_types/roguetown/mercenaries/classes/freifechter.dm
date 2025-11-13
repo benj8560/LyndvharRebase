@@ -33,7 +33,7 @@
 	..()
 	to_chat(H, span_warning("As part of the Potentate's leading vanguard, you have served diligently along the Khaliphate border. Wielder of Beowricke's most versatile and noble weapon, you needn't anything else. You can choose a regional longsword."))
 	l_hand = /obj/item/rogueweapon/scabbard/sword
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/fencer	//Experimental.
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fencer	//Experimental.
 	var/weapons = list("Freifechter Longsword", "Dunargi Longsword", "Kriegsmesser", "Field Longsword")
 	if(H.mind)
 		var/weapon_choice = input(H, "Choose your weapon.", "TAKE UP ARMS") as anything in weapons

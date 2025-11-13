@@ -39,8 +39,8 @@
 /datum/outfit/job/roguetown/mercenary/underdweller/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/helmet/kettle/minershelm
-	pants = /obj/item/clothing/under/roguetown/splintlegs
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/half
+	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
 	gloves = /obj/item/clothing/gloves/roguetown/angle/atgervi
 	mask = /obj/item/clothing/mask/rogue/shepherd

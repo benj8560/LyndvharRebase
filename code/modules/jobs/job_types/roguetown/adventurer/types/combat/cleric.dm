@@ -231,7 +231,7 @@
 					if("Hauberk")
 						armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 					if("Cuirass")
-						armor = /obj/item/clothing/suit/roguetown/armor/plate/half/fluted/ornate
+						armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fluted/ornate
 		if(/datum/patron/divine/astrata)
 			cloak = /obj/item/clothing/cloak/templar/astrata
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/astratan

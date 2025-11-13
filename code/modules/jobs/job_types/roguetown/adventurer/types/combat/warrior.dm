@@ -74,7 +74,7 @@
 				neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 				gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 			if("Iron Breastplate")
-				armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
+				armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron
 				neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
 				shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 				pants = /obj/item/clothing/under/roguetown/splintlegs/iron
@@ -373,7 +373,7 @@
 		var/armorchoice = input(H, "Choose your armor.", "TAKE UP ARMOR") as anything in armors
 		switch(armorchoice)
 			if("Breastplate + Hauberk")
-				armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
+				armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron
 				shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
 			if("Half-Plate + Light Gambeson")
 				armor = /obj/item/clothing/suit/roguetown/armor/plate/iron

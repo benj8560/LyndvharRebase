@@ -132,7 +132,7 @@ GLOBAL_LIST_INIT(thief_aggro, world.file2list("strings/rt/highwaymanaggrolines.t
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	if(prob(50))
 		wrists = /obj/item/clothing/wrists/roguetown/bracers/copper
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/copper
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/copper
 	if(prob(50))
 		armor = /obj/item/clothing/suit/roguetown/armor/leather
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/light
