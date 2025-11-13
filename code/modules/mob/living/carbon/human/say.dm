@@ -59,8 +59,9 @@
 		if(!voice_descriptor)
 			return "Unknown Person"
 
-		var/voice_gender = "Person"
+		var/voice_gender = "Person"	
 		var/datum/mob_descriptor/stature/voice_stature = get_descriptor_type(/datum/mob_descriptor/stature)
+		var/checkem = voice_stature.get_description(src)
 		if(!voice_stature)
 			switch(voice_type)
 				if(VOICE_TYPE_FEM)
@@ -70,7 +71,10 @@
 				if(VOICE_TYPE_ANDR)
 					voice_gender = "Person"
 		else
-			voice_gender = voice_stature
+			if(checkem)
+				voice_gender = capitalize(checkem)
+			else
+				voice_gender = voice_stature
 		return voice_descriptor.get_speaking_name(voice_gender)
 
 /mob/living/carbon/human/proc/forcesay(list/append) //this proc is at the bottom of the file because quote fuckery makes notepad++ cri
