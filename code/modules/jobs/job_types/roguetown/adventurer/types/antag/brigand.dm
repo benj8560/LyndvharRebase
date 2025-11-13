@@ -51,7 +51,7 @@
 	mask = /obj/item/clothing/mask/rogue/facemask
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	head = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	id = /obj/item/mattcoin
 	H.adjust_blindness(-3)

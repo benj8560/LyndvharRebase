@@ -217,7 +217,7 @@
 		wretch_select_bounty(H)
 
 	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/iron
 	cloak = /obj/item/clothing/cloak/tabard/blkknight 

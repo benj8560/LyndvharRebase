@@ -104,7 +104,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget/steel
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy
 	head = /obj/item/clothing/head/roguetown/helmet/sallet
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/modern
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/blacksteel/modern
 	pants = /obj/item/clothing/under/roguetown/splintlegs
 	shoes = /obj/item/clothing/shoes/roguetown/boots/armor
 	gloves = /obj/item/clothing/gloves/roguetown/chain

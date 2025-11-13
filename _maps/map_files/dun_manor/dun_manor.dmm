@@ -5317,9 +5317,9 @@
 /area/rogue/indoors/town/magician)
 "dzk" = (
 /obj/structure/rack/rogue,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron,
+/obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/town/basement/keep)
 "dzt" = (
@@ -34090,7 +34090,7 @@
 	pixel_x = 6;
 	pixel_y = 5
 	},
-/obj/item/clothing/suit/roguetown/armor/plate/half/iron{
+/obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron{
 	pixel_y = 15
 	},
 /turf/open/floor/rogue/ruinedwood{

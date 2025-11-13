@@ -30,7 +30,7 @@
 
 /obj/item/clothing/suit/roguetown/armor/plate/blackiron_half_plate
 	name = "blackiron cuirass"
-	desc = "A basic cuirass forged from Grenzelhoftian blackiron. It's as durable as steel."
+	desc = "A basic cuirass forged from blackiron. It's more durable than steel, though it proves brittle under blunt force."
 	body_parts_covered = COVERAGE_TORSO
 	icon_state = "grenzelcuirass"
 	item_state = "grenzelcuirass"

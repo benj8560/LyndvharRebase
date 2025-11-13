@@ -614,7 +614,7 @@
 	req_bar = /obj/item/ingot/steel
 	req_blade = /obj/item/blade/steel_plate
 	additional_items = list(/obj/item/ingot/steel, /obj/item/natural/fur, /obj/item/natural/fur, /obj/item/reagent_containers/food/snacks/tallow, /obj/item/natural/hide/cured, /obj/item/natural/hide/cured, /obj/item/natural/hide/cured)
-	created_item = /obj/item/clothing/suit/roguetown/armor/plate/half/fencer
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/fencer
 
 /datum/anvil_recipe/armor/steel/cuirass/fluted
 	name = "Fluted Cuirass, Steel (+1 Steel, +1 Iron)"
@@ -973,9 +973,9 @@
 // BLACKSTEEL
 
 /datum/anvil_recipe/armor/blacksteel/cuirass
-	name = "Cuirass, Blacksteel (+1 Blacksteel)"
+	name = "Cuirass, Blackiron (+1 Iron)"
 	req_bar = /obj/item/ingot/blacksteel
-	additional_items = list(/obj/item/ingot/blacksteel)
+	additional_items = list(/obj/item/ingot/iron)
 	created_item = /obj/item/clothing/suit/roguetown/armor/plate/blackiron_half_plate
 
 /datum/anvil_recipe/armor/blacksteel/modern/platechest
@@ -989,7 +989,7 @@
 	name = "Blacksteel Half Plate Armor (+2 Blacksteel, +1 Cured Hide)"
 	req_bar = /obj/item/ingot/blacksteel
 	additional_items = list(/obj/item/ingot/blacksteel, /obj/item/ingot/blacksteel, /obj/item/natural/hide/cured)
-	created_item = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/blacksteel
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel
 	craftdiff = 5
 
 /datum/anvil_recipe/armor/blacksteel/modern/plategloves

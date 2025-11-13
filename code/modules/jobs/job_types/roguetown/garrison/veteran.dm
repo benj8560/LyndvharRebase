@@ -158,7 +158,7 @@
 
 /datum/outfit/job/roguetown/vet/footman/pre_equip(mob/living/carbon/human/H)
 	neck = /obj/item/clothing/neck/roguetown/gorget
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/half/iron
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/cuirass/iron
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 	head = /obj/item/clothing/head/roguetown/helmet/sallet/visored/iron
 	pants = /obj/item/clothing/under/roguetown/chainlegs/iron

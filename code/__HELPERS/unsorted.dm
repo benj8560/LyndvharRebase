@@ -1607,7 +1607,6 @@ GLOBAL_LIST_INIT(duplicate_forbidden_vars,list(
 		"Yeoman" = GLOB.yeoman_positions,
 		"Peasant" = GLOB.peasant_positions,
 		"Youngfolk" = GLOB.youngfolk_positions,
-		"Wanderer" = GLOB.wanderer_positions,
 	)
 
 	for(var/category in categories)

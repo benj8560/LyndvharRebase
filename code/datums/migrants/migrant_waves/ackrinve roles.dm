@@ -127,7 +127,7 @@
 
 /datum/outfit/job/roguetown/ackrinve/knight/pre_equip(mob/living/carbon/human/H)
 	..()
-	armor = /obj/item/clothing/suit/roguetown/armor/plate/modern/blacksteel_full_plate
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/full/blacksteel/modern
 	pants = /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
 	shoes = /obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots
 	gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves
