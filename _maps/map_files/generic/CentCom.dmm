@@ -589,7 +589,6 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/guard/aalloy,
 /obj/item/clothing/gloves/roguetown/plate/aalloy,
 /obj/item/clothing/under/roguetown/platelegs/aalloy,
-/obj/item/clothing/wrists/roguetown/bracers/aalloy,
 /turf/open/floor/rogue/tile/bfloorz,
 /area/rogue/indoors/vampire_lair)
 "bP" = (
@@ -1322,6 +1321,10 @@
 /obj/item/clothing/suit/roguetown/armor/chainmail/iron,
 /turf/open/floor/rogue/carpet,
 /area/rogue/indoors/shelter)
+"fo" = (
+/obj/structure/chair/wood/rogue/throne,
+/turf/open/floor/carpet/red,
+/area/rogue/indoors/vampire_lair)
 "fq" = (
 /obj/structure/fluff/railing/corner/south_west,
 /turf/open/floor/rogue/cobble,
@@ -1851,7 +1854,6 @@
 /obj/item/clothing/head/roguetown/helmet/heavy/guard/aalloy,
 /obj/item/clothing/gloves/roguetown/plate/aalloy,
 /obj/item/clothing/under/roguetown/platelegs/aalloy,
-/obj/item/clothing/wrists/roguetown/bracers/aalloy,
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/vampire_lair)
 "jq" = (
@@ -2692,7 +2694,6 @@
 /obj/item/clothing/gloves/roguetown/plate/aalloy,
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/item/clothing/under/roguetown/platelegs/aalloy,
-/obj/item/clothing/wrists/roguetown/bracers/aalloy,
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/vampire_lair)
 "qk" = (
@@ -2948,6 +2949,10 @@
 /obj/machinery/light/rogue/firebowl/standing,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/inhumen)
+"sJ" = (
+/obj/machinery/light/rogue/firebowl/standing,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods)
 "sK" = (
 /obj/structure/fluff/statue/knight/r,
 /turf/open/water/pond,
@@ -3717,10 +3722,6 @@
 "zn" = (
 /turf/open/water/cleanshallow,
 /area/rogue/under/cave/inhumen)
-"zp" = (
-/obj/machinery/light/rogue/firebowl/standing,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/outdoors/woods)
 "zq" = (
 /obj/machinery/light/rogue/wallfire/candle{
 	pixel_y = -32
@@ -4905,7 +4906,6 @@
 /obj/item/clothing/gloves/roguetown/plate/aalloy,
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/item/clothing/under/roguetown/platelegs/aalloy,
-/obj/item/clothing/wrists/roguetown/bracers/aalloy,
 /turf/open/floor/rogue/wood,
 /area/rogue/indoors/vampire_lair)
 "Kc" = (
@@ -5499,10 +5499,6 @@
 "Pa" = (
 /obj/item/roguebin/water,
 /turf/open/floor/rogue/ruinedwood/spiral,
-/area/rogue/indoors/vampire_lair)
-"Pd" = (
-/obj/structure/chair/wood/rogue/throne,
-/turf/open/floor/carpet/red,
 /area/rogue/indoors/vampire_lair)
 "Pe" = (
 /obj/structure/table/wood{
@@ -19788,7 +19784,7 @@ dG
 dG
 dR
 Xz
-Pd
+fo
 mW
 Ia
 km
@@ -20426,7 +20422,7 @@ CE
 dU
 GN
 dV
-zp
+sJ
 Vu
 Vu
 Vu
@@ -21208,7 +21204,7 @@ GN
 dV
 vQ
 vQ
-zp
+sJ
 Vu
 Vu
 Vu
