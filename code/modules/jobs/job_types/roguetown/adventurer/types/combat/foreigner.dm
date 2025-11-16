@@ -273,7 +273,7 @@
 	backr = /obj/item/rogueweapon/shield/heater
 	backl = /obj/item/storage/backpack/rogue/satchel/short
 	beltl = /obj/item/flashlight/flare/torch
-	r_hand = /obj/item/rogueweapon/sword/long/shotel
+	r_hand = /obj/item/rogueweapon/sword/sabre/shamshir
 	l_hand = /obj/item/rogueweapon/scabbard/sword
 	beltr = /obj/item/rogueweapon/scabbard/sheath
 	backpack_contents = list(/obj/item/rope/chain = 2, 
