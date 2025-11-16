@@ -89,8 +89,7 @@
 
 
 	H = new(shape,src,caster)
-	if (show_true_name)
-		shape.name = "[shape] ([caster.real_name])"
+	shape.name = "[shape]"
 
 	clothes_req = FALSE
 	human_req = FALSE
