@@ -140,8 +140,8 @@
 	mask = /obj/item/clothing/mask/rogue/facemask/steel
 	wrists = /obj/item/clothing/wrists/roguetown/bracers
 	if(H.mind)
-		H.dna.species.soundpack_m = new /datum/voicepack/skeleton/get_sound()
-		H.dna.species.soundpack_f = new /datum/voicepack/skeleton/get_sound()
+		H.dna.species.soundpack_m = new /datum/voicepack/skeleton()
+		H.dna.species.soundpack_f = new /datum/voicepack/skeleton()
 		to_chat(H, span_warning("ASPECT OF SIN"))
 		var/daemons = list("ZIZO", "GRAGGAR", "MATTHIOS")
 		var/patron_choice = input(H, "Choose your sin.", "DARK BLESSINGS") as anything in daemons
