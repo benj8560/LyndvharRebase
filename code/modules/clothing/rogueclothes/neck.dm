@@ -421,8 +421,8 @@
 	possible_item_intents = list(/datum/intent/use, /datum/intent/special/magicarc)
 
 /obj/item/clothing/neck/roguetown/psicross/inhumen/iron
-	name = "inverted psycross"
-	desc = "A symbol of progress from an era that had reason to believe in it."
+	name = "inverted cross"
+	desc = "A symbol of darkness from an era long forgotten in blood."
 	icon_state = "zcross_iron"
 	resistance_flags = FIRE_PROOF
 
