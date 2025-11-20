@@ -35,20 +35,21 @@
 
 //	For competence of life I will allow you,
 //	That lack of means enforce you not to evil:
-/obj/structure/roguemachine/steward/proc/setup_default_payments()
-	daily_payments["Sergeant"] = 40 //Garrison
-	daily_payments["Man at Arms"] = 30
-	daily_payments["Dungeoneer"] = 30
-	daily_payments["Warden"] = 30
-	daily_payments["Veteran"] = 20
-	daily_payments["Squire"] = 10
-	daily_payments["Seneschal"] = 40 //Manor-House
-	daily_payments["Servant"] = 20	
-	daily_payments["Head Physician"] = 20 //Doctors
-	daily_payments["Apothecary"] = 10
-	daily_payments["Court Magician"] = 40 //University
-	daily_payments["Archivist"] = 20
-	daily_payments["Magicians Associate"] = 10
+/obj/structure/roguemachine/steward/proc/setup_default_payments() 
+	daily_payments["Watch Captain"] = 30 // garrison leader
+	daily_payments["Watchman"] = 15 // if these guys arent paid they go ballistic
+	daily_payments["Dungeoneer"] = 5 // they dont really need pay, they just do it for the love of the game
+	daily_payments["Manor Guard"] = 20 // guarding the manor is even harder work
+	daily_payments["Gatemaster"] = 15 // guarding the gate is hard work
+	daily_payments["Veteran"] = 10 // pension fund
+	daily_payments["Squire"] = 25 // cataphract's underling so he's treated better because they are the the future cataphract
+	daily_payments["Seneschal"] = 20 // to get stuff
+	daily_payments["Servant"] = 10	// to get stuff, but should rely on seneschal to do this for them
+	daily_payments["Practitioner"] = 25 // doctor house md
+	daily_payments["Apothecary"] = 10 // should be relying on practitioner for this
+	daily_payments["Archmagus"] = 30 // big smart
+	daily_payments["Archivist"] = 20 //upkeeping a library is costly you know
+	daily_payments["Magus Apprentice"] = 10 // should rely on their teacher for this
 
 /obj/structure/roguemachine/steward/attackby(obj/item/P, mob/user, params)
 	if(istype(P, /obj/item/roguekey))
