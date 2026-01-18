@@ -25,8 +25,9 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 		aggressive=1
 		wander = TRUE
 		if(!is_silent && target != newtarg)
-			say(pick(GLOB.searaider_aggro))
-			pointed(target)
+			if(prob(30))
+				say(pick(GLOB.searaider_aggro))
+				pointed(target)
 
 /mob/living/carbon/human/species/human/northern/searaider/should_target(mob/living/L)
 	if(L.stat != CONSCIOUS)

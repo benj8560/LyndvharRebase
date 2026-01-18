@@ -25,8 +25,9 @@ GLOBAL_LIST_INIT(drowraider_aggro, world.file2list("strings/rt/drowaggrolines.tx
 		aggressive=1
 		wander = TRUE
 	if(!is_silent && target != newtarg)
-		say(pick(GLOB.drowraider_aggro))
-		pointed(target)
+		if(prob(30))
+			say(pick(GLOB.drowraider_aggro))
+			pointed(target)
 
 /mob/living/carbon/human/species/elf/dark/drowraider/should_target(mob/living/L)
 	if(L.stat != CONSCIOUS)
