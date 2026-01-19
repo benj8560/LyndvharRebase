@@ -57,7 +57,7 @@
 	backr = /obj/item/rogueweapon/woodstaff/diamond
 	backpack_contents = list(
 		/obj/item/book/spellbook = 1,
-		/obj/item/ritechalk = 1 = 1,
+		/obj/item/ritechalk = 1,
 		/obj/item/necro_relics/necro_crystal = 2, 
 		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue/strongpoison = 1,
