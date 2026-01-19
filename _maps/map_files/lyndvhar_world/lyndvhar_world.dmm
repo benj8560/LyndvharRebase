@@ -7073,14 +7073,6 @@
 /obj/item/reagent_containers/food/snacks/egg,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains/decap/gunduzirak)
-"bTz" = (
-/obj/structure/fluff/railing/wood,
-/turf/open/water/river{
-	icon_state = "rockwd"
-	},
-/area/rogue/outdoors/woods{
-	first_time_text = "DRAGUIPPE FOREST"
-	})
 "bTB" = (
 /obj/structure/fluff/railing/border/east,
 /turf/open/transparent/openspace,
@@ -10207,19 +10199,6 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/church,
 /area/rogue/under/cave/orcdungeon)
-"cKx" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_x = 2;
-	pixel_y = 7
-	},
-/turf/open/water/river{
-	icon_state = "rockwd"
-	},
-/area/rogue/outdoors/woods{
-	first_time_text = "DRAGUIPPE FOREST"
-	})
 "cKJ" = (
 /obj/structure/table/wood/large_table/middle_west{
 	pixel_x = -5
@@ -14984,14 +14963,6 @@
 "dQV" = (
 /turf/open/floor/rogue/carpet/lord/right,
 /area/rogue/indoors/town/manor)
-"dQZ" = (
-/obj/structure/stairs{
-	dir = 4
-	},
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors/woods{
-	first_time_text = "DRAGUIPPE FOREST"
-	})
 "dRb" = (
 /obj/structure/table/wood{
 	dir = 10;
@@ -15699,12 +15670,6 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
-"ebs" = (
-/obj/structure/stairs{
-	dir = 8
-	},
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors/bog/north)
 "ebt" = (
 /obj/item/reagent_containers/glass/cup/wooden{
 	pixel_x = 8
@@ -19614,17 +19579,9 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/mazedungeon)
 "fdG" = (
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_x = -8
-	},
-/obj/structure/fluff/railing/wood{
-	dir = 4
-	},
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors/woods{
-	first_time_text = "DRAGUIPPE FOREST"
-	})
+/obj/effect/landmark/quest_spawner/hard,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/underdark/south)
 "fdM" = (
 /obj/structure/closet/crate/chest/neu_fancy{
 	locked = 1;
@@ -21717,15 +21674,6 @@
 /obj/structure/fluff/railing/border/west,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains)
-"fGb" = (
-/obj/structure/fluff/railing/wood{
-	dir = 8;
-	pixel_x = -8
-	},
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors/woods{
-	first_time_text = "DRAGUIPPE FOREST"
-	})
 "fGc" = (
 /obj/structure/fluff/railing/corner/south_east,
 /obj/effect/decal/cobbleedge{
@@ -22432,7 +22380,6 @@
 /obj/item/rogueweapon/pitchfork/aalloy,
 /obj/item/rogueweapon/shovel/aalloy,
 /obj/item/rogueweapon/scythe,
-/obj/item/rogueweapon/sickle/aalloy,
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
@@ -22592,12 +22539,6 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/orcdungeon)
-"fSZ" = (
-/obj/structure/fluff/railing/wood,
-/turf/open/transparent/openspace,
-/area/rogue/outdoors/woods{
-	first_time_text = "DRAGUIPPE FOREST"
-	})
 "fTb" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet/bogcaves)
@@ -32251,10 +32192,6 @@
 /obj/structure/fluff/psycross,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors/mountains/decap/gunduzirak)
-"iuE" = (
-/obj/structure/vine,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/under/underdark/south)
 "iuF" = (
 /obj/structure/fluff/walldeco/customflag{
 	pixel_y = -32
@@ -36032,14 +35969,6 @@
 	icon_state = "plating2"
 	},
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
-"jsB" = (
-/obj/structure/stairs{
-	dir = 8
-	},
-/turf/open/floor/rogue/twig,
-/area/rogue/outdoors/woods{
-	first_time_text = "DRAGUIPPE FOREST"
-	})
 "jsC" = (
 /obj/structure/fluff/railing/border/north,
 /turf/open/lava/acid,
@@ -63143,20 +63072,6 @@
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog/north)
-"qfs" = (
-/obj/structure/fluff/railing/wood{
-	dir = 1;
-	layer = 2.7;
-	pixel_x = 2;
-	pixel_y = 7
-	},
-/turf/open/water/river{
-	icon_state = "rockwd";
-	dir = 4
-	},
-/area/rogue/outdoors/woods{
-	first_time_text = "DRAGUIPPE FOREST"
-	})
 "qfB" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -91453,11 +91368,6 @@
 /obj/item/ingot/blacksteel,
 /turf/open/floor/rogue/blocks/platform,
 /area/rogue/under/cave/orcdungeon)
-"xdp" = (
-/obj/structure/vine,
-/obj/structure/vine,
-/turf/open/floor/rogue/dirt,
-/area/rogue/under/underdark/south)
 "xdr" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -330969,10 +330879,10 @@ ilR
 ilR
 ilR
 vYJ
-udn
-udn
-udn
-udn
+vYJ
+vYJ
+vYJ
+vYJ
 udn
 ilR
 iwT
@@ -332173,7 +332083,7 @@ ilR
 ilR
 ilR
 vYJ
-udn
+vYJ
 udn
 udn
 udn
@@ -332574,7 +332484,7 @@ ilR
 ilR
 ltk
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -332976,7 +332886,7 @@ ilR
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -333378,7 +333288,7 @@ ilR
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -333780,7 +333690,7 @@ ilR
 ilR
 ilR
 byG
-udn
+vYJ
 udn
 udn
 udn
@@ -334182,7 +334092,7 @@ ilR
 ilR
 byG
 byG
-udn
+vYJ
 udn
 udn
 udn
@@ -334584,7 +334494,7 @@ ilR
 ilR
 byG
 vYJ
-udn
+vYJ
 udn
 udn
 udn
@@ -334985,7 +334895,7 @@ rcr
 ilR
 ilR
 byG
-udn
+vYJ
 udn
 udn
 udn
@@ -335387,7 +335297,7 @@ rcr
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -335789,7 +335699,7 @@ rcr
 rcr
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -336191,7 +336101,7 @@ ilR
 rcr
 ltk
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -336593,7 +336503,7 @@ ilR
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -336995,7 +336905,7 @@ ilR
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -337397,7 +337307,7 @@ ilR
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -338200,7 +338110,7 @@ iQC
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -338602,7 +338512,7 @@ ilR
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -339004,7 +338914,7 @@ ilR
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -339406,7 +339316,7 @@ ilR
 ilR
 ilR
 vYJ
-udn
+vYJ
 udn
 udn
 udn
@@ -339759,9 +339669,9 @@ ilR
 ilR
 ilR
 ilR
-vYJ
-vYJ
-vYJ
+oWI
+oWI
+oWI
 oWI
 ilR
 ilR
@@ -339807,7 +339717,7 @@ ilR
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -340164,10 +340074,10 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
-vYJ
-vYJ
+oWI
+oWI
+oWI
+oWI
 oWI
 ilR
 ilR
@@ -340570,8 +340480,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
+oWI
+oWI
 oWI
 ilR
 ilR
@@ -340610,10 +340520,10 @@ ilR
 ilR
 ilR
 ilR
-fdG
-ads
-fdG
-fGb
+vYJ
+udn
+udn
+udn
 ilR
 ilR
 ilR
@@ -340974,8 +340884,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
+oWI
+oWI
 oWI
 ilR
 ilR
@@ -341378,8 +341288,8 @@ vYJ
 vYJ
 vYJ
 oWI
-vYJ
-vYJ
+oWI
+oWI
 oWI
 ilR
 ilR
@@ -341765,8 +341675,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
+udn
+udn
 udn
 ilR
 ilR
@@ -341782,7 +341692,7 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
+oWI
 oWI
 ilR
 ilR
@@ -342165,8 +342075,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
+udn
+udn
 udn
 ilR
 ilR
@@ -342185,9 +342095,9 @@ vYJ
 vYJ
 vYJ
 vYJ
-bTz
-ads
-qfs
+oWI
+oWI
+oWI
 ilR
 ilR
 ilR
@@ -342215,7 +342125,7 @@ ilR
 ilR
 ilR
 ilR
-udn
+vYJ
 udn
 udn
 udn
@@ -342565,8 +342475,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
+udn
+udn
 udn
 ilR
 ilR
@@ -342587,10 +342497,10 @@ ilR
 vYJ
 vYJ
 vYJ
-bTz
-ads
 vYJ
 vYJ
+oWI
+oWI
 oWI
 ilR
 ilR
@@ -342965,8 +342875,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
+udn
+udn
 udn
 ilR
 ilR
@@ -342990,11 +342900,11 @@ ilR
 vYJ
 vYJ
 vYJ
-ads
-cKx
 vYJ
 vYJ
 vYJ
+oWI
+oWI
 oWI
 ilR
 ilR
@@ -343365,8 +343275,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
+udn
+udn
 udn
 ilR
 ilR
@@ -343391,14 +343301,14 @@ ilR
 ilR
 ilR
 ilR
-bTz
-ads
-cKx
 vYJ
 vYJ
 vYJ
 vYJ
 vYJ
+vYJ
+oWI
+oWI
 oWI
 ilR
 ilR
@@ -343765,8 +343675,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
+udn
+udn
 udn
 ilR
 ilR
@@ -343801,10 +343711,10 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
-vYJ
-vYJ
+oWI
+oWI
+oWI
+oWI
 oWI
 ilR
 ilR
@@ -343822,7 +343732,7 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
+udn
 udn
 udn
 ilR
@@ -344208,7 +344118,7 @@ vYJ
 vYJ
 vYJ
 oWI
-vYJ
+oWI
 oWI
 ilR
 vYJ
@@ -344623,8 +344533,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
+udn
+udn
 udn
 ilR
 ilR
@@ -344966,9 +344876,9 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
-vYJ
+udn
+udn
+udn
 udn
 ilR
 ilR
@@ -345022,9 +344932,9 @@ vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-vYJ
-vYJ
+udn
+udn
+udn
 udn
 ilR
 ilR
@@ -345818,8 +345728,8 @@ ilR
 ilR
 ilR
 ilR
-vYJ
-vYJ
+udn
+udn
 udn
 ilR
 ilR
@@ -355860,9 +355770,9 @@ uFG
 uFG
 ilR
 uFG
-ads
-dQZ
-dQZ
+uFG
+ilR
+ilR
 aTY
 aTY
 aTY
@@ -357870,9 +357780,9 @@ lAu
 gYE
 mCu
 mCu
-ebs
-ebs
-ebs
+nVU
+ptg
+hJL
 qbm
 hJL
 hJL
@@ -485995,8 +485905,8 @@ pms
 pms
 qCx
 nhW
-rup
-arg
+nhW
+qCx
 kHT
 exr
 vSZ
@@ -486006,7 +485916,7 @@ uvU
 uvU
 uvU
 uvU
-jcX
+uvU
 jcX
 jcX
 jcX
@@ -486396,19 +486306,19 @@ qCx
 pms
 cSb
 qCx
-rup
-iuE
-arg
+nhW
+kFU
+qCx
 kHT
 exr
 vSZ
-iEm
-iEm
-jcX
-jcX
-jcX
-jcX
-jcX
+vSZ
+uvU
+uvU
+uvU
+uvU
+uvU
+uvU
 jcX
 jcX
 jcX
@@ -486799,18 +486709,18 @@ pms
 pms
 qCx
 nhW
-rup
-xdp
+nhW
+qCx
 kHT
-arg
-pQg
-iEm
-iEm
-jcX
+exr
+vSZ
+vSZ
 uvU
 uvU
-jcX
-jcX
+uvU
+uvU
+uvU
+uvU
 jcX
 jcX
 jcX
@@ -487201,11 +487111,11 @@ pms
 qCx
 xSS
 nhW
-rup
-xdp
-rup
-rup
-pQg
+nhW
+qCx
+kHT
+exr
+vSZ
 vSZ
 uvU
 uvU
@@ -487603,8 +487513,8 @@ nhW
 nhW
 nhW
 nhW
-rup
-arg
+nhW
+qCx
 kHT
 exr
 vSZ
@@ -488005,8 +487915,8 @@ nhW
 nhW
 nhW
 nhW
-arg
-rup
+qCx
+nhW
 kHT
 exr
 vSZ
@@ -488406,9 +488316,9 @@ nhW
 nhW
 qCx
 nhW
-rup
 nhW
-rup
+nhW
+nhW
 kHT
 exr
 vSZ
@@ -491626,7 +491536,7 @@ kHT
 eGI
 kFU
 kFU
-kFU
+fdG
 vSZ
 vSZ
 uvU
@@ -537162,10 +537072,10 @@ iwT
 iwT
 iwT
 iwT
-fSZ
-ads
-dQZ
-dQZ
+iwT
+ujJ
+ujJ
+ilR
 ilR
 ltk
 ilR
@@ -537565,7 +537475,7 @@ ilR
 rcr
 rcr
 ujJ
-ads
+ujJ
 rcr
 ilR
 ilR
@@ -537967,9 +537877,9 @@ ltk
 rcr
 rcr
 rcr
-ads
 ilR
-ads
+ltk
+ilR
 ilR
 ilR
 ilR
@@ -538369,9 +538279,9 @@ ujJ
 ujJ
 ujJ
 ujJ
-ads
-jsB
-jsB
+ujJ
+ujJ
+ujJ
 ujJ
 ujJ
 rcr
