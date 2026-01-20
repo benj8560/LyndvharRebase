@@ -273,6 +273,28 @@ Hotkey-Mode: (hotkey-mode must be on)
 		else
 			to_chat(src, "Headshot in chat Disabled")
 
+/client/verb/set_chattermode()
+	set name = "Chat Prompt Mode"
+	set category = "Options"
+	if(!prefs)
+		return
+	var/mode = prefs.chattermode
+	var/choice
+	var/choicename = ""
+	switch(mode)
+		if(CHATTER_COMMANDBAR)
+			choice = CHATTER_CHATBOX
+			choicename = "Chatbox"
+		if(CHATTER_CHATBOX)
+			choice = CHATTER_OLDSTYLE
+			choicename = "Legacy"
+		if(CHATTER_OLDSTYLE)
+			choice = CHATTER_COMMANDBAR
+			choicename = "Command Bar"
+	prefs.chattermode = choice
+	prefs.save_preferences()
+	to_chat(src, "Chat Prompt Mode set to [choicename].")
+
 /*
 /client/verb/set_blur()
 	set name = "AAOn"
