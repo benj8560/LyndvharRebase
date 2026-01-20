@@ -8,13 +8,22 @@
 	set hidden = TRUE
 	set category = "IC"
 	
-	display_typing_indicator()
-	var/message = browser_input_text(usr, "SPEAK YOUR MIND", "", placeholder = "SAY IT LOUDER...", encode = FALSE, max_length = 1824)
-	// If they don't type anything just drop the message.
-	clear_typing_indicator()
-	if(!length(message))
+	if(client.prefs.chattermode != CHATTER_COMMANDBAR)
+		display_typing_indicator()
+		var/message = null
+		if(client.prefs.chattermode == CHATTER_CHATBOX)
+			message = browser_input_text(usr, "SPEAK YOUR MIND", "", placeholder = "SAY IT LOUDER...", encode = FALSE, max_length = 1824)
+		else
+			message = input(usr, "SAY", "SAY IT OUT LOUD...", null)
+		// If they don't type anything just drop the message.
+		clear_typing_indicator()
+		if(!length(message))
+			return
+		return say_verb(message)
+	else
+		winset(usr.client, "input", "focus=true")
+		winset(usr.client, "input", "background-color=[COLOR_INPUT_ENABLED]")
 		return
-	return say_verb(message)
 
 /mob/verb/say_verb(message as text)
 	set name = "Say"

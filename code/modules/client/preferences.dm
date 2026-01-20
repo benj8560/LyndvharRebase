@@ -2,6 +2,10 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 GLOBAL_LIST_EMPTY(chosen_names)
 
+#define CHATTER_COMMANDBAR 0
+#define CHATTER_CHATBOX 1
+#define CHATTER_OLDSTYLE 2 
+
 /datum/preferences
 	var/client/parent
 	//doohickeys for savefiles
@@ -179,6 +183,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/list/custom_descriptors = list()
 
 	var/char_accent = "No accent"
+
+	var/chattermode = CHATTER_COMMANDBAR // Default chat prompt mode.
 
 	var/datum/loadout_item/loadout
 	var/datum/loadout_item/loadout2
