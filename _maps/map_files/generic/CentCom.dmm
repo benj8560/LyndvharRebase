@@ -1579,9 +1579,11 @@
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/outdoors/woods)
 "hq" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
 /obj/structure/lever/wall{
-	dir = 1;
-	pixel_x = -16;
+	pixel_x = 17;
 	redstone_id = "wretch_2"
 	},
 /turf/open/floor/rogue/hexstone,
@@ -1661,8 +1663,12 @@
 /turf/open/floor/rogue/blocks/green,
 /area/rogue/indoors/eventarea)
 "hY" = (
+/obj/structure/stairs/stone{
+	dir = 1
+	},
 /obj/structure/lever/wall{
-	pixel_x = 17;
+	dir = 1;
+	pixel_x = -16;
 	redstone_id = "wretch_2"
 	},
 /turf/open/floor/rogue/hexstone,
@@ -3793,13 +3799,6 @@
 /obj/structure/fluff/railing/border/east,
 /turf/open/floor/rogue/blocks,
 /area/rogue/indoors/vampire_lair)
-"zX" = (
-/obj/structure/fluff/traveltile/bandit{
-	aportalid = "banditin";
-	aportalgoesto = "banditexit2"
-	},
-/turf/open/floor/rogue/naturalstone,
-/area/rogue)
 "Ac" = (
 /obj/structure/chair/wood/rogue/fancy,
 /turf/open/floor/carpet/red,
@@ -4128,7 +4127,7 @@
 /area/rogue/indoors/vampire_lair)
 "CN" = (
 /obj/structure/fluff/traveltile/bandit{
-	aportalid = "banditin";
+	aportalid = "banditin2";
 	aportalgoesto = "banditexit2"
 	},
 /turf/open/floor/rogue/naturalstone,
@@ -4774,7 +4773,7 @@
 /obj/structure/mineral_door/wood/donjon/stone{
 	name = "Forgotten Chapel"
 	},
-/obj/structure/bars/passage/shutter{
+/obj/structure/bars/passage/shutter/open{
 	name = "unholy protection";
 	redstone_id = "wretch_1"
 	},
@@ -4837,7 +4836,7 @@
 /area/rogue/under/cave/inhumen)
 "Jj" = (
 /obj/structure/roguewindow/stained/zizo,
-/obj/structure/bars/passage/shutter{
+/obj/structure/bars/passage/shutter/open{
 	name = "unholy protection";
 	redstone_id = "wretch_1"
 	},
@@ -12579,7 +12578,7 @@ bX
 bX
 bX
 tz
-zX
+tz
 tz
 tz
 bX
@@ -12928,8 +12927,8 @@ xZ
 Os
 BJ
 ev
-sd
-hY
+hq
+xZ
 xZ
 xZ
 xZ
@@ -14748,8 +14747,8 @@ xZ
 BZ
 MF
 ii
-sd
-hq
+hY
+xZ
 xZ
 xZ
 xZ

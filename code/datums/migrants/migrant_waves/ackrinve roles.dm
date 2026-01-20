@@ -16,7 +16,7 @@
 	outfit = /datum/outfit/job/roguetown/ackrinve/necromancer
 	cmode_music = 'sound/music/combat_heretic.ogg'
 	category_tags = list(CTAG_ACKRINVE_NECROMANCER)
-	traits_applied = list(TRAIT_ZOMBIE_IMMUNE, TRAIT_MAGEARMOR, TRAIT_GRAVEROBBER, TRAIT_ARCYNE_T4, TRAIT_ALCHEMY_EXPERT, TRAIT_MEDICINE_EXPERT, TRAIT_DARKVISION)
+	traits_applied = list(TRAIT_ZOMBIE_IMMUNE, TRAIT_MAGEARMOR, TRAIT_GRAVEROBBER, TRAIT_ARCYNE_T4, TRAIT_ALCHEMY_EXPERT, TRAIT_MEDICINE_EXPERT, TRAIT_DARKVISION, TRAIT_RITUALIST)
 	maximum_possible_slots = 1
 	
 	subclass_stats = list(
@@ -57,6 +57,7 @@
 	backr = /obj/item/rogueweapon/woodstaff/diamond
 	backpack_contents = list(
 		/obj/item/book/spellbook = 1,
+		/obj/item/ritechalk = 1,
 		/obj/item/necro_relics/necro_crystal = 2, 
 		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue/strongpoison = 1,
@@ -102,7 +103,7 @@
 /datum/advclass/ackrinve_knight
 	name = "Death Knight"
 	outfit = /datum/outfit/job/roguetown/ackrinve/knight
-	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_CABAL, TRAIT_ZOMBIE_IMMUNE, TRAIT_INFINITE_ENERGY, TRAIT_NOPAIN, TRAIT_NOBREATH, TRAIT_NOHUNGER, TRAIT_DARKVISION, TRAIT_SILVER_WEAK, TRAIT_NOMOOD, TRAIT_NOSLEEP)
+	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_CABAL, TRAIT_ZOMBIE_IMMUNE, TRAIT_INFINITE_ENERGY, TRAIT_NOPAIN, TRAIT_NOBREATH, TRAIT_NOHUNGER, TRAIT_DARKVISION, TRAIT_SILVER_WEAK, TRAIT_NOMOOD, TRAIT_NOSLEEP, TRAIT_HEAVYARMOR)
 	category_tags = list(CTAG_ACKRINVE_KNIGHT)
 	subclass_stats = list(
 		STATKEY_STR = 4,
