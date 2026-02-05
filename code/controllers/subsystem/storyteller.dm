@@ -1159,6 +1159,7 @@ SUBSYSTEM_DEF(gamemode)
         STATS_ADULT_POPULATION,
         STATS_MIDDLEAGED_POPULATION,
         STATS_ELDERLY_POPULATION,
+		STATS_IMMORTAL_POPULATION,
         STATS_ALIVE_NORTHERN_HUMANS,
         STATS_ALIVE_DWARVES,
         STATS_ALIVE_DARK_ELVES,
@@ -1171,6 +1172,7 @@ SUBSYSTEM_DEF(gamemode)
         STATS_ALIVE_AASIMAR,
         STATS_ALIVE_TIEFLINGS,
         STATS_ALIVE_HALFKIN,
+		STATS_ALIVE_DOLLS,
         STATS_ALIVE_WILDKIN,
         STATS_ALIVE_AXIAN,
         STATS_ALIVE_TABAXI,
@@ -1245,6 +1247,8 @@ SUBSYSTEM_DEF(gamemode)
 					record_round_statistic(STATS_MIDDLEAGED_POPULATION)
 				if(AGE_OLD)
 					record_round_statistic(STATS_ELDERLY_POPULATION)
+				if(AGE_IMMORTAL)
+					record_round_statistic(STATS_IMMORTAL_POPULATION)
 			if(human_mob.is_noble())
 				record_round_statistic(STATS_ALIVE_NOBLES)
 			if(human_mob.mind.assigned_role in GLOB.garrison_positions)
@@ -1287,6 +1291,8 @@ SUBSYSTEM_DEF(gamemode)
 				record_round_statistic(STATS_ALIVE_HALFKIN)
 			if(iswildkin(human_mob))
 				record_round_statistic(STATS_ALIVE_WILDKIN)
+			if(isdoll(human_mob))
+				record_round_statistic(STATS_ALIVE_DOLLS)
 			if(iscervaline(human_mob))
 				record_round_statistic(STATS_ALIVE_CERVALINE)
 			if(isrhaeteian(human_mob))

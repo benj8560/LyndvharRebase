@@ -8,7 +8,7 @@
 	allowed_races = RACES_TOLERATED_UP
 	allowed_patrons = ALL_NICE_PATRONS
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
 	tutorial = "Your lineage is noble, and generations of strong, loyal men and women have come before you. You served your time gracefully as one of the most prominent knights of the Viscount, and one of the most feared fighters in Lyndvhar.. and now you've grown into a role which many men can only dream of becoming. Lead your men to victory--and keep them in line--and you will see this city prosper under a thousand suns and be returned to its former glory."
 	display_order = JDO_GUARD_CAPTAIN
 	advclass_cat_rolls = list(CTAG_CAPTAIN = 20)
@@ -60,7 +60,6 @@
 			honorary = "Dame"
 		H.real_name = "[honorary] [prev_real_name]"
 		H.name = "[honorary] [prev_name]"
-
 		for(var/X in peopleknowme)
 			for(var/datum/mind/MF in get_minds(X))
 				if(MF.known_people)
@@ -173,7 +172,6 @@
 	name = "Cavalry Captain"
 	tutorial = "As the first among finest you ride at the speartip of cavalier forces, barreling saiga and blades through the soft flanks of enemy formations. Many a man can tell the tale of what your prowess on saigaback has contributed to this city's protection."
 	outfit = /datum/outfit/job/roguetown/captain/cavalry
-	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck/tame/saddled
 	category_tags = list(CTAG_CAPTAIN)
 
 	subclass_stats = list(
@@ -201,7 +199,10 @@
 		/datum/skill/misc/climbing = SKILL_LEVEL_APPRENTICE,
 		/datum/skill/misc/riding = SKILL_LEVEL_MASTER,
 	)
-
+	subclass_virtues = list(
+		/datum/virtue/utility/riding
+	)
+	
 /datum/outfit/job/roguetown/captain/cavalry/pre_equip(mob/living/carbon/human/H)
 	..()
 	backr = /obj/item/storage/backpack/rogue/satchel/short

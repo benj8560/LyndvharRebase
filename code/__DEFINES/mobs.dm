@@ -520,6 +520,12 @@
 #define SKIN_COLOR_ZIERZATI "41577C"
 #define SKIN_COLOR_YOLZUTHBOC "5b4d4d"
 #define SKIN_COLOR_YABORYS "643e83"
+#define SKIN_COLOR_VESYL "7A2525"
+#define SKIN_COLOR_KROSEC "f9f9f9"
+#define SKIN_COLOR_ASZA "7a5497"
+#define SKIN_COLOR_KRIZZSHA "a191cc"
+#define SKIN_COLOR_TOSIZ "5b7343"
+#define SKIN_COLOR_VELOTHEL "87a665"
 
 //GOBLIN SKIN TONES
 #define SKIN_COLOR_OCHRE "968127"
@@ -566,6 +572,15 @@
 #define WHITEBROWN_FUR "c69b83"
 #define DARKBROWN_FUR "3b2e27"
 #define BLACK_FUR	 "271f1a"
+
+//DOLL PAINT COLOR
+#define DOLL_PORCELAIN "ffffff"
+#define DOLL_SIENNA "a0522d"
+#define DOLL_LOTUS "dbcca9"
+#define DOLL_DAWN  "daa99c"
+#define DOLL_WALNUT "ba9882"
+#define DOLL_GLOOM "897489"
+#define DOLL_DUSK "4e3729"
 
 // Pixel shifting
 #define PIXEL_SHIFT_MAXIMUM 16
