@@ -4,7 +4,7 @@
 /datum/migrant_role/ackrinve/necromancer
 	name = "Ackrinval Necromancer"
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_ALL_KINDS
 	greet_text = "Hailing from the wastelands of far away Ackrinval, you have travelled a far distance in order to setup a coven to the glorious ones in this region. Myths speak of the Draguippe's deep connection to leylines, and have brought your dark watch upon it."
 	advclass_cat_rolls = list(CTAG_ACKRINVE_NECROMANCER = 20)
 
@@ -16,7 +16,7 @@
 	outfit = /datum/outfit/job/roguetown/ackrinve/necromancer
 	cmode_music = 'sound/music/combat_heretic.ogg'
 	category_tags = list(CTAG_ACKRINVE_NECROMANCER)
-	traits_applied = list(TRAIT_ZOMBIE_IMMUNE, TRAIT_MAGEARMOR, TRAIT_GRAVEROBBER, TRAIT_ARCYNE_T4, TRAIT_ALCHEMY_EXPERT, TRAIT_MEDICINE_EXPERT, TRAIT_DARKVISION)
+	traits_applied = list(TRAIT_ZOMBIE_IMMUNE, TRAIT_MAGEARMOR, TRAIT_GRAVEROBBER, TRAIT_ARCYNE_T4, TRAIT_ALCHEMY_EXPERT, TRAIT_MEDICINE_EXPERT, TRAIT_DARKVISION, TRAIT_RITUALIST)
 	maximum_possible_slots = 1
 	
 	subclass_stats = list(
@@ -57,6 +57,7 @@
 	backr = /obj/item/rogueweapon/woodstaff/diamond
 	backpack_contents = list(
 		/obj/item/book/spellbook = 1,
+		/obj/item/ritechalk = 1,
 		/obj/item/necro_relics/necro_crystal = 2, 
 		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue/strongpoison = 1,
@@ -81,7 +82,7 @@
 	name = "Death Knight"
 	greet_text = "Having been rose as a thrall to the reigning Necromancer of the party, you know only one thing only: undying loyalty to your summoner. Let no harm befall them."
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_SHUNNED_UP
+	allowed_races = RACES_ALL_KINDS
 	advclass_cat_rolls = list(CTAG_ACKRINVE_KNIGHT = 20)
 
 /datum/migrant_role/ackrinve/knight/after_spawn(mob/living/carbon/human/L, mob/M, latejoin = TRUE)
@@ -102,7 +103,7 @@
 /datum/advclass/ackrinve_knight
 	name = "Death Knight"
 	outfit = /datum/outfit/job/roguetown/ackrinve/knight
-	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_CABAL, TRAIT_ZOMBIE_IMMUNE, TRAIT_INFINITE_ENERGY, TRAIT_NOPAIN, TRAIT_NOBREATH, TRAIT_NOHUNGER, TRAIT_DARKVISION, TRAIT_SILVER_WEAK, TRAIT_NOMOOD, TRAIT_NOSLEEP)
+	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_CABAL, TRAIT_ZOMBIE_IMMUNE, TRAIT_INFINITE_ENERGY, TRAIT_NOPAIN, TRAIT_NOBREATH, TRAIT_NOHUNGER, TRAIT_DARKVISION, TRAIT_SILVER_WEAK, TRAIT_NOMOOD, TRAIT_NOSLEEP, TRAIT_HEAVYARMOR)
 	category_tags = list(CTAG_ACKRINVE_KNIGHT)
 	subclass_stats = list(
 		STATKEY_STR = 4,

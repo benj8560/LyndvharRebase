@@ -1,16 +1,17 @@
 /datum/keybinding/client/communication
 	category = CATEGORY_COMMUNICATION
-/*
+
 /datum/keybinding/client/communication/say
 	hotkey_keys = list("T")
 	name = "Say"
 	full_name = "Say"
 	clientside = "say_typing_indicator"
+	
 /datum/keybinding/client/communication/say/down(client/user)
 	var/mob/M = user.mob
 	M.say_typing_indicator()
 	return TRUE
-*/
+
 /datum/keybinding/client/communication/me
 	hotkey_keys = list("M")
 	name = "Me"

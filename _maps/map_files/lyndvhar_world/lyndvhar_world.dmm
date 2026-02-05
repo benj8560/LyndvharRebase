@@ -7073,6 +7073,14 @@
 /obj/item/reagent_containers/food/snacks/egg,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains/decap/gunduzirak)
+"bTz" = (
+/obj/structure/fluff/railing/wood,
+/turf/open/water/river{
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "bTB" = (
 /obj/structure/fluff/railing/border/east,
 /turf/open/transparent/openspace,
@@ -10199,6 +10207,19 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/rogue/church,
 /area/rogue/under/cave/orcdungeon)
+"cKx" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/turf/open/water/river{
+	icon_state = "rockwd"
+	},
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "cKJ" = (
 /obj/structure/table/wood/large_table/middle_west{
 	pixel_x = -5
@@ -14963,6 +14984,14 @@
 "dQV" = (
 /turf/open/floor/rogue/carpet/lord/right,
 /area/rogue/indoors/town/manor)
+"dQZ" = (
+/obj/structure/stairs{
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "dRb" = (
 /obj/structure/table/wood{
 	dir = 10;
@@ -15670,6 +15699,12 @@
 /area/rogue/outdoors/rtfield{
 	first_time_text = "CITY OUTSKIRTS"
 	})
+"ebs" = (
+/obj/structure/stairs{
+	dir = 8
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/bog/north)
 "ebt" = (
 /obj/item/reagent_containers/glass/cup/wooden{
 	pixel_x = 8
@@ -19579,9 +19614,17 @@
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/mazedungeon)
 "fdG" = (
-/obj/effect/landmark/quest_spawner/hard,
-/turf/open/floor/rogue/dirt/road,
-/area/rogue/under/underdark/south)
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -8
+	},
+/obj/structure/fluff/railing/wood{
+	dir = 4
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "fdM" = (
 /obj/structure/closet/crate/chest/neu_fancy{
 	locked = 1;
@@ -21674,6 +21717,15 @@
 /obj/structure/fluff/railing/border/west,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/outdoors/mountains)
+"fGb" = (
+/obj/structure/fluff/railing/wood{
+	dir = 8;
+	pixel_x = -8
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "fGc" = (
 /obj/structure/fluff/railing/corner/south_east,
 /obj/effect/decal/cobbleedge{
@@ -22380,6 +22432,7 @@
 /obj/item/rogueweapon/pitchfork/aalloy,
 /obj/item/rogueweapon/shovel/aalloy,
 /obj/item/rogueweapon/scythe,
+/obj/item/rogueweapon/sickle/aalloy,
 /turf/open/floor/rogue/grassred,
 /area/rogue/outdoors/woods{
 	first_time_text = "DRAGUIPPE FOREST"
@@ -22539,6 +22592,12 @@
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/orcdungeon)
+"fSZ" = (
+/obj/structure/fluff/railing/wood,
+/turf/open/transparent/openspace,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "fTb" = (
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cavewet/bogcaves)
@@ -32192,6 +32251,10 @@
 /obj/structure/fluff/psycross,
 /turf/open/floor/rogue/herringbone,
 /area/rogue/outdoors/mountains/decap/gunduzirak)
+"iuE" = (
+/obj/structure/vine,
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/under/underdark/south)
 "iuF" = (
 /obj/structure/fluff/walldeco/customflag{
 	pixel_y = -32
@@ -35969,6 +36032,14 @@
 	icon_state = "plating2"
 	},
 /area/rogue/under/cave/dungeon1/gethsmane/inner)
+"jsB" = (
+/obj/structure/stairs{
+	dir = 8
+	},
+/turf/open/floor/rogue/twig,
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "jsC" = (
 /obj/structure/fluff/railing/border/north,
 /turf/open/lava/acid,
@@ -38741,6 +38812,10 @@
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/grassyel,
 /area/rogue/outdoors/town)
+"kbk" = (
+/obj/structure/flora/roguetree/pine/dead,
+/turf/open/floor/rogue/snow,
+/area/rogue/outdoors/mountains/decap)
 "kbm" = (
 /obj/structure/meathook,
 /obj/effect/decal/cleanable/blood,
@@ -57457,6 +57532,9 @@
 /obj/effect/spawner/lootdrop/valuable_clutter_spawner,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/his_vault)
+"oOj" = (
+/turf/open/floor/rogue/volcanic,
+/area/rogue/outdoors/mountains/decap)
 "oOt" = (
 /obj/structure/fluff/walldeco/rpainting{
 	pixel_x = 32;
@@ -61357,6 +61435,9 @@
 /obj/structure/fluff/railing/corner/north_east,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/bog/north)
+"pIN" = (
+/turf/open/lava,
+/area/rogue/outdoors/mountains/decap)
 "pIP" = (
 /obj/structure/stairs/stone{
 	dir = 1
@@ -63072,6 +63153,20 @@
 /obj/structure/fluff/railing/border,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog/north)
+"qfs" = (
+/obj/structure/fluff/railing/wood{
+	dir = 1;
+	layer = 2.7;
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/turf/open/water/river{
+	icon_state = "rockwd";
+	dir = 4
+	},
+/area/rogue/outdoors/woods{
+	first_time_text = "DRAGUIPPE FOREST"
+	})
 "qfB" = (
 /obj/structure/fluff/railing/wood{
 	dir = 1;
@@ -91368,6 +91463,11 @@
 /obj/item/ingot/blacksteel,
 /turf/open/floor/rogue/blocks/platform,
 /area/rogue/under/cave/orcdungeon)
+"xdp" = (
+/obj/structure/vine,
+/obj/structure/vine,
+/turf/open/floor/rogue/dirt,
+/area/rogue/under/underdark/south)
 "xdr" = (
 /obj/structure/fluff/railing/wood{
 	dir = 4;
@@ -91554,6 +91654,10 @@
 /mob/living/simple_animal/hostile/rogue/deepone/spit,
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/under/cave/fishmandungeon)
+"xgk" = (
+/obj/structure/flora/roguetree/pine/dead,
+/turf/open/floor/rogue/grasscold,
+/area/rogue/outdoors/mountains/decap)
 "xgl" = (
 /obj/effect/decal/cobbleedge{
 	icon_state = "cobbleedge-sread"
@@ -330879,10 +330983,10 @@ ilR
 ilR
 ilR
 vYJ
-vYJ
-vYJ
-vYJ
-vYJ
+udn
+udn
+udn
+udn
 udn
 ilR
 iwT
@@ -332083,7 +332187,7 @@ ilR
 ilR
 ilR
 vYJ
-vYJ
+udn
 udn
 udn
 udn
@@ -332484,7 +332588,7 @@ ilR
 ilR
 ltk
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -332886,7 +332990,7 @@ ilR
 ilR
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -333288,7 +333392,7 @@ ilR
 ilR
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -333690,7 +333794,7 @@ ilR
 ilR
 ilR
 byG
-vYJ
+udn
 udn
 udn
 udn
@@ -334092,7 +334196,7 @@ ilR
 ilR
 byG
 byG
-vYJ
+udn
 udn
 udn
 udn
@@ -334494,7 +334598,7 @@ ilR
 ilR
 byG
 vYJ
-vYJ
+udn
 udn
 udn
 udn
@@ -334895,7 +334999,7 @@ rcr
 ilR
 ilR
 byG
-vYJ
+udn
 udn
 udn
 udn
@@ -335297,7 +335401,7 @@ rcr
 ilR
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -335699,7 +335803,7 @@ rcr
 rcr
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -336101,7 +336205,7 @@ ilR
 rcr
 ltk
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -336503,7 +336607,7 @@ ilR
 ilR
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -336905,7 +337009,7 @@ ilR
 ilR
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -337307,7 +337411,7 @@ ilR
 ilR
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -338110,7 +338214,7 @@ iQC
 ilR
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -338512,7 +338616,7 @@ ilR
 ilR
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -338914,7 +339018,7 @@ ilR
 ilR
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -339316,7 +339420,7 @@ ilR
 ilR
 ilR
 vYJ
-vYJ
+udn
 udn
 udn
 udn
@@ -339669,55 +339773,55 @@ ilR
 ilR
 ilR
 ilR
-oWI
-oWI
-oWI
-oWI
-ilR
-ilR
-ilR
-byG
-byG
-ilR
-ilR
-ilR
-ilR
-ilR
-uFG
-uFG
-ltk
-byG
-ilR
-ilR
-ltk
-rcr
-rcr
-ilR
-uFG
-ilR
-ilR
-ltk
-ilR
-ilR
-ilR
-uFG
-uFG
-ilR
-ltk
-ilR
-ilR
-ilR
-ilR
-ilR
-ilR
-ilR
-uFG
-ltk
-ilR
-ilR
-ilR
-ilR
 vYJ
+vYJ
+vYJ
+oWI
+ilR
+ilR
+ilR
+byG
+byG
+ilR
+ilR
+ilR
+ilR
+ilR
+uFG
+uFG
+ltk
+byG
+ilR
+ilR
+ltk
+rcr
+rcr
+ilR
+uFG
+ilR
+ilR
+ltk
+ilR
+ilR
+ilR
+uFG
+uFG
+ilR
+ltk
+ilR
+ilR
+ilR
+ilR
+ilR
+ilR
+ilR
+uFG
+ltk
+ilR
+ilR
+ilR
+ilR
+udn
 udn
 udn
 udn
@@ -340074,10 +340178,10 @@ vYJ
 vYJ
 vYJ
 vYJ
-oWI
-oWI
-oWI
-oWI
+vYJ
+vYJ
+vYJ
+vYJ
 oWI
 ilR
 ilR
@@ -340480,8 +340584,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-oWI
-oWI
+vYJ
+vYJ
 oWI
 ilR
 ilR
@@ -340520,10 +340624,10 @@ ilR
 ilR
 ilR
 ilR
-vYJ
-udn
-udn
-udn
+fdG
+ads
+fdG
+fGb
 ilR
 ilR
 ilR
@@ -340884,8 +340988,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-oWI
-oWI
+vYJ
+vYJ
 oWI
 ilR
 ilR
@@ -341288,8 +341392,8 @@ vYJ
 vYJ
 vYJ
 oWI
-oWI
-oWI
+vYJ
+vYJ
 oWI
 ilR
 ilR
@@ -341675,9 +341779,9 @@ vYJ
 vYJ
 vYJ
 vYJ
+vYJ
+vYJ
 udn
-udn
-udn
 ilR
 ilR
 ilR
@@ -341692,7 +341796,7 @@ vYJ
 vYJ
 vYJ
 vYJ
-oWI
+vYJ
 oWI
 ilR
 ilR
@@ -342075,9 +342179,9 @@ vYJ
 vYJ
 vYJ
 vYJ
+vYJ
+vYJ
 udn
-udn
-udn
 ilR
 ilR
 ilR
@@ -342095,9 +342199,9 @@ vYJ
 vYJ
 vYJ
 vYJ
-oWI
-oWI
-oWI
+bTz
+ads
+qfs
 ilR
 ilR
 ilR
@@ -342125,7 +342229,7 @@ ilR
 ilR
 ilR
 ilR
-vYJ
+udn
 udn
 udn
 udn
@@ -342475,8 +342579,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-udn
-udn
+vYJ
+vYJ
 udn
 ilR
 ilR
@@ -342497,10 +342601,10 @@ ilR
 vYJ
 vYJ
 vYJ
+bTz
+ads
 vYJ
 vYJ
-oWI
-oWI
 oWI
 ilR
 ilR
@@ -342875,8 +342979,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-udn
-udn
+vYJ
+vYJ
 udn
 ilR
 ilR
@@ -342900,11 +343004,11 @@ ilR
 vYJ
 vYJ
 vYJ
+ads
+cKx
 vYJ
 vYJ
 vYJ
-oWI
-oWI
 oWI
 ilR
 ilR
@@ -343275,8 +343379,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-udn
-udn
+vYJ
+vYJ
 udn
 ilR
 ilR
@@ -343301,14 +343405,14 @@ ilR
 ilR
 ilR
 ilR
+bTz
+ads
+cKx
 vYJ
 vYJ
 vYJ
 vYJ
 vYJ
-vYJ
-oWI
-oWI
 oWI
 ilR
 ilR
@@ -343675,8 +343779,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-udn
-udn
+vYJ
+vYJ
 udn
 ilR
 ilR
@@ -343711,11 +343815,11 @@ vYJ
 vYJ
 vYJ
 vYJ
+vYJ
+vYJ
+vYJ
+vYJ
 oWI
-oWI
-oWI
-oWI
-oWI
 ilR
 ilR
 ilR
@@ -343732,7 +343836,7 @@ vYJ
 vYJ
 vYJ
 vYJ
-udn
+vYJ
 udn
 udn
 ilR
@@ -344118,7 +344222,7 @@ vYJ
 vYJ
 vYJ
 oWI
-oWI
+vYJ
 oWI
 ilR
 vYJ
@@ -344533,8 +344637,8 @@ vYJ
 vYJ
 vYJ
 vYJ
-udn
-udn
+vYJ
+vYJ
 udn
 ilR
 ilR
@@ -344876,9 +344980,9 @@ vYJ
 vYJ
 vYJ
 vYJ
-udn
-udn
-udn
+vYJ
+vYJ
+vYJ
 udn
 ilR
 ilR
@@ -344932,9 +345036,9 @@ vYJ
 vYJ
 vYJ
 vYJ
-udn
-udn
-udn
+vYJ
+vYJ
+vYJ
 udn
 ilR
 ilR
@@ -345728,8 +345832,8 @@ ilR
 ilR
 ilR
 ilR
-udn
-udn
+vYJ
+vYJ
 udn
 ilR
 ilR
@@ -355770,9 +355874,9 @@ uFG
 uFG
 ilR
 uFG
-uFG
-ilR
-ilR
+ads
+dQZ
+dQZ
 aTY
 aTY
 aTY
@@ -357780,9 +357884,9 @@ lAu
 gYE
 mCu
 mCu
-nVU
-ptg
-hJL
+ebs
+ebs
+ebs
 qbm
 hJL
 hJL
@@ -485905,8 +486009,8 @@ pms
 pms
 qCx
 nhW
-nhW
-qCx
+rup
+arg
 kHT
 exr
 vSZ
@@ -485916,7 +486020,7 @@ uvU
 uvU
 uvU
 uvU
-uvU
+jcX
 jcX
 jcX
 jcX
@@ -486306,19 +486410,19 @@ qCx
 pms
 cSb
 qCx
-nhW
-kFU
-qCx
+rup
+iuE
+arg
 kHT
 exr
 vSZ
-vSZ
-uvU
-uvU
-uvU
-uvU
-uvU
-uvU
+iEm
+iEm
+jcX
+jcX
+jcX
+jcX
+jcX
 jcX
 jcX
 jcX
@@ -486709,18 +486813,18 @@ pms
 pms
 qCx
 nhW
-nhW
-qCx
+rup
+xdp
 kHT
-exr
-vSZ
-vSZ
+arg
+pQg
+iEm
+iEm
+jcX
 uvU
 uvU
-uvU
-uvU
-uvU
-uvU
+jcX
+jcX
 jcX
 jcX
 jcX
@@ -487111,11 +487215,11 @@ pms
 qCx
 xSS
 nhW
-nhW
-qCx
-kHT
-exr
-vSZ
+rup
+xdp
+rup
+rup
+pQg
 vSZ
 uvU
 uvU
@@ -487513,8 +487617,8 @@ nhW
 nhW
 nhW
 nhW
-nhW
-qCx
+rup
+arg
 kHT
 exr
 vSZ
@@ -487915,8 +488019,8 @@ nhW
 nhW
 nhW
 nhW
-qCx
-nhW
+arg
+rup
 kHT
 exr
 vSZ
@@ -488316,9 +488420,9 @@ nhW
 nhW
 qCx
 nhW
+rup
 nhW
-nhW
-nhW
+rup
 kHT
 exr
 vSZ
@@ -491536,7 +491640,7 @@ kHT
 eGI
 kFU
 kFU
-fdG
+kFU
 vSZ
 vSZ
 uvU
@@ -537072,10 +537176,10 @@ iwT
 iwT
 iwT
 iwT
-iwT
-ujJ
-ujJ
-ilR
+fSZ
+ads
+dQZ
+dQZ
 ilR
 ltk
 ilR
@@ -537475,7 +537579,7 @@ ilR
 rcr
 rcr
 ujJ
-ujJ
+ads
 rcr
 ilR
 ilR
@@ -537877,9 +537981,9 @@ ltk
 rcr
 rcr
 rcr
+ads
 ilR
-ltk
-ilR
+ads
 ilR
 ilR
 ilR
@@ -538279,9 +538383,9 @@ ujJ
 ujJ
 ujJ
 ujJ
-ujJ
-ujJ
-ujJ
+ads
+jsB
+jsB
 ujJ
 ujJ
 rcr
@@ -716164,12 +716268,12 @@ oLH
 oLH
 oLH
 oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
+qjb
+qjb
+qjb
+qjb
+qjb
+qjb
 oLH
 oLH
 oLH
@@ -716565,14 +716669,14 @@ oLH
 oLH
 oLH
 oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
+qjb
+qjb
+pIN
+pIN
+pIN
+pIN
+qjb
+qjb
 oLH
 oLH
 oLH
@@ -716967,15 +717071,15 @@ oLH
 oLH
 oLH
 oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
+qjb
+pIN
+pIN
+pIN
+pIN
+pIN
+pIN
+qjb
+qjb
 oLH
 oLH
 oLH
@@ -717368,17 +717472,17 @@ oLH
 oLH
 oLH
 oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
+qjb
+qjb
+pIN
+oOj
+oOj
+oOj
+oOj
+oOj
+pIN
+qjb
+qjb
 oLH
 oLH
 oLH
@@ -717770,17 +717874,17 @@ oLH
 oLH
 oLH
 oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
+qjb
+pIN
+oOj
+oOj
+kmp
+kmp
+kmp
+oOj
+oOj
+pIN
+qjb
 oLH
 oLH
 oLH
@@ -718172,18 +718276,18 @@ oLH
 oLH
 oLH
 oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
-oLH
+qjb
+pIN
+oOj
+kmp
+kmp
+kmp
+kmp
+kmp
+oOj
+oOj
+qjb
+qjb
 oLH
 oLH
 oLH
@@ -718578,10 +718682,10 @@ iiL
 iiL
 iiL
 iiL
-iiL
-iiL
-qjb
-qjb
+kmp
+kmp
+kmp
+kmp
 qjb
 qjb
 qjb
@@ -718980,10 +719084,10 @@ iiL
 iiL
 iiL
 iiL
-iiL
-iiL
-qjb
-qjb
+kmp
+kmp
+kmp
+kmp
 qjb
 qjb
 qjb
@@ -719383,9 +719487,9 @@ iiL
 iiL
 iiL
 vnu
-vnu
-vnu
-qjb
+kmp
+kmp
+kmp
 qjb
 qjb
 qjb
@@ -720187,7 +720291,7 @@ vnu
 vnu
 vnu
 vnu
-gzV
+vnu
 vnu
 vnu
 qjb
@@ -720589,7 +720693,7 @@ vnu
 vnu
 vnu
 vnu
-gzV
+vnu
 vnu
 vnu
 qjb
@@ -720988,10 +721092,10 @@ iiL
 vnu
 vnu
 vnu
-gzV
-oRG
-gzV
-gzV
+kbk
+vnu
+vnu
+vnu
 vnu
 vnu
 vnu
@@ -721388,7 +721492,7 @@ iiL
 vnu
 vnu
 vnu
-hSs
+vnu
 gzV
 gzV
 gzV
@@ -721796,7 +721900,7 @@ wAR
 rUK
 gzV
 gzV
-vnu
+xgk
 vnu
 vnu
 qjb
@@ -723004,7 +723108,7 @@ gzV
 gzV
 vnu
 vnu
-hSs
+vnu
 vnu
 qjb
 qjb
